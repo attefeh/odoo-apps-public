@@ -1,12 +1,12 @@
 {
     'name': 'Reset Contacts Password',
-    'version': '18.0.1.0.0',
+    'version': '19.0.1.0.0',
     'summary': "Reset user's password from partner form",
     'description': "This module allows administrators to reset a user's password directly from the partner form view. It works for all type of users including internal and portal users.",
     'author': 'Attefeh Falah',
     'maintainer': 'Attefeh Falah',
     'support': 'attefehfalah@gmail.com',
-    'website': 'https://www.techstarssolution.com',
+    'website': 'https://www.attefehfalah.com',
     'category': 'Contact',
     'depends': ['contacts'],
     'data': [
