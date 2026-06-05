@@ -1,0 +1,59 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sale_multiple_print
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-03 00:00+0000\n"
+"PO-Revision-Date: 2026-06-03 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: he\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_multiple_print
+#: model:ir.model,name:sale_multiple_print.model_sale_multiple_print_wizard
+msgid "Sale Order Multiple Print Wizard"
+msgstr "אשף הדפסה מרובה של הזמנת מכירה"
+
+#. module: sale_multiple_print
+#: model:ir.model.fields,field_description:sale_multiple_print.field_sale_multiple_print_wizard__order_id
+msgid "Sale Order"
+msgstr "הזמנת מכירה"
+
+#. module: sale_multiple_print
+#: model:ir.model.fields,field_description:sale_multiple_print.field_sale_multiple_print_wizard__copies
+msgid "Number of Copies"
+msgstr "מספר עותקים"
+
+#. module: sale_multiple_print
+#: code:addons/sale_multiple_print/wizard/sale_multiple_print_wizard.py:0
+#, python-format
+msgid "Number of copies must be at least 1."
+msgstr "מספר העותקים חייב להיות לפחות 1."
+
+#. module: sale_multiple_print
+#: model:ir.actions.act_window,name:sale_multiple_print.action_sale_multiple_print_wizard
+#: model_terms:ir.ui.view,arch_db:sale_multiple_print.view_sale_multiple_print_wizard_form
+msgid "Print Multiple Copies"
+msgstr "הדפסת עותקים מרובים"
+
+#. module: sale_multiple_print
+#: model_terms:ir.ui.view,arch_db:sale_multiple_print.view_sale_multiple_print_wizard_form
+msgid "Print"
+msgstr "הדפסה"
+
+#. module: sale_multiple_print
+#: model_terms:ir.ui.view,arch_db:sale_multiple_print.view_sale_multiple_print_wizard_form
+msgid "Cancel"
+msgstr "ביטול"
+
+#. module: sale_multiple_print
+#: model_terms:ir.ui.view,arch_db:sale_multiple_print.view_order_form_inherit_multiple_print
+msgid "Print Copies"
+msgstr "הדפסת עותקים"

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="purchase_order_form_inherit_multiple_print" model="ir.ui.view">
+        <field name="name">purchase.order.form.inherit.multiple.print</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header/button[@name='print_quotation']" position="after">
+                <button string="Print Copies"
+                        name="%(purchase_multiple_print.action_purchase_multiple_print_wizard)d"
+                        type="action"
+                        context="{'default_order_id': id}"
+                        groups="base.group_user"
+                        data-hotkey="p"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

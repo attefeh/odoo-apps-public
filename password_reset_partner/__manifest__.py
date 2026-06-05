@@ -4,9 +4,10 @@
     'summary': "Reset user's password from partner form",
     'description': "This module allows administrators to reset a user's password directly from the partner form view. It works for all type of users including internal and portal users.",
     'author': 'Attefeh Falah',
-    'maintainer': 'Attefeh Falah',
-    'support': 'attefehfalah@gmail.com',
+    'company': 'Tech Stars SPC',
+    'maintainer': 'Tech Stars SPC',
     'website': 'https://www.attefehfalah.com',
+    'support': 'attefehfalah@gmail.com',
     'category': 'Contact',
     'depends': ['contacts'],
     'data': [

@@ -1,0 +1,134 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# * currency_rate_guard
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: Attefeh Falah\n"
+"Language-Team: Persian\n"
+"Language: fa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+
+#. module: currency_rate_guard
+#: model:ir.module.module,shortdesc:base.module_currency_rate_guard
+msgid "Currency Rate Guard"
+msgstr "نگهبان نرخ ارز"
+
+#. module: currency_rate_guard
+#: model:ir.module.module,summary:base.module_currency_rate_guard
+msgid ""
+"Block confirmation/posting of purchase orders, vendor bills, customer "
+"invoices and payments when today's currency rate is missing for guarded "
+"currencies. Daily reminder to accountants."
+msgstr ""
+"اگر نرخ ارز امروز برای ارزهای پاسبانی‌شده ثبت نشده باشد، تأیید/ثبت سفارش‌های "
+"خرید، قبض‌های فروشنده، فاکتورهای مشتری و پرداخت‌ها را مسدود می‌کند. یادآور "
+"روزانه برای حسابداران."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "Require Daily Rate"
+msgstr "نیاز به نرخ روزانه"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_res_currency__rate_guard_required
+msgid ""
+"If set, posting/confirming any document in this currency is blocked unless "
+"a currency rate exists for today."
+msgstr ""
+"اگر فعال باشد، ثبت/تأیید هر سندی در این ارز تا زمانی که نرخ ارز برای امروز "
+"ثبت نشده باشد، مسدود می‌شود."
+
+#. module: currency_rate_guard
+#: model:ir.model,name:currency_rate_guard.model_currency_rate_quick_entry_wizard
+msgid "Quick Entry for Today's Currency Rate"
+msgstr "ورود سریع نرخ ارز امروز"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__currency_id
+msgid "Currency"
+msgstr "ارز"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_id
+msgid "Company"
+msgstr "شرکت"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_currency_id
+msgid "Company Currency"
+msgstr "ارز شرکت"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__date
+msgid "Date"
+msgstr "تاریخ"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
+msgid "Rate"
+msgstr "نرخ"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
+msgid ""
+"How many units of the company currency equal 1 unit of the selected "
+"currency (e.g. 1 OMR = X IRR)."
+msgstr ""
+"چند واحد از ارز شرکت برابر با ۱ واحد از ارز انتخاب‌شده است (مثلاً ۱ ریال "
+"عمان = X ریال ایران)."
+
+#. module: currency_rate_guard
+#: model:ir.actions.act_window,name:currency_rate_guard.action_currency_rate_quick_entry_wizard
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "Enter Today's Rate"
+msgstr "نرخ امروز را وارد کنید"
+
+#. module: currency_rate_guard
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Save Rate"
+msgstr "ذخیره نرخ"
+
+#. module: currency_rate_guard
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Cancel"
+msgstr "لغو"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/wizard/currency_rate_quick_entry.py:0
+#, python-format
+msgid "Rate must be strictly positive."
+msgstr "نرخ باید کاملاً مثبت باشد."
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid ""
+"No exchange rate has been registered for %(currency)s on %(date)s. Please "
+"enter today's rate before continuing."
+msgstr ""
+"هیچ نرخ ارزی برای %(currency)s در تاریخ %(date)s ثبت نشده است. لطفاً پیش از "
+"ادامه، نرخ امروز را وارد کنید."
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "Register today's %s rate"
+msgstr "نرخ %s امروز را ثبت کنید"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid ""
+"Today's exchange rate for %(currency)s (company %(company)s) has not been "
+"entered yet. Documents in this currency are blocked until the rate is set."
+msgstr ""
+"نرخ ارز امروز برای %(currency)s (شرکت %(company)s) هنوز وارد نشده است. "
+"اسناد در این ارز تا زمانی که نرخ تنظیم نشود مسدود هستند."

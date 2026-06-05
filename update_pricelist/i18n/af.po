@@ -1,0 +1,136 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* update_pricelist
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-03 00:00+0000\n"
+"PO-Revision-Date: 2026-06-03 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: af\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__product_ids
+#: model_terms:ir.ui.view,arch_db:update_pricelist.update_pricelist_item_view
+msgid "Products"
+msgstr "Produkte"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__product_count
+msgid "Product Count"
+msgstr "Produktelling"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__type
+msgid "Type"
+msgstr "Tipe"
+
+#. module: update_pricelist
+#: model:ir.model.fields.selection,name:update_pricelist.selection__update_pricelist_item__type__percentage
+msgid "Percentage"
+msgstr "Persentasie"
+
+#. module: update_pricelist
+#: model:ir.model.fields.selection,name:update_pricelist.selection__update_pricelist_item__type__fixed
+msgid "Fixed"
+msgstr "Vas"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__percentage_amount
+msgid "Percentage Amount"
+msgstr "Persentasiebedrag"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__fixed_amount
+msgid "Fixed Amount"
+msgstr "Vaste Bedrag"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__close_old_pricelists
+msgid "Close Old Pricelists"
+msgstr "Sluit Ou Pryslyste"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__products_without_price
+msgid "Products Without Price"
+msgstr "Produkte Sonder Prys"
+
+#. module: update_pricelist
+#: code:addons/update_pricelist/wizard/update_pricelist_items.py:0
+msgid "No product selected."
+msgstr "Geen produk gekies nie."
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_product_pricelist_item__supplier_id
+msgid "Supplier"
+msgstr "Verskaffer"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_product_pricelist_item__purchase_price
+msgid "Latest Purchase Price"
+msgstr "Jongste Aankoopprys"
+
+#. module: update_pricelist
+#: code:addons/update_pricelist/models/product_pricelist_item.py:0
+msgid "You have to select products from one pricelist!"
+msgstr "Jy moet produkte uit een pryslys kies!"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.update_pricelist_item_view
+msgid "Warning:"
+msgstr "Waarskuwing:"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.update_pricelist_item_view
+msgid "The following products have no existing price on this pricelist. If you continue, their new price will be calculated from a base of 0. Remove them from the selection unless you intend to create them with a price of 0."
+msgstr "Die volgende produkte het geen bestaande prys op hierdie pryslys nie. As jy voortgaan, sal hul nuwe prys vanaf 'n basis van 0 bereken word. Verwyder hulle uit die seleksie tensy jy van plan is om hulle met 'n prys van 0 te skep."
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.update_pricelist_item_view
+msgid "Submit"
+msgstr "Dien In"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_pricelist_line_tree_view
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_product_tree_view
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_template_tree_view
+msgid "Update Pricelist"
+msgstr "Werk Pryslys By"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_pricelist_line_view_search
+msgid "Pricelist"
+msgstr "Pryslys"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_pricelist_line_view_search
+msgid "Products Price Lines Search"
+msgstr "Produkpryslyne-soektog"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_pricelist_line_view_search
+msgid "Price List"
+msgstr "Pryslys"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_pricelist_line_view_search
+msgid "Current Prices"
+msgstr "Huidige Pryse"
+
+#. module: update_pricelist
+#: model:ir.actions.act_window,name:update_pricelist.product_pricelist_lines_action
+msgid "Pricelist Items"
+msgstr "Pryslysitems"
+
+#. module: update_pricelist
+#: model:ir.ui.menu,name:update_pricelist.menu_product_pricelist_line_main
+msgid "Pricelist Lines"
+msgstr "Pryslyslyne"

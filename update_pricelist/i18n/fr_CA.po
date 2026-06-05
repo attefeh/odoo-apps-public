@@ -1,0 +1,136 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* update_pricelist
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-03 00:00+0000\n"
+"PO-Revision-Date: 2026-06-03 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr_CA\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__product_ids
+#: model_terms:ir.ui.view,arch_db:update_pricelist.update_pricelist_item_view
+msgid "Products"
+msgstr "Articles"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__product_count
+msgid "Product Count"
+msgstr "Nombre d'articles"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__type
+msgid "Type"
+msgstr "Type"
+
+#. module: update_pricelist
+#: model:ir.model.fields.selection,name:update_pricelist.selection__update_pricelist_item__type__percentage
+msgid "Percentage"
+msgstr "Pourcentage"
+
+#. module: update_pricelist
+#: model:ir.model.fields.selection,name:update_pricelist.selection__update_pricelist_item__type__fixed
+msgid "Fixed"
+msgstr "Fixe"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__percentage_amount
+msgid "Percentage Amount"
+msgstr "Montant en pourcentage"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__fixed_amount
+msgid "Fixed Amount"
+msgstr "Montant fixe"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__close_old_pricelists
+msgid "Close Old Pricelists"
+msgstr "Clôturer les anciennes listes de prix"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__products_without_price
+msgid "Products Without Price"
+msgstr "Articles sans prix"
+
+#. module: update_pricelist
+#: code:addons/update_pricelist/wizard/update_pricelist_items.py:0
+msgid "No product selected."
+msgstr "Aucun article sélectionné."
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_product_pricelist_item__supplier_id
+msgid "Supplier"
+msgstr "Fournisseur"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_product_pricelist_item__purchase_price
+msgid "Latest Purchase Price"
+msgstr "Dernier prix d'achat"
+
+#. module: update_pricelist
+#: code:addons/update_pricelist/models/product_pricelist_item.py:0
+msgid "You have to select products from one pricelist!"
+msgstr "Vous devez sélectionner des articles d'une seule liste de prix !"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.update_pricelist_item_view
+msgid "Warning:"
+msgstr "Avertissement :"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.update_pricelist_item_view
+msgid "The following products have no existing price on this pricelist. If you continue, their new price will be calculated from a base of 0. Remove them from the selection unless you intend to create them with a price of 0."
+msgstr "Les articles suivants n'ont pas de prix existant sur cette liste de prix. Si vous continuez, leur nouveau prix sera calculé à partir d'une base de 0. Retirez-les de la sélection, sauf si vous avez l'intention de les créer avec un prix de 0."
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.update_pricelist_item_view
+msgid "Submit"
+msgstr "Soumettre"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_pricelist_line_tree_view
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_product_tree_view
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_template_tree_view
+msgid "Update Pricelist"
+msgstr "Mettre à jour la liste de prix"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_pricelist_line_view_search
+msgid "Pricelist"
+msgstr "Liste de prix"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_pricelist_line_view_search
+msgid "Products Price Lines Search"
+msgstr "Recherche de lignes de prix des articles"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_pricelist_line_view_search
+msgid "Price List"
+msgstr "Liste de prix"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_pricelist_line_view_search
+msgid "Current Prices"
+msgstr "Prix actuels"
+
+#. module: update_pricelist
+#: model:ir.actions.act_window,name:update_pricelist.product_pricelist_lines_action
+msgid "Pricelist Items"
+msgstr "Éléments de la liste de prix"
+
+#. module: update_pricelist
+#: model:ir.ui.menu,name:update_pricelist.menu_product_pricelist_line_main
+msgid "Pricelist Lines"
+msgstr "Lignes de la liste de prix"

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_move_form_inherit_multiple_print" model="ir.ui.view">
+        <field name="name">account.move.form.inherit.multiple.print</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header/button[@name='preview_invoice']" position="after">
+                <button string="Print Copies"
+                        name="%(account_move_multiple_print.action_account_move_multiple_print_wizard)d"
+                        type="action"
+                        context="{'default_move_id': id}"
+                        groups="account.group_account_invoice"
+                        data-hotkey="p"
+                        invisible="state != 'posted' or move_type == 'entry'"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_order_form_inherit_multiple_print" model="ir.ui.view">
+        <field name="name">sale.order.form.inherit.multiple.print</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header/button[@name='sale.action_report_saleorder']" position="after">
+                <button string="Print Copies"
+                        name="%(sale_multiple_print.action_sale_multiple_print_wizard)d"
+                        type="action"
+                        context="{'default_order_id': id}"
+                        data-hotkey="p"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

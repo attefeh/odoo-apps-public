@@ -1,0 +1,136 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* update_pricelist
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-03 00:00+0000\n"
+"PO-Revision-Date: 2026-06-03 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__product_ids
+#: model_terms:ir.ui.view,arch_db:update_pricelist.update_pricelist_item_view
+msgid "Products"
+msgstr "Productes"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__product_count
+msgid "Product Count"
+msgstr "Recompte de productes"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__type
+msgid "Type"
+msgstr "Tipus"
+
+#. module: update_pricelist
+#: model:ir.model.fields.selection,name:update_pricelist.selection__update_pricelist_item__type__percentage
+msgid "Percentage"
+msgstr "Percentatge"
+
+#. module: update_pricelist
+#: model:ir.model.fields.selection,name:update_pricelist.selection__update_pricelist_item__type__fixed
+msgid "Fixed"
+msgstr "Fix"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__percentage_amount
+msgid "Percentage Amount"
+msgstr "Import percentual"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__fixed_amount
+msgid "Fixed Amount"
+msgstr "Import fix"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__close_old_pricelists
+msgid "Close Old Pricelists"
+msgstr "Tancar tarifes antigues"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__products_without_price
+msgid "Products Without Price"
+msgstr "Productes sense preu"
+
+#. module: update_pricelist
+#: code:addons/update_pricelist/wizard/update_pricelist_items.py:0
+msgid "No product selected."
+msgstr "No s'ha seleccionat cap producte."
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_product_pricelist_item__supplier_id
+msgid "Supplier"
+msgstr "Proveïdor"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_product_pricelist_item__purchase_price
+msgid "Latest Purchase Price"
+msgstr "Últim preu de compra"
+
+#. module: update_pricelist
+#: code:addons/update_pricelist/models/product_pricelist_item.py:0
+msgid "You have to select products from one pricelist!"
+msgstr "Heu de seleccionar productes d'una sola tarifa!"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.update_pricelist_item_view
+msgid "Warning:"
+msgstr "Advertència:"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.update_pricelist_item_view
+msgid "The following products have no existing price on this pricelist. If you continue, their new price will be calculated from a base of 0. Remove them from the selection unless you intend to create them with a price of 0."
+msgstr "Els següents productes no tenen un preu existent en aquesta tarifa. Si continueu, el seu nou preu es calcularà a partir d'una base de 0. Elimineu-los de la selecció tret que tingueu la intenció de crear-los amb un preu de 0."
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.update_pricelist_item_view
+msgid "Submit"
+msgstr "Enviar"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_pricelist_line_tree_view
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_product_tree_view
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_template_tree_view
+msgid "Update Pricelist"
+msgstr "Actualitzar tarifa"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_pricelist_line_view_search
+msgid "Pricelist"
+msgstr "Tarifa"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_pricelist_line_view_search
+msgid "Products Price Lines Search"
+msgstr "Cerca de línies de preu de productes"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_pricelist_line_view_search
+msgid "Price List"
+msgstr "Tarifa"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_pricelist_line_view_search
+msgid "Current Prices"
+msgstr "Preus actuals"
+
+#. module: update_pricelist
+#: model:ir.actions.act_window,name:update_pricelist.product_pricelist_lines_action
+msgid "Pricelist Items"
+msgstr "Elements de tarifa"
+
+#. module: update_pricelist
+#: model:ir.ui.menu,name:update_pricelist.menu_product_pricelist_line_main
+msgid "Pricelist Lines"
+msgstr "Línies de tarifa"
