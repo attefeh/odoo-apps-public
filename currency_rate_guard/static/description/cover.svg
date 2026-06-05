@@ -36,4 +36,5 @@
 <text x="204" y="200" font-family="Georgia,serif" font-size="14" fill="#4A2800" opacity="0.85">Ensure exchange rates are up to date</text>
 <text x="204" y="220" font-family="Georgia,serif" font-size="14" fill="#4A2800" opacity="0.85">before every bill, payment or purchase</text>
 <text x="204" y="254" font-family="Georgia,serif" font-size="12" fill="#795548" opacity="0.75">For currencies configured to require a daily rate update</text>
+<text x="340" y="326" font-family="Georgia,serif" font-size="10" fill="#F9A825" text-anchor="middle" opacity="0.45" letter-spacing="1.5">Smart Tech Solutions for Stellar Success</text>
 </svg>

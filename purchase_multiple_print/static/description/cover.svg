@@ -47,4 +47,5 @@
 <rect x="204" y="210" width="240" height="2" rx="1" fill="#F57C00" opacity="0.45"/>
 <text x="204" y="233" font-family="Georgia,serif" font-size="12" fill="#BF360C" opacity="0.85">Choose how many copies to print for each</text>
 <text x="204" y="253" font-family="Georgia,serif" font-size="12" fill="#BF360C" opacity="0.85">purchase order — set quantity and print at once</text>
+<text x="340" y="326" font-family="Georgia,serif" font-size="10" fill="#E65100" text-anchor="middle" opacity="0.45" letter-spacing="1.5">Smart Tech Solutions for Stellar Success</text>
 </svg>
