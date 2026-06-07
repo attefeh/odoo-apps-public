@@ -1,0 +1,80 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* password_reset_partner
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-03 00:00+0000\n"
+"PO-Revision-Date: 2026-06-03 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: mn\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: password_reset_partner
+#: model:ir.model,name:password_reset_partner.model_partner_reset_password
+msgid "Wizard to reset password for a partner"
+msgstr "Харилцагчийн нууц үгийг шинэчлэх шидтэн"
+
+#. module: password_reset_partner
+#: model:ir.model.fields,field_description:password_reset_partner.field_partner_reset_password__user_ids
+msgid "Users"
+msgstr "Хэрэглэгчид"
+
+#. module: password_reset_partner
+#: model:ir.model.fields,field_description:password_reset_partner.field_partner_reset_password__new_password
+msgid "New Password"
+msgstr "Шинэ нууц үг"
+
+#. module: password_reset_partner
+#: model:ir.model.fields,field_description:password_reset_partner.field_partner_reset_password__re_new_password
+msgid "New Password (Retype)"
+msgstr "Шинэ нууц үг (дахин оруулна уу)"
+
+#. module: password_reset_partner
+#: code:addons/password_reset_partner/wizard/partner_reset_password.py:0
+msgid "No user selected for password reset."
+msgstr "Нууц үг шинэчлэхэд хэрэглэгч сонгоогүй байна."
+
+#. module: password_reset_partner
+#: code:addons/password_reset_partner/wizard/partner_reset_password.py:0
+msgid "New password fields cannot be empty."
+msgstr "Шинэ нууц үгийн талбар хоосон байж болохгүй."
+
+#. module: password_reset_partner
+#: code:addons/password_reset_partner/wizard/partner_reset_password.py:0
+msgid "The new passwords do not match."
+msgstr "Шинэ нууц үг таарахгүй байна."
+
+#. module: password_reset_partner
+#: code:addons/password_reset_partner/wizard/partner_reset_password.py:0
+#, python-format
+msgid "Password has been reset by %s"
+msgstr "%s нууц үгийг шинэчилсэн"
+
+#. module: password_reset_partner
+#: model_terms:ir.ui.view,arch_db:password_reset_partner.view_res_partner_form_reset_password
+#: model_terms:ir.ui.view,arch_db:password_reset_partner.view_res_partner_form_inherit_reset_password
+msgid "Reset Password"
+msgstr "Нууц үг шинэчлэх"
+
+#. module: password_reset_partner
+#: model_terms:ir.ui.view,arch_db:password_reset_partner.view_res_partner_form_reset_password
+msgid "Cancel"
+msgstr "Цуцлах"
+
+#. module: password_reset_partner
+#: code:addons/password_reset_partner/models/res_partner.py:0
+msgid "This partner is not linked to any user."
+msgstr "Энэ харилцагч ямар ч хэрэглэгчтэй холбогдоогүй байна."
+
+#. module: password_reset_partner
+#: model:res.groups,name:password_reset_partner.group_password_reset_manager
+msgid "Password Reset Manager"
+msgstr "Нууц үг шинэчлэх менежер"

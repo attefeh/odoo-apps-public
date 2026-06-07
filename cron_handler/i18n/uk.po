@@ -1,0 +1,249 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* cron_handler
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 00:00+0000\n"
+"PO-Revision-Date: 2026-06-06 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: cron_handler
+#: model:ir.model,name:cron_handler.model_cron_handler
+#: model:ir.module.category,name:cron_handler.module_category_cron_handler
+#: model:ir.module.module,shortdesc:base.module_cron_handler
+#: model_terms:ir.ui.view,arch_db:cron_handler.view_cron_handler_form
+msgid "Cron Handler"
+msgstr "Обробник Cron"
+
+#. module: cron_handler
+#: model:ir.model,name:cron_handler.model_cron_handler_schedule_line
+msgid "Cron Handler Schedule Line"
+msgstr "Рядок розкладу обробника Cron"
+
+#. module: cron_handler
+#: model:ir.actions.act_window,name:cron_handler.action_cron_handler
+#: model:ir.ui.menu,name:cron_handler.menu_cron_handler
+#: model_terms:ir.ui.view,arch_db:cron_handler.view_cron_handler_tree
+msgid "Cron Handlers"
+msgstr "Обробники Cron"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler__cron_id
+msgid "Scheduled Action"
+msgstr "Scheduled Action"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler__model_id
+msgid "Target Model"
+msgstr "Цільова модель"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler__run_method
+msgid "Method name"
+msgstr "Назва методу"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler__schedule_line_ids
+#: model_terms:ir.ui.view,arch_db:cron_handler.view_cron_handler_form
+msgid "Schedules"
+msgstr "Розклади"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler_schedule_line__frequency
+msgid "Frequency"
+msgstr "Частота"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler_schedule_line__hour
+msgid "Hour of day"
+msgstr "Година доби"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler_schedule_line__weekday
+msgid "Weekday"
+msgstr "День тижня"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler_schedule_line__month_day
+msgid "Day of month"
+msgstr "День місяця"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler_schedule_line__last_run_at
+msgid "Last run"
+msgstr "Останній запуск"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_ir_cron__handler_managed
+msgid "Managed by Cron Handler"
+msgstr "Керується обробником Cron"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__frequency__daily
+msgid "Daily"
+msgstr "Щодня"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__frequency__weekly
+msgid "Weekly"
+msgstr "Щотижня"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__frequency__monthly
+msgid "Monthly"
+msgstr "Щомісяця"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__0
+msgid "Monday"
+msgstr "Понеділок"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__1
+msgid "Tuesday"
+msgstr "Вівторок"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__2
+msgid "Wednesday"
+msgstr "Середа"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__3
+msgid "Thursday"
+msgstr "Четвер"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__4
+msgid "Friday"
+msgstr "П’ятниця"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__5
+msgid "Saturday"
+msgstr "Субота"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__6
+msgid "Sunday"
+msgstr "Неділя"
+
+#. module: cron_handler
+#: model:res.groups,name:cron_handler.group_cron_handler_user
+msgid "User"
+msgstr "Користувач"
+
+#. module: cron_handler
+#: model:res.groups,name:cron_handler.group_cron_handler_manager
+msgid "Manager"
+msgstr "Менеджер"
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler__cron_id
+msgid "An existing Scheduled Action to run at the times below. While this handler is active the linked action is deactivated, so it stops running on its own interval and only runs on this schedule."
+msgstr "Наявна Scheduled Action для запуску в зазначений нижче час. Поки цей обробник активний, пов’язана дія деактивується, тому вона припиняє запускатися за власним інтервалом і виконується лише за цим розкладом."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler__model_id
+msgid "Registered Odoo model that defines the method to run. Transient (wizard) models are hidden. Not needed when a Scheduled Action is linked."
+msgstr "Зареєстрована модель Odoo, яка визначає метод для запуску. Тимчасові (wizard) моделі приховані. Не потрібна, коли пов’язано Scheduled Action."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler__run_method
+msgid "Name of a method on the target model. Called on the model recordset with no arguments (use env context or search handlers if needed). Not needed when a Scheduled Action is linked."
+msgstr "Назва методу в цільовій моделі. Викликається на наборі записів моделі без аргументів (за потреби використовуйте контекст env або обробники пошуку). Не потрібна, коли пов’язано Scheduled Action."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler__timezone
+msgid "Local timezone used to match schedule times."
+msgstr "Локальний часовий пояс, що використовується для зіставлення часу розкладу."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler_schedule_line__hour
+msgid "Local hour (0–23). The dispatcher runs once per hour and matches this hour only."
+msgstr "Локальна година (0–23). Диспетчер запускається раз на годину й зіставляє лише цю годину."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler_schedule_line__weekday
+msgid "Only used when frequency is Weekly."
+msgstr "Використовується лише коли частота — Щотижня."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler_schedule_line__month_day
+msgid "1–31. Only used when frequency is Monthly. If the month is shorter, the last day is used."
+msgstr "1–31. Використовується лише коли частота — Щомісяця. Якщо місяць коротший, використовується останній день."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_ir_cron__handler_managed
+msgid "Set automatically when a Cron Handler deactivates this scheduled action to take over its timing. The scheduled action is re-activated once no active handler manages it anymore."
+msgstr "Встановлюється автоматично, коли обробник Cron деактивує цю заплановану дію, щоб взяти на себе її розклад. Запланована дія повторно активується, коли нею більше не керує жоден активний обробник."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+#, python-format
+msgid "Unknown model: %s"
+msgstr "Невідома модель: %s"
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+#, python-format
+msgid "Model “%s” is abstract and cannot be used as a cron target."
+msgstr "Модель “%s” є абстрактною і не може використовуватися як ціль cron."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+msgid "Set a linked Scheduled Action, or both a Target Model and a Method name."
+msgstr "Встановіть пов’язану Scheduled Action або водночас Цільову модель і Назву методу."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+#, python-format
+msgid "Invalid timezone “%s”."
+msgstr "Недійсний часовий пояс “%s”."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+#, python-format
+msgid "No target configured for handler “%s”."
+msgstr "Для обробника “%s” не налаштовано ціль."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+#, python-format
+msgid "Method “%s” is missing or not callable on model “%s”."
+msgstr "Метод “%s” відсутній або не може бути викликаний у моделі “%s”."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+msgid "Day of month must be between 1 and 31."
+msgstr "День місяця має бути в межах від 1 до 31."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+msgid "Please set a weekday for weekly schedules."
+msgstr "Будь ласка, встановіть день тижня для щотижневих розкладів."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+msgid "Hour of day must be between 0 and 23."
+msgstr "Година доби має бути в межах від 0 до 23."
+
+#. module: cron_handler
+#: model_terms:ir.ui.view,arch_db:cron_handler.view_cron_handler_form
+msgid "The linked Scheduled Action is deactivated while this handler is active, so it stops running on its own interval and runs only at the times defined below. It is re-activated if you clear the link or deactivate this handler."
+msgstr "Пов’язана Scheduled Action деактивується, поки цей обробник активний, тому вона припиняє запускатися за власним інтервалом і виконується лише в зазначений нижче час. Вона повторно активується, якщо ви очистите зв’язок або деактивуєте цей обробник."
+
+#. module: cron_handler
+#: model:ir.module.module,summary:base.module_cron_handler
+msgid "Run scheduled actions at a set time of day (3 PM daily, etc.) instead of fixed intervals"
+msgstr "Запускайте scheduled actions у встановлений час доби (15:00 щодня тощо) замість фіксованих інтервалів"

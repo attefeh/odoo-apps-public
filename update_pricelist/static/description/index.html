@@ -1,56 +1,78 @@
-<section style="max-width:820px;margin:0 auto;font-family:'Segoe UI',Arial,sans-serif;color:#333;line-height:1.55;">
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Update Pricelist</title>
+</head>
+<body style="margin:0; padding:0;">
+    <div style="font-family:'Segoe UI','Arial',sans-serif; color:#333; max-width:900px; margin:0 auto; background:#fff; border-radius:18px; box-shadow:0 4px 20px 0 rgba(0,0,0,.08); padding:32px 40px; box-sizing:border-box;">
 
-    <h1 style="color:#0A3D28;font-size:30px;font-weight:700;text-align:center;margin:0 0 8px;">💲 Update Pricelist</h1>
-    <p style="font-size:15px;text-align:center;color:#555;margin:0 auto 28px;max-width:680px;">
-        Update the prices of many products on a pricelist at once — by a fixed amount or by a
-        percentage of their current price — without editing each pricelist line by hand.
-    </p>
+        <h1 style="color:#0A4D30; font-size:30px; line-height:1.2; text-align:center; font-weight:700; letter-spacing:1px; margin:0 0 16px;">💲 Update Pricelist</h1>
 
-    <h2 style="color:#1D9E75;font-size:20px;font-weight:600;border-bottom:2px solid #e3f5ee;padding-bottom:6px;margin:28px 0 10px;">✨ Key Features</h2>
-    <ul style="font-size:15px;padding-left:20px;margin:0;">
-        <li style="margin:6px 0;">Bulk update wizard launched from the Product Variants, Product Templates and Pricelist Items lists.</li>
-        <li style="margin:6px 0;">Increase prices by a <strong>fixed amount</strong> or a <strong>percentage</strong> of the current price.</li>
-        <li style="margin:6px 0;">Creates new, time-stamped pricelist lines and can optionally close the previous open lines so history is preserved.</li>
-        <li style="margin:6px 0;">Warns when selected products have no current price on the pricelist (a percentage increase would be computed from a base of 0).</li>
-        <li style="margin:6px 0;">Dedicated <strong>Sales &rarr; Pricelist Lines</strong> view showing latest purchase price, supplier, profit percentage and validity dates.</li>
-    </ul>
+        <p style="font-size:15px; line-height:1.6; margin:8px 0 15px;">
+            Update the prices of many products on a pricelist at once — either by a fixed
+            amount or by a percentage of their current price — without editing each
+            pricelist line by hand.
+        </p>
 
-    <h2 style="color:#1D9E75;font-size:20px;font-weight:600;border-bottom:2px solid #e3f5ee;padding-bottom:6px;margin:28px 0 10px;">📸 Screenshots</h2>
+        <h2 style="color:#0A4D30; font-size:21px; line-height:1.3; font-weight:700; letter-spacing:1px; margin:32px 0 12px; border-bottom:2px solid #e3f3ec; padding-bottom:4px;">✨ Key Features</h2>
+        <ul style="font-size:15px; line-height:1.6; margin:8px 0 24px; padding-left:22px;">
+            <li style="margin:7px 0;">Bulk update wizard launched from <strong>Product Variants</strong>, <strong>Product Templates</strong>, and <strong>Pricelist Items</strong> lists</li>
+            <li style="margin:7px 0;">Increase prices by a <strong>fixed amount</strong> or a <strong>percentage</strong> of the current price</li>
+            <li style="margin:7px 0;">Creates new, time-stamped pricelist lines (per-variant rules)</li>
+            <li style="margin:7px 0;">Optionally <strong>close the previous open lines</strong> so price history is preserved</li>
+            <li style="margin:7px 0;">Warns before submitting when selected products have <strong>no current price</strong> on the pricelist</li>
+        </ul>
 
-    <p style="font-size:14px;color:#1D9E75;font-weight:600;margin:18px 0 8px;">The bulk Update Pricelist wizard</p>
-    <img src="screenshot_wizard.png" alt="Update Pricelist wizard"
-         style="display:block;width:100%;height:auto;border:1px solid #d5e9e0;border-radius:8px;margin:0 0 24px;">
+        <h2 style="color:#0A4D30; font-size:21px; line-height:1.3; font-weight:700; letter-spacing:1px; margin:32px 0 12px; border-bottom:2px solid #e3f3ec; padding-bottom:4px;">📊 Pricelist Lines Overview</h2>
+        <p style="font-size:15px; line-height:1.6; margin:8px 0 15px;">
+            A dedicated <strong>Sales → Pricelist Lines</strong> view shows each pricelist line with its
+            latest purchase price (from posted vendor bills), supplier, computed profit percentage,
+            and validity dates — with search, filtering on current prices, and grouping by pricelist.
+        </p>
 
-    <p style="font-size:14px;color:#1D9E75;font-weight:600;margin:18px 0 8px;">Pricelist Lines overview with purchase price and profit</p>
-    <img src="screenshot_pricelist_items.png" alt="Pricelist Lines overview"
-         style="display:block;width:100%;height:auto;border:1px solid #d5e9e0;border-radius:8px;margin:0 0 24px;">
+        <h2 style="color:#0A4D30; font-size:21px; line-height:1.3; font-weight:700; letter-spacing:1px; margin:32px 0 12px; border-bottom:2px solid #e3f3ec; padding-bottom:4px;">✅ Compatibility</h2>
+        <ul style="font-size:15px; line-height:1.6; margin:8px 0 24px; padding-left:22px;">
+            <li style="margin:7px 0;">Odoo version: 18.0</li>
+            <li style="margin:7px 0;">Editions: Community and Enterprise</li>
+            <li style="margin:7px 0;">Hosting: Odoo.sh, On-Premise and Odoo Online (SaaS)</li>
+        </ul>
 
-    <h2 style="color:#1D9E75;font-size:20px;font-weight:600;border-bottom:2px solid #e3f5ee;padding-bottom:6px;margin:28px 0 10px;">🚀 Usage</h2>
-    <ul style="font-size:15px;padding-left:20px;margin:0;">
-        <li style="margin:6px 0;">Open <strong>Sales &rarr; Products &rarr; Product Variants</strong> (or Pricelist Lines).</li>
-        <li style="margin:6px 0;">Select the products/lines to update and click <strong>Update Pricelist</strong>.</li>
-        <li style="margin:6px 0;">Choose the pricelist, the update type (Fixed / Percentage) and the amount.</li>
-        <li style="margin:6px 0;">Tick <strong>Close Old Pricelists</strong> to end-date the previous lines, then <strong>Submit</strong>.</li>
-    </ul>
+        <h2 style="color:#0A4D30; font-size:21px; line-height:1.3; font-weight:700; letter-spacing:1px; margin:32px 0 12px; border-bottom:2px solid #e3f3ec; padding-bottom:4px;">📸 Screenshots</h2>
 
-    <h2 style="color:#1D9E75;font-size:20px;font-weight:600;border-bottom:2px solid #e3f5ee;padding-bottom:6px;margin:28px 0 10px;">✅ Compatibility</h2>
-    <ul style="font-size:15px;padding-left:20px;margin:0;">
-        <li style="margin:6px 0;">Odoo version: 18.0</li>
-        <li style="margin:6px 0;">Editions: Community and Enterprise</li>
-        <li style="margin:6px 0;">Hosting: Odoo.sh, On-Premise and Odoo Online (SaaS)</li>
-    </ul>
+        <div style="background:#e8f5ee; border:2px solid #1f9d63; border-radius:18px; padding:16px; margin:0 0 26px; text-align:center;">
+            <img src="screenshot_wizard.png" alt="Update Pricelist wizard" style="display:block; width:100%; max-width:100%; height:auto; border-radius:12px; border:2px solid #fff; box-sizing:border-box;">
+            <div style="margin-top:12px; color:#0A4D30; font-size:15px;">The bulk Update Pricelist wizard</div>
+        </div>
 
-    <h2 style="color:#1D9E75;font-size:20px;font-weight:600;border-bottom:2px solid #e3f5ee;padding-bottom:6px;margin:28px 0 10px;">📦 Installation</h2>
-    <ul style="font-size:15px;padding-left:20px;margin:0;">
-        <li style="margin:6px 0;">Copy the module to your Odoo addons directory.</li>
-        <li style="margin:6px 0;">Update the app list.</li>
-        <li style="margin:6px 0;">Install the module from the Apps menu.</li>
-    </ul>
+        <div style="background:#e8f5ee; border:2px solid #1f9d63; border-radius:18px; padding:16px; margin:0 0 26px; text-align:center;">
+            <img src="screenshot_pricelist_items.png" alt="Pricelist Lines overview" style="display:block; width:100%; max-width:100%; height:auto; border-radius:12px; border:2px solid #fff; box-sizing:border-box;">
+            <div style="margin-top:12px; color:#0A4D30; font-size:15px;">Pricelist Lines overview with purchase price &amp; profit</div>
+        </div>
 
-    <h2 style="color:#1D9E75;font-size:20px;font-weight:600;border-bottom:2px solid #e3f5ee;padding-bottom:6px;margin:28px 0 10px;">🧑‍💻 Maintainer</h2>
-    <p style="font-size:15px;margin:8px 0 0;">
-        Developed by <strong>Attefeh Falah</strong> — for support or customization, contact
-        <a href="mailto:attefehfalah@gmail.com" style="color:#1D9E75;">attefehfalah@gmail.com</a>.
-    </p>
+        <h2 style="color:#0A4D30; font-size:21px; line-height:1.3; font-weight:700; letter-spacing:1px; margin:32px 0 12px; border-bottom:2px solid #e3f3ec; padding-bottom:4px;">🛠️ Usage</h2>
+        <ul style="font-size:15px; line-height:1.6; margin:8px 0 24px; padding-left:22px;">
+            <li style="margin:7px 0;">Open <strong>Sales → Products → Product Variants</strong> (or Pricelist Lines).</li>
+            <li style="margin:7px 0;">Select the products/lines to update and click <strong>Update Pricelist</strong>.</li>
+            <li style="margin:7px 0;">Choose the pricelist, the update type (Fixed / Percentage) and the amount.</li>
+            <li style="margin:7px 0;">Tick <strong>Close Old Pricelists</strong> to end-date the previous lines, then <strong>Submit</strong>.</li>
+        </ul>
 
-</section>
+        <h2 style="color:#0A4D30; font-size:21px; line-height:1.3; font-weight:700; letter-spacing:1px; margin:32px 0 12px; border-bottom:2px solid #e3f3ec; padding-bottom:4px;">📦 Installation</h2>
+        <ul style="font-size:15px; line-height:1.6; margin:8px 0 24px; padding-left:22px;">
+            <li style="margin:7px 0;">Copy the module to your Odoo addons directory</li>
+            <li style="margin:7px 0;">Update the app list</li>
+            <li style="margin:7px 0;">Install the module from the Apps menu</li>
+        </ul>
+
+        <h2 style="color:#0A4D30; font-size:21px; line-height:1.3; font-weight:700; letter-spacing:1px; margin:32px 0 12px; border-bottom:2px solid #e3f3ec; padding-bottom:4px;">🧑‍💻 Maintainer</h2>
+        <p style="font-size:15px; line-height:1.6; margin:8px 0 15px;">
+            Developed by <strong>Attefeh Falah</strong> at <strong>Tech Stars SPC</strong> — For support or customization, contact
+            <a href="mailto:attefehfalah@gmail.com" style="color:#1f9d63; text-decoration:none;">attefehfalah@gmail.com</a>
+            or visit
+            <a href="https://www.attefehfalah.com" style="color:#1f9d63; text-decoration:none;">attefehfalah.com</a>
+            and <a href="https://www.techstarssolution.com" style="color:#1f9d63; text-decoration:none;">techstarssolution.com</a>.
+        </p>
+    </div>
+</body>
+</html>

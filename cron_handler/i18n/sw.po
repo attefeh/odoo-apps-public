@@ -1,0 +1,249 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* cron_handler
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 00:00+0000\n"
+"PO-Revision-Date: 2026-06-06 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sw\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: cron_handler
+#: model:ir.model,name:cron_handler.model_cron_handler
+#: model:ir.module.category,name:cron_handler.module_category_cron_handler
+#: model:ir.module.module,shortdesc:base.module_cron_handler
+#: model_terms:ir.ui.view,arch_db:cron_handler.view_cron_handler_form
+msgid "Cron Handler"
+msgstr "Kidhibiti Cron"
+
+#. module: cron_handler
+#: model:ir.model,name:cron_handler.model_cron_handler_schedule_line
+msgid "Cron Handler Schedule Line"
+msgstr "Mstari wa Ratiba ya Kidhibiti Cron"
+
+#. module: cron_handler
+#: model:ir.actions.act_window,name:cron_handler.action_cron_handler
+#: model:ir.ui.menu,name:cron_handler.menu_cron_handler
+#: model_terms:ir.ui.view,arch_db:cron_handler.view_cron_handler_tree
+msgid "Cron Handlers"
+msgstr "Vidhibiti Cron"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler__cron_id
+msgid "Scheduled Action"
+msgstr "Scheduled Action"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler__model_id
+msgid "Target Model"
+msgstr "Modeli Lengwa"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler__run_method
+msgid "Method name"
+msgstr "Jina la mbinu"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler__schedule_line_ids
+#: model_terms:ir.ui.view,arch_db:cron_handler.view_cron_handler_form
+msgid "Schedules"
+msgstr "Ratiba"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler_schedule_line__frequency
+msgid "Frequency"
+msgstr "Marudio"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler_schedule_line__hour
+msgid "Hour of day"
+msgstr "Saa ya siku"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler_schedule_line__weekday
+msgid "Weekday"
+msgstr "Siku ya wiki"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler_schedule_line__month_day
+msgid "Day of month"
+msgstr "Siku ya mwezi"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler_schedule_line__last_run_at
+msgid "Last run"
+msgstr "Mwendesho wa mwisho"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_ir_cron__handler_managed
+msgid "Managed by Cron Handler"
+msgstr "Inadhibitiwa na Kidhibiti Cron"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__frequency__daily
+msgid "Daily"
+msgstr "Kila siku"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__frequency__weekly
+msgid "Weekly"
+msgstr "Kila wiki"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__frequency__monthly
+msgid "Monthly"
+msgstr "Kila mwezi"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__0
+msgid "Monday"
+msgstr "Jumatatu"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__1
+msgid "Tuesday"
+msgstr "Jumanne"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__2
+msgid "Wednesday"
+msgstr "Jumatano"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__3
+msgid "Thursday"
+msgstr "Alhamisi"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__4
+msgid "Friday"
+msgstr "Ijumaa"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__5
+msgid "Saturday"
+msgstr "Jumamosi"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__6
+msgid "Sunday"
+msgstr "Jumapili"
+
+#. module: cron_handler
+#: model:res.groups,name:cron_handler.group_cron_handler_user
+msgid "User"
+msgstr "Mtumiaji"
+
+#. module: cron_handler
+#: model:res.groups,name:cron_handler.group_cron_handler_manager
+msgid "Manager"
+msgstr "Meneja"
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler__cron_id
+msgid "An existing Scheduled Action to run at the times below. While this handler is active the linked action is deactivated, so it stops running on its own interval and only runs on this schedule."
+msgstr "Scheduled Action iliyopo ya kuendeshwa kwa nyakati zilizo hapa chini. Wakati kidhibiti hiki kikiwa hai, kitendo kilichounganishwa kinazimwa, hivyo kinaacha kuendeshwa kwa muda wake na kinaendeshwa tu kwa ratiba hii."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler__model_id
+msgid "Registered Odoo model that defines the method to run. Transient (wizard) models are hidden. Not needed when a Scheduled Action is linked."
+msgstr "Modeli ya Odoo iliyosajiliwa inayofafanua mbinu ya kuendeshwa. Modeli za muda (wizard) zimefichwa. Hazihitajiki wakati Scheduled Action imeunganishwa."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler__run_method
+msgid "Name of a method on the target model. Called on the model recordset with no arguments (use env context or search handlers if needed). Not needed when a Scheduled Action is linked."
+msgstr "Jina la mbinu kwenye modeli lengwa. Inaitwa kwenye seti ya rekodi za modeli bila hoja zozote (tumia muktadha wa env au mbinu za utafutaji ikiwa inahitajika). Haihitajiki wakati Scheduled Action imeunganishwa."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler__timezone
+msgid "Local timezone used to match schedule times."
+msgstr "Saa za eneo za ndani zinazotumika kulinganisha nyakati za ratiba."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler_schedule_line__hour
+msgid "Local hour (0–23). The dispatcher runs once per hour and matches this hour only."
+msgstr "Saa ya ndani (0–23). Kisambazaji kinaendeshwa mara moja kwa saa na kinalinganisha saa hii pekee."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler_schedule_line__weekday
+msgid "Only used when frequency is Weekly."
+msgstr "Hutumika tu wakati marudio ni Kila wiki."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler_schedule_line__month_day
+msgid "1–31. Only used when frequency is Monthly. If the month is shorter, the last day is used."
+msgstr "1–31. Hutumika tu wakati marudio ni Kila mwezi. Ikiwa mwezi ni mfupi zaidi, siku ya mwisho hutumika."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_ir_cron__handler_managed
+msgid "Set automatically when a Cron Handler deactivates this scheduled action to take over its timing. The scheduled action is re-activated once no active handler manages it anymore."
+msgstr "Huwekwa kiotomatiki wakati Kidhibiti Cron kinazima kitendo hiki kilichoratibiwa ili kushika muda wake. Kitendo kilichoratibiwa kinawashwa upya mara tu hakuna kidhibiti hai kinachokidhibiti tena."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+#, python-format
+msgid "Unknown model: %s"
+msgstr "Modeli isiyojulikana: %s"
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+#, python-format
+msgid "Model “%s” is abstract and cannot be used as a cron target."
+msgstr "Modeli “%s” ni dhahania na haiwezi kutumika kama lengo la cron."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+msgid "Set a linked Scheduled Action, or both a Target Model and a Method name."
+msgstr "Weka Scheduled Action iliyounganishwa, au Modeli Lengwa na Jina la mbinu vyote viwili."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+#, python-format
+msgid "Invalid timezone “%s”."
+msgstr "Saa za eneo batili “%s”."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+#, python-format
+msgid "No target configured for handler “%s”."
+msgstr "Hakuna lengo lililosanidiwa kwa kidhibiti “%s”."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+#, python-format
+msgid "Method “%s” is missing or not callable on model “%s”."
+msgstr "Mbinu “%s” haipo au haiwezi kuitwa kwenye modeli “%s”."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+msgid "Day of month must be between 1 and 31."
+msgstr "Siku ya mwezi lazima iwe kati ya 1 na 31."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+msgid "Please set a weekday for weekly schedules."
+msgstr "Tafadhali weka siku ya wiki kwa ratiba za kila wiki."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+msgid "Hour of day must be between 0 and 23."
+msgstr "Saa ya siku lazima iwe kati ya 0 na 23."
+
+#. module: cron_handler
+#: model_terms:ir.ui.view,arch_db:cron_handler.view_cron_handler_form
+msgid "The linked Scheduled Action is deactivated while this handler is active, so it stops running on its own interval and runs only at the times defined below. It is re-activated if you clear the link or deactivate this handler."
+msgstr "Scheduled Action iliyounganishwa inazimwa wakati kidhibiti hiki kikiwa hai, hivyo inaacha kuendeshwa kwa muda wake na inaendeshwa tu kwa nyakati zilizofafanuliwa hapa chini. Inawashwa upya ikiwa utafuta kiungo au kuzima kidhibiti hiki."
+
+#. module: cron_handler
+#: model:ir.module.module,summary:base.module_cron_handler
+msgid "Run scheduled actions at a set time of day (3 PM daily, etc.) instead of fixed intervals"
+msgstr "Endesha scheduled actions kwa wakati uliowekwa wa siku (saa 3 jioni kila siku, n.k.) badala ya vipindi vilivyowekwa"

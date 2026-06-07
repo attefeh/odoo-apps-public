@@ -1,0 +1,103 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* currency_rate_guard
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-03 00:00+0000\n"
+"PO-Revision-Date: 2026-06-03 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: tl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: currency_rate_guard
+#: model:ir.module.module,shortdesc:base.module_currency_rate_guard
+msgid "Currency Rate Guard"
+msgstr "Bantay ng Halaga ng Pera"
+
+#. module: currency_rate_guard
+#: model:ir.module.module,summary:base.module_currency_rate_guard
+msgid "Block confirmation/posting of purchase orders, vendor bills, customer invoices and payments when today's currency rate is missing for guarded currencies. Daily reminder to accountants."
+msgstr "I-block ang kumpirmasyon/pag-post ng mga purchase order, bill ng vendor, invoice ng customer at mga pagbabayad kapag walang halaga ng pera ngayong araw para sa mga binabantayang pera. Pang-araw-araw na paalala sa mga accountant."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "Require Daily Rate"
+msgstr "Kailangan ng Pang-araw-araw na Halaga"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "If set, posting/confirming any document in this currency is blocked unless a currency rate exists for today."
+msgstr "Kung naka-set, ang pag-post/pagkumpirma ng anumang dokumento sa perang ito ay hahadlangan maliban kung may halaga ng pera para sa ngayong araw."
+
+#. module: currency_rate_guard
+#: model:ir.model,name:currency_rate_guard.model_currency_rate_quick_entry_wizard
+msgid "Quick Entry for Today's Currency Rate"
+msgstr "Mabilisang Pag-enter para sa Halaga ng Pera Ngayong Araw"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__currency_id
+msgid "Currency"
+msgstr "Pera"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_id
+msgid "Company"
+msgstr "Kumpanya"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_currency_id
+msgid "Company Currency"
+msgstr "Pera ng Kumpanya"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__date
+msgid "Date"
+msgstr "Petsa"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
+msgid "Rate"
+msgstr "Halaga"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
+msgid "How many units of the company currency equal 1 unit of the selected currency (e.g. 1 OMR = X IRR)."
+msgstr "Ilang yunit ng pera ng kumpanya ang katumbas ng 1 yunit ng napiling pera (hal. 1 OMR = X IRR)."
+
+#. module: currency_rate_guard
+#: model:ir.actions.act_window,name:currency_rate_guard.action_currency_rate_quick_entry_wizard
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "Enter Today's Rate"
+msgstr "Ilagay ang Halaga Ngayong Araw"
+
+#. module: currency_rate_guard
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Save Rate"
+msgstr "I-save ang Halaga"
+
+#. module: currency_rate_guard
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Cancel"
+msgstr "Kanselahin"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/wizard/currency_rate_quick_entry.py:0
+#, python-format
+msgid "Rate must be strictly positive."
+msgstr "Ang halaga ay dapat na mahigpit na positibo."
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "No exchange rate has been registered for %(currency)s on %(date)s. Please enter today's rate before continuing."
+msgstr "Walang nakarehistrong halaga ng palitan para sa %(currency)s noong %(date)s. Mangyaring ilagay ang halaga ngayong araw bago magpatuloy."

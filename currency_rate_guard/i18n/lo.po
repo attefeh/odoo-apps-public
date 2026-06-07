@@ -1,0 +1,103 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* currency_rate_guard
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-03 00:00+0000\n"
+"PO-Revision-Date: 2026-06-03 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: currency_rate_guard
+#: model:ir.module.module,shortdesc:base.module_currency_rate_guard
+msgid "Currency Rate Guard"
+msgstr "ຕົວປ້ອງກັນອັດຕາແລກປ່ຽນ"
+
+#. module: currency_rate_guard
+#: model:ir.module.module,summary:base.module_currency_rate_guard
+msgid "Block confirmation/posting of purchase orders, vendor bills, customer invoices and payments when today's currency rate is missing for guarded currencies. Daily reminder to accountants."
+msgstr "ສະກັດການຢືນຢັນ/ການລົງບັນຊີຂອງໃບສັ່ງຊື້, ໃບບິນຜູ້ສະໜອງ, ໃບແຈ້ງໜີ້ລູກຄ້າ ແລະ ການຈ່າຍເງິນ ເມື່ອບໍ່ມີອັດຕາແລກປ່ຽນຂອງມື້ນີ້ສຳລັບສະກุນເງິນທີ່ຖືກປ້ອງກັນ. ແຈ້ງເຕືອນປະຈຳວັນໃຫ້ນັກບັນຊີ."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "Require Daily Rate"
+msgstr "ຕ້ອງການອັດຕາປະຈຳວັນ"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "If set, posting/confirming any document in this currency is blocked unless a currency rate exists for today."
+msgstr "ຖ້າຕັ້ງຄ່າ, ການລົງບັນຊີ/ການຢືນຢັນເອກະສານໃດໆໃນສະກຸນເງິນນີ້ຈະຖືກສະກັດ ນອກຈາກວ່າມີອັດຕາແລກປ່ຽນສຳລັບມື້ນີ້."
+
+#. module: currency_rate_guard
+#: model:ir.model,name:currency_rate_guard.model_currency_rate_quick_entry_wizard
+msgid "Quick Entry for Today's Currency Rate"
+msgstr "ການປ້ອນຂໍ້ມູນດ່ວນສຳລັບອັດຕາແລກປ່ຽນຂອງມື້ນີ້"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__currency_id
+msgid "Currency"
+msgstr "ສະກຸນເງິນ"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_id
+msgid "Company"
+msgstr "ບໍລິສັດ"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_currency_id
+msgid "Company Currency"
+msgstr "ສະກຸນເງິນຂອງບໍລິສັດ"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__date
+msgid "Date"
+msgstr "ວັນທີ"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
+msgid "Rate"
+msgstr "ອັດຕາ"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
+msgid "How many units of the company currency equal 1 unit of the selected currency (e.g. 1 OMR = X IRR)."
+msgstr "ຈັກໜ່ວຍຂອງສະກຸນເງິນບໍລິສັດເທົ່າກັບ 1 ໜ່ວຍຂອງສະກຸນເງິນທີ່ເລືອກ (ຕົວຢ່າງ 1 OMR = X IRR)."
+
+#. module: currency_rate_guard
+#: model:ir.actions.act_window,name:currency_rate_guard.action_currency_rate_quick_entry_wizard
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "Enter Today's Rate"
+msgstr "ປ້ອນອັດຕາຂອງມື້ນີ້"
+
+#. module: currency_rate_guard
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Save Rate"
+msgstr "ບັນທຶກອັດຕາ"
+
+#. module: currency_rate_guard
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Cancel"
+msgstr "ຍົກເລີກ"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/wizard/currency_rate_quick_entry.py:0
+#, python-format
+msgid "Rate must be strictly positive."
+msgstr "ອັດຕາຕ້ອງເປັນຄ່າບວກຢ່າງເຂັ້ມງວດ."
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "No exchange rate has been registered for %(currency)s on %(date)s. Please enter today's rate before continuing."
+msgstr "ບໍ່ມີອັດຕາແລກປ່ຽນທີ່ລົງທະບຽນສຳລັບ %(currency)s ໃນ %(date)s. ກະລຸນາປ້ອນອັດຕາຂອງມື້ນີ້ກ່ອນສືບຕໍ່."

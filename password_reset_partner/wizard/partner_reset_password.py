@@ -11,7 +11,7 @@ class PartnerResetPassword(models.TransientModel):
     re_new_password = fields.Char(string='New Password (Retype)')
 
     def action_reset_password(self):
-        # Validate the entered passwords, apply them to the selected users, and log the change.
+        # Validate the typed passwords, apply them to the selected users, and log the change on their partners.
         if not self.user_ids:
             raise UserError(_("No user selected for password reset."))
         if not self.new_password or not self.re_new_password:

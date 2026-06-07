@@ -1,0 +1,28 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* disable_tours
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-03 00:00+0000\n"
+"PO-Revision-Date: 2026-06-03 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: disable_tours
+#: model:ir.module.module,shortdesc:base.module_disable_tours
+msgid "Disable Tours"
+msgstr "둘러보기 비활성화"
+
+#. module: disable_tours
+#: model:ir.module.module,summary:base.module_disable_tours
+msgid "Permanently disable all Odoo onboarding tours for every user, across backend and frontend."
+msgstr "백엔드와 프론트엔드 전반에 걸쳐 모든 사용자에 대해 모든 Odoo 온보딩 둘러보기를 영구적으로 비활성화합니다."

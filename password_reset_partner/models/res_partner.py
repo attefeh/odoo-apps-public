@@ -6,7 +6,7 @@ class ResPartner(models.Model):
     _inherit = 'res.partner'
 
     def reset_user_password(self):
-        # Open the password reset wizard for the users linked to this partner.
+        # Open the password-reset wizard for the users linked to this partner.
         self.ensure_one()
         if not self.user_ids:
             raise UserError(_("This partner is not linked to any user."))

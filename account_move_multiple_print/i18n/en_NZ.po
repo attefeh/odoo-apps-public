@@ -1,0 +1,59 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_move_multiple_print
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-03 00:00+0000\n"
+"PO-Revision-Date: 2026-06-03 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_NZ\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: account_move_multiple_print
+#: model:ir.model,name:account_move_multiple_print.model_account_move_multiple_print_wizard
+msgid "Account Move Multiple Print Wizard"
+msgstr "Account Move Multiple Print Wizard"
+
+#. module: account_move_multiple_print
+#: model:ir.model.fields,field_description:account_move_multiple_print.field_account_move_multiple_print_wizard__move_id
+msgid "Invoice / Bill"
+msgstr "Invoice / Bill"
+
+#. module: account_move_multiple_print
+#: model:ir.model.fields,field_description:account_move_multiple_print.field_account_move_multiple_print_wizard__copies
+msgid "Number of Copies"
+msgstr "Number of Copies"
+
+#. module: account_move_multiple_print
+#: code:addons/account_move_multiple_print/wizard/account_move_multiple_print_wizard.py:0
+msgid "Number of copies must be at least 1."
+msgstr "Number of copies must be at least 1."
+
+#. module: account_move_multiple_print
+#: model:ir.actions.act_window,name:account_move_multiple_print.action_account_move_multiple_print_wizard
+#: model_terms:ir.ui.view,arch_db:account_move_multiple_print.view_account_move_multiple_print_wizard_form
+msgid "Print Multiple Copies"
+msgstr "Print Multiple Copies"
+
+#. module: account_move_multiple_print
+#: model_terms:ir.ui.view,arch_db:account_move_multiple_print.view_account_move_multiple_print_wizard_form
+msgid "Print"
+msgstr "Print"
+
+#. module: account_move_multiple_print
+#: model_terms:ir.ui.view,arch_db:account_move_multiple_print.view_account_move_multiple_print_wizard_form
+msgid "Cancel"
+msgstr "Cancel"
+
+#. module: account_move_multiple_print
+#: model_terms:ir.ui.view,arch_db:account_move_multiple_print.view_move_form_inherit_multiple_print
+msgid "Print Copies"
+msgstr "Print Copies"

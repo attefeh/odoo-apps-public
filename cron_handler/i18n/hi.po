@@ -1,0 +1,249 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* cron_handler
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 00:00+0000\n"
+"PO-Revision-Date: 2026-06-06 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: cron_handler
+#: model:ir.model,name:cron_handler.model_cron_handler
+#: model:ir.module.category,name:cron_handler.module_category_cron_handler
+#: model:ir.module.module,shortdesc:base.module_cron_handler
+#: model_terms:ir.ui.view,arch_db:cron_handler.view_cron_handler_form
+msgid "Cron Handler"
+msgstr "क्रॉन हैंडलर"
+
+#. module: cron_handler
+#: model:ir.model,name:cron_handler.model_cron_handler_schedule_line
+msgid "Cron Handler Schedule Line"
+msgstr "क्रॉन हैंडलर शेड्यूल लाइन"
+
+#. module: cron_handler
+#: model:ir.actions.act_window,name:cron_handler.action_cron_handler
+#: model:ir.ui.menu,name:cron_handler.menu_cron_handler
+#: model_terms:ir.ui.view,arch_db:cron_handler.view_cron_handler_tree
+msgid "Cron Handlers"
+msgstr "क्रॉन हैंडलर्स"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler__cron_id
+msgid "Scheduled Action"
+msgstr "Scheduled Action"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler__model_id
+msgid "Target Model"
+msgstr "लक्ष्य मॉडल"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler__run_method
+msgid "Method name"
+msgstr "मेथड नाम"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler__schedule_line_ids
+#: model_terms:ir.ui.view,arch_db:cron_handler.view_cron_handler_form
+msgid "Schedules"
+msgstr "शेड्यूल"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler_schedule_line__frequency
+msgid "Frequency"
+msgstr "आवृत्ति"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler_schedule_line__hour
+msgid "Hour of day"
+msgstr "दिन का घंटा"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler_schedule_line__weekday
+msgid "Weekday"
+msgstr "सप्ताह का दिन"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler_schedule_line__month_day
+msgid "Day of month"
+msgstr "माह का दिन"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler_schedule_line__last_run_at
+msgid "Last run"
+msgstr "अंतिम रन"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_ir_cron__handler_managed
+msgid "Managed by Cron Handler"
+msgstr "क्रॉन हैंडलर द्वारा प्रबंधित"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__frequency__daily
+msgid "Daily"
+msgstr "दैनिक"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__frequency__weekly
+msgid "Weekly"
+msgstr "साप्ताहिक"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__frequency__monthly
+msgid "Monthly"
+msgstr "मासिक"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__0
+msgid "Monday"
+msgstr "सोमवार"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__1
+msgid "Tuesday"
+msgstr "मंगलवार"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__2
+msgid "Wednesday"
+msgstr "बुधवार"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__3
+msgid "Thursday"
+msgstr "गुरुवार"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__4
+msgid "Friday"
+msgstr "शुक्रवार"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__5
+msgid "Saturday"
+msgstr "शनिवार"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__6
+msgid "Sunday"
+msgstr "रविवार"
+
+#. module: cron_handler
+#: model:res.groups,name:cron_handler.group_cron_handler_user
+msgid "User"
+msgstr "उपयोगकर्ता"
+
+#. module: cron_handler
+#: model:res.groups,name:cron_handler.group_cron_handler_manager
+msgid "Manager"
+msgstr "प्रबंधक"
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler__cron_id
+msgid "An existing Scheduled Action to run at the times below. While this handler is active the linked action is deactivated, so it stops running on its own interval and only runs on this schedule."
+msgstr "नीचे दिए गए समय पर चलने के लिए एक मौजूदा Scheduled Action। जब तक यह हैंडलर सक्रिय है, लिंक की गई क्रिया निष्क्रिय रहती है, इसलिए वह अपने स्वयं के अंतराल पर चलना बंद कर देती है और केवल इस शेड्यूल पर चलती है।"
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler__model_id
+msgid "Registered Odoo model that defines the method to run. Transient (wizard) models are hidden. Not needed when a Scheduled Action is linked."
+msgstr "पंजीकृत Odoo मॉडल जो चलाने के लिए मेथड को परिभाषित करता है। ट्रांज़िएंट (विज़ार्ड) मॉडल छिपे रहते हैं। जब कोई Scheduled Action लिंक हो तो इसकी आवश्यकता नहीं होती।"
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler__run_method
+msgid "Name of a method on the target model. Called on the model recordset with no arguments (use env context or search handlers if needed). Not needed when a Scheduled Action is linked."
+msgstr "लक्ष्य मॉडल पर किसी मेथड का नाम। मॉडल रिकॉर्डसेट पर बिना किसी आर्ग्युमेंट के कॉल किया जाता है (आवश्यकता होने पर env संदर्भ या search हैंडलर का उपयोग करें)। जब कोई Scheduled Action लिंक हो तो इसकी आवश्यकता नहीं होती।"
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler__timezone
+msgid "Local timezone used to match schedule times."
+msgstr "शेड्यूल समय का मिलान करने के लिए उपयोग किया जाने वाला स्थानीय समय क्षेत्र।"
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler_schedule_line__hour
+msgid "Local hour (0–23). The dispatcher runs once per hour and matches this hour only."
+msgstr "स्थानीय घंटा (0–23)। डिस्पैचर प्रति घंटे एक बार चलता है और केवल इसी घंटे का मिलान करता है।"
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler_schedule_line__weekday
+msgid "Only used when frequency is Weekly."
+msgstr "केवल तभी उपयोग किया जाता है जब आवृत्ति साप्ताहिक हो।"
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler_schedule_line__month_day
+msgid "1–31. Only used when frequency is Monthly. If the month is shorter, the last day is used."
+msgstr "1–31। केवल तभी उपयोग किया जाता है जब आवृत्ति मासिक हो। यदि माह छोटा है, तो अंतिम दिन का उपयोग किया जाता है।"
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_ir_cron__handler_managed
+msgid "Set automatically when a Cron Handler deactivates this scheduled action to take over its timing. The scheduled action is re-activated once no active handler manages it anymore."
+msgstr "स्वचालित रूप से सेट होता है जब कोई क्रॉन हैंडलर इस शेड्यूल्ड क्रिया को निष्क्रिय करके उसके समय को संभाल लेता है। जब कोई सक्रिय हैंडलर इसे प्रबंधित नहीं करता, तो शेड्यूल्ड क्रिया फिर से सक्रिय हो जाती है।"
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+#, python-format
+msgid "Unknown model: %s"
+msgstr "अज्ञात मॉडल: %s"
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+#, python-format
+msgid "Model “%s” is abstract and cannot be used as a cron target."
+msgstr "मॉडल “%s” अमूर्त है और इसे cron लक्ष्य के रूप में उपयोग नहीं किया जा सकता।"
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+msgid "Set a linked Scheduled Action, or both a Target Model and a Method name."
+msgstr "एक लिंक की गई Scheduled Action सेट करें, या लक्ष्य मॉडल और मेथड नाम दोनों सेट करें।"
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+#, python-format
+msgid "Invalid timezone “%s”."
+msgstr "अमान्य समय क्षेत्र “%s”।"
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+#, python-format
+msgid "No target configured for handler “%s”."
+msgstr "हैंडलर “%s” के लिए कोई लक्ष्य कॉन्फ़िगर नहीं किया गया।"
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+#, python-format
+msgid "Method “%s” is missing or not callable on model “%s”."
+msgstr "मेथड “%s” मॉडल “%s” पर मौजूद नहीं है या कॉल करने योग्य नहीं है।"
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+msgid "Day of month must be between 1 and 31."
+msgstr "माह का दिन 1 और 31 के बीच होना चाहिए।"
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+msgid "Please set a weekday for weekly schedules."
+msgstr "कृपया साप्ताहिक शेड्यूल के लिए एक सप्ताह का दिन सेट करें।"
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+msgid "Hour of day must be between 0 and 23."
+msgstr "दिन का घंटा 0 और 23 के बीच होना चाहिए।"
+
+#. module: cron_handler
+#: model_terms:ir.ui.view,arch_db:cron_handler.view_cron_handler_form
+msgid "The linked Scheduled Action is deactivated while this handler is active, so it stops running on its own interval and runs only at the times defined below. It is re-activated if you clear the link or deactivate this handler."
+msgstr "जब यह हैंडलर सक्रिय है, तब लिंक की गई Scheduled Action निष्क्रिय रहती है, इसलिए वह अपने स्वयं के अंतराल पर चलना बंद कर देती है और केवल नीचे परिभाषित समय पर ही चलती है। यदि आप लिंक हटा देते हैं या इस हैंडलर को निष्क्रिय कर देते हैं तो यह फिर से सक्रिय हो जाती है।"
+
+#. module: cron_handler
+#: model:ir.module.module,summary:base.module_cron_handler
+msgid "Run scheduled actions at a set time of day (3 PM daily, etc.) instead of fixed intervals"
+msgstr "निश्चित अंतरालों के बजाय दिन के निर्धारित समय पर (प्रतिदिन दोपहर 3 बजे, आदि) शेड्यूल्ड क्रियाएँ चलाएँ"

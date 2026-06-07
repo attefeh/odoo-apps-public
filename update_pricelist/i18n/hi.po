@@ -1,0 +1,136 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* update_pricelist
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-03 00:00+0000\n"
+"PO-Revision-Date: 2026-06-03 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__product_ids
+#: model_terms:ir.ui.view,arch_db:update_pricelist.update_pricelist_item_view
+msgid "Products"
+msgstr "उत्पाद"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__product_count
+msgid "Product Count"
+msgstr "उत्पाद संख्या"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__type
+msgid "Type"
+msgstr "प्रकार"
+
+#. module: update_pricelist
+#: model:ir.model.fields.selection,name:update_pricelist.selection__update_pricelist_item__type__percentage
+msgid "Percentage"
+msgstr "प्रतिशत"
+
+#. module: update_pricelist
+#: model:ir.model.fields.selection,name:update_pricelist.selection__update_pricelist_item__type__fixed
+msgid "Fixed"
+msgstr "नियत"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__percentage_amount
+msgid "Percentage Amount"
+msgstr "प्रतिशत राशि"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__fixed_amount
+msgid "Fixed Amount"
+msgstr "नियत राशि"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__close_old_pricelists
+msgid "Close Old Pricelists"
+msgstr "पुरानी मूल्य सूचियाँ बंद करें"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_update_pricelist_item__products_without_price
+msgid "Products Without Price"
+msgstr "बिना मूल्य के उत्पाद"
+
+#. module: update_pricelist
+#: code:addons/update_pricelist/wizard/update_pricelist_items.py:0
+msgid "No product selected."
+msgstr "कोई उत्पाद चयनित नहीं है।"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_product_pricelist_item__supplier_id
+msgid "Supplier"
+msgstr "आपूर्तिकर्ता"
+
+#. module: update_pricelist
+#: model:ir.model.fields,field_description:update_pricelist.field_product_pricelist_item__purchase_price
+msgid "Latest Purchase Price"
+msgstr "नवीनतम खरीद मूल्य"
+
+#. module: update_pricelist
+#: code:addons/update_pricelist/models/product_pricelist_item.py:0
+msgid "You have to select products from one pricelist!"
+msgstr "आपको एक ही मूल्य सूची से उत्पाद चुनने होंगे!"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.update_pricelist_item_view
+msgid "Warning:"
+msgstr "चेतावनी:"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.update_pricelist_item_view
+msgid "The following products have no existing price on this pricelist. If you continue, their new price will be calculated from a base of 0. Remove them from the selection unless you intend to create them with a price of 0."
+msgstr "निम्नलिखित उत्पादों का इस मूल्य सूची पर कोई मौजूदा मूल्य नहीं है। यदि आप जारी रखते हैं, तो उनका नया मूल्य 0 के आधार से गणना किया जाएगा। उन्हें चयन से हटा दें जब तक कि आप उन्हें 0 मूल्य के साथ बनाने का इरादा न रखते हों।"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.update_pricelist_item_view
+msgid "Submit"
+msgstr "सबमिट करें"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_pricelist_line_tree_view
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_product_tree_view
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_template_tree_view
+msgid "Update Pricelist"
+msgstr "मूल्य सूची अद्यतन करें"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_pricelist_line_view_search
+msgid "Pricelist"
+msgstr "मूल्य सूची"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_pricelist_line_view_search
+msgid "Products Price Lines Search"
+msgstr "उत्पाद मूल्य पंक्तियाँ खोज"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_pricelist_line_view_search
+msgid "Price List"
+msgstr "मूल्य सूची"
+
+#. module: update_pricelist
+#: model_terms:ir.ui.view,arch_db:update_pricelist.product_pricelist_line_view_search
+msgid "Current Prices"
+msgstr "वर्तमान मूल्य"
+
+#. module: update_pricelist
+#: model:ir.actions.act_window,name:update_pricelist.product_pricelist_lines_action
+msgid "Pricelist Items"
+msgstr "मूल्य सूची आइटम"
+
+#. module: update_pricelist
+#: model:ir.ui.menu,name:update_pricelist.menu_product_pricelist_line_main
+msgid "Pricelist Lines"
+msgstr "मूल्य सूची पंक्तियाँ"

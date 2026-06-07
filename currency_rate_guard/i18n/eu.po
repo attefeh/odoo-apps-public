@@ -1,0 +1,103 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* currency_rate_guard
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-03 00:00+0000\n"
+"PO-Revision-Date: 2026-06-03 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: currency_rate_guard
+#: model:ir.module.module,shortdesc:base.module_currency_rate_guard
+msgid "Currency Rate Guard"
+msgstr "Kanbio-tasaren Zaindaria"
+
+#. module: currency_rate_guard
+#: model:ir.module.module,summary:base.module_currency_rate_guard
+msgid "Block confirmation/posting of purchase orders, vendor bills, customer invoices and payments when today's currency rate is missing for guarded currencies. Daily reminder to accountants."
+msgstr "Erosketa-eskaeren, hornitzaileen fakturen, bezeroen fakturen eta ordainketen baieztapena/kontabilizazioa blokeatzen du gaurko kanbio-tasa falta denean zaindutako monetentzat. Eguneroko gogorarazpena kontulariei."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "Require Daily Rate"
+msgstr "Eskatu Eguneko Tasa"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "If set, posting/confirming any document in this currency is blocked unless a currency rate exists for today."
+msgstr "Ezarrita badago, moneta honetako edozein dokumentu kontabilizatzea/baieztatzea blokeatuta dago gaurko kanbio-tasarik ez badago."
+
+#. module: currency_rate_guard
+#: model:ir.model,name:currency_rate_guard.model_currency_rate_quick_entry_wizard
+msgid "Quick Entry for Today's Currency Rate"
+msgstr "Gaurko Kanbio-tasaren Sarrera Azkarra"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__currency_id
+msgid "Currency"
+msgstr "Moneta"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_id
+msgid "Company"
+msgstr "Enpresa"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_currency_id
+msgid "Company Currency"
+msgstr "Enpresaren Moneta"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__date
+msgid "Date"
+msgstr "Data"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
+msgid "Rate"
+msgstr "Tasa"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
+msgid "How many units of the company currency equal 1 unit of the selected currency (e.g. 1 OMR = X IRR)."
+msgstr "Enpresaren monetaren zenbat unitate diren hautatutako monetaren unitate 1 (adib. 1 OMR = X IRR)."
+
+#. module: currency_rate_guard
+#: model:ir.actions.act_window,name:currency_rate_guard.action_currency_rate_quick_entry_wizard
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "Enter Today's Rate"
+msgstr "Sartu Gaurko Tasa"
+
+#. module: currency_rate_guard
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Save Rate"
+msgstr "Gorde Tasa"
+
+#. module: currency_rate_guard
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Cancel"
+msgstr "Utzi"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/wizard/currency_rate_quick_entry.py:0
+#, python-format
+msgid "Rate must be strictly positive."
+msgstr "Tasak zorrozki positiboa izan behar du."
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "No exchange rate has been registered for %(currency)s on %(date)s. Please enter today's rate before continuing."
+msgstr "Ez da kanbio-tasarik erregistratu %(currency)s monetarako %(date)s egunean. Mesedez, sartu gaurko tasa jarraitu aurretik."

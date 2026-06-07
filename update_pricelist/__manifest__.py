@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 {
     'name': 'Update Pricelist',
     'version': '18.0.1.0.0',
@@ -43,8 +44,10 @@ Usage
 #. Tick **Close Old Pricelists** to end-date the previous lines, then **Submit**.
     """,
     'author': 'Attefeh Falah',
-    'maintainer': 'Attefeh Falah',
+    'company': 'Tech Stars SPC',
+    'maintainer': 'Tech Stars SPC',
     'website': 'https://www.attefehfalah.com',
+    'support': 'attefehfalah@gmail.com',
     'depends': ['sale_management', 'account'],
     'data': [
         'security/ir.model.access.csv',

@@ -1,0 +1,33 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<rect width="200" height="200" rx="38" fill="#FFFFFF"/>
+
+<!-- Tooltip bubble shadow -->
+<rect x="34" y="50" width="138" height="92" rx="18" fill="#1A237E" opacity="0.08" transform="translate(3,3)"/>
+<!-- Tooltip bubble -->
+<rect x="28" y="44" width="138" height="92" rx="18" fill="#3949AB"/>
+<!-- Bubble inner highlight -->
+<rect x="28" y="44" width="130" height="12" rx="12" fill="white" opacity="0.12"/>
+<!-- Bubble tail -->
+<polygon points="62,136 86,136 74,158" fill="#3949AB"/>
+
+<!-- Content lines inside bubble -->
+<rect x="44" y="63" width="96" height="8" rx="4" fill="white" opacity="0.55"/>
+<rect x="44" y="77" width="76" height="7" rx="3.5" fill="white" opacity="0.35"/>
+<rect x="44" y="90" width="84" height="7" rx="3.5" fill="white" opacity="0.35"/>
+
+<!-- Step progress dots -->
+<circle cx="88" cy="114" r="5" fill="white" opacity="0.35"/>
+<circle cx="104" cy="114" r="5" fill="white" opacity="0.35"/>
+<circle cx="120" cy="114" r="5" fill="white" opacity="0.35"/>
+<circle cx="136" cy="114" r="5" fill="white" opacity="0.35"/>
+<!-- Next button -->
+<rect x="44" y="107" width="30" height="14" rx="7" fill="white" opacity="0.25"/>
+<text x="59" y="118" font-family="Arial,sans-serif" font-size="7" fill="white" text-anchor="middle" opacity="0.8">Next →</text>
+
+<!-- Red X badge -->
+<circle cx="148" cy="52" r="28" fill="white" opacity="0.9"/>
+<circle cx="148" cy="52" r="23" fill="#E53935"/>
+<circle cx="148" cy="52" r="23" fill="none" stroke="#FFCDD2" stroke-width="2" opacity="0.5"/>
+<line x1="136" y1="40" x2="160" y2="64" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
+<line x1="160" y1="40" x2="136" y2="64" stroke="white" stroke-width="5.5" stroke-linecap="round"/>
+</svg>
