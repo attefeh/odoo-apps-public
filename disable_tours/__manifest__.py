@@ -28,6 +28,9 @@ There is no setting; once installed, tours stay off.
     "maintainer": "Tech Stars SPC",
     "website": "https://www.attefehfalah.com",
     "support": "attefehfalah@gmail.com",
+    "images": [
+        "static/description/cover.png",
+    ],
     "depends": ["web_tour"],
     "data": [],
     "assets": {

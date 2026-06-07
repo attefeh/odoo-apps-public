@@ -45,9 +45,7 @@ The dispatcher runs every hour via a built-in scheduled action.
     'support': 'attefehfalah@gmail.com',
     'depends': ['base'],
     'images': [
-        'static/description/icon.png',
-        'static/description/screenshot_list.png',
-        'static/description/screenshot_form.png',
+        'static/description/cover.png',
     ],
     'data': [
         'security/cron_handler_security.xml',

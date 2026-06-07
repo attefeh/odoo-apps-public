@@ -10,6 +10,10 @@
     "maintainer": "Tech Stars SPC",
     "website": "https://www.attefehfalah.com",
     "support": "attefehfalah@gmail.com",
+    "images": [
+        "static/description/cover.png",
+        "static/description/screenshot01.png",
+    ],
     "depends": ["sale"],
     "data": [
         "security/ir.model.access.csv",

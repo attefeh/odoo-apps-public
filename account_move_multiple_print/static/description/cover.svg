@@ -1,35 +1,35 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 680 340">
-<rect width="680" height="340" fill="#FFEBEE"/>
-<rect x="420" y="20" width="220" height="140" rx="16" fill="#EF9A9A" opacity="0.25"/>
-<rect x="450" y="55" width="220" height="140" rx="16" fill="#EF9A9A" opacity="0.18"/>
-<rect x="480" y="90" width="220" height="140" rx="16" fill="#EF9A9A" opacity="0.12"/>
-<rect x="436" y="90" width="34" height="18" rx="9" fill="#EF9A9A" opacity="0.30"/>
-<rect x="477" y="90" width="55" height="7" rx="3" fill="#EF9A9A" opacity="0.28"/>
-<rect x="477" y="102" width="42" height="6" rx="3" fill="#EF9A9A" opacity="0.22"/>
-<rect x="436" y="115" width="18" height="10" rx="3" fill="#EF9A9A" opacity="0.45"/>
-<rect x="460" y="115" width="18" height="10" rx="3" fill="#EF9A9A" opacity="0.45"/>
-<rect x="484" y="115" width="28" height="10" rx="3" fill="#EF9A9A" opacity="0.45"/>
-<circle cx="110" cy="148" r="92" fill="white" opacity="0.42"/>
+<rect width="680" height="340" fill="#FCE4EC"/>
+<rect x="420" y="20" width="220" height="140" rx="16" fill="#EF9A9A" opacity="0.22"/>
+<rect x="450" y="55" width="220" height="140" rx="16" fill="#EF9A9A" opacity="0.16"/>
+<rect x="480" y="90" width="220" height="140" rx="16" fill="#EF9A9A" opacity="0.10"/>
+<rect x="436" y="90" width="34" height="18" rx="9" fill="#EF9A9A" opacity="0.28"/>
+<rect x="477" y="90" width="55" height="7" rx="3" fill="#EF9A9A" opacity="0.26"/>
+<rect x="477" y="102" width="42" height="6" rx="3" fill="#EF9A9A" opacity="0.20"/>
+<rect x="436" y="115" width="18" height="10" rx="3" fill="#EF9A9A" opacity="0.42"/>
+<rect x="460" y="115" width="18" height="10" rx="3" fill="#EF9A9A" opacity="0.42"/>
+<rect x="484" y="115" width="28" height="10" rx="3" fill="#EF9A9A" opacity="0.42"/>
+<circle cx="110" cy="148" r="92" fill="white" opacity="0.45"/>
 <g transform="translate(18,44) scale(0.73)">
   <rect width="200" height="200" rx="38" fill="#FFFFFF"/>
-  <rect x="64" y="36" width="86" height="108" rx="8" fill="#FFCDD2"/>
+  <rect x="64" y="36" width="86" height="108" rx="8" fill="#F8BBD0"/>
   <rect x="57" y="30" width="86" height="108" rx="8" fill="#EF9A9A"/>
-  <rect x="50" y="24" width="86" height="108" rx="8" fill="#FFEBEE"/>
-  <rect x="50" y="24" width="86" height="28" rx="8" fill="#B71C1C"/>
-  <rect x="50" y="40" width="86" height="12" fill="#B71C1C"/>
+  <rect x="50" y="24" width="86" height="108" rx="8" fill="#FDECEF"/>
+  <rect x="50" y="24" width="86" height="28" rx="8" fill="#C62828"/>
+  <rect x="50" y="40" width="86" height="12" fill="#C62828"/>
   <rect x="58" y="31" width="48" height="7" rx="3.5" fill="white" opacity="0.5"/>
   <rect x="58" y="43" width="34" height="5" rx="2.5" fill="white" opacity="0.28"/>
   <rect x="54" y="24" width="78" height="8" rx="8" fill="white" opacity="0.15"/>
-  <rect x="58" y="65" width="48" height="7" rx="3" fill="#EF9A9A"/>
-  <rect x="118" y="65" width="12" height="7" rx="3" fill="#B71C1C"/>
-  <line x1="56" y1="79" x2="134" y2="79" stroke="#FFCDD2" stroke-width="1"/>
-  <rect x="58" y="84" width="40" height="7" rx="3" fill="#EF9A9A"/>
-  <rect x="118" y="84" width="12" height="7" rx="3" fill="#B71C1C"/>
-  <line x1="56" y1="98" x2="134" y2="98" stroke="#FFCDD2" stroke-width="1"/>
-  <rect x="58" y="103" width="44" height="7" rx="3" fill="#EF9A9A"/>
-  <rect x="118" y="103" width="12" height="7" rx="3" fill="#B71C1C"/>
-  <rect x="56" y="116" width="74" height="11" rx="4" fill="#B71C1C" opacity="0.12"/>
-  <rect x="114" y="118" width="12" height="7" rx="2" fill="#B71C1C" opacity="0.7"/>
+  <rect x="58" y="65" width="48" height="7" rx="3" fill="#F8BBD0"/>
+  <rect x="118" y="65" width="12" height="7" rx="3" fill="#C62828"/>
+  <line x1="56" y1="79" x2="134" y2="79" stroke="#F8BBD0" stroke-width="1"/>
+  <rect x="58" y="84" width="40" height="7" rx="3" fill="#F8BBD0"/>
+  <rect x="118" y="84" width="12" height="7" rx="3" fill="#C62828"/>
+  <line x1="56" y1="98" x2="134" y2="98" stroke="#F8BBD0" stroke-width="1"/>
+  <rect x="58" y="103" width="44" height="7" rx="3" fill="#F8BBD0"/>
+  <rect x="118" y="103" width="12" height="7" rx="3" fill="#C62828"/>
+  <rect x="56" y="116" width="74" height="11" rx="4" fill="#C62828" opacity="0.12"/>
+  <rect x="114" y="118" width="12" height="7" rx="2" fill="#C62828" opacity="0.7"/>
   <circle cx="150" cy="152" r="28" fill="#C62828" opacity="0.15"/>
   <circle cx="150" cy="152" r="22" fill="#C62828"/>
   <rect x="142" y="134" width="16" height="9" rx="2" fill="white" opacity="0.75"/>
@@ -40,12 +40,11 @@
   <line x1="144" y1="159.5" x2="156" y2="159.5" stroke="#C62828" stroke-width="1.2" opacity="0.55"/>
   <circle cx="155" cy="146" r="2" fill="#C62828" opacity="0.7"/>
 </g>
-<line x1="186" y1="52" x2="186" y2="278" stroke="#D32F2F" stroke-width="1" opacity="0.55"/>
-<text x="206" y="110" font-family="Georgia,serif" font-size="10" fill="#7F0000" letter-spacing="3" font-weight="bold">EVERYTHING YOU NEED FOR</text>
-<text x="204" y="155" font-family="Georgia,serif" font-size="32" fill="#7F0000" font-weight="bold">Accounting Multiple Print</text>
-<text x="204" y="195" font-family="Georgia,serif" font-size="32" fill="#7F0000" font-weight="bold">Print Multiple Copies</text>
-<rect x="204" y="210" width="240" height="2" rx="1" fill="#D32F2F" opacity="0.45"/>
-<text x="204" y="233" font-family="Georgia,serif" font-size="12" fill="#7F0000" opacity="0.85">Choose how many copies to print for each</text>
-<text x="204" y="253" font-family="Georgia,serif" font-size="12" fill="#7F0000" opacity="0.85">accounting document — set quantity and print at once</text>
-<text x="340" y="326" font-family="Georgia,serif" font-size="10" fill="#B71C1C" text-anchor="middle" opacity="0.45" letter-spacing="1.5">Smart Tech Solutions for Stellar Success</text>
+<line x1="186" y1="52" x2="186" y2="278" stroke="#E53935" stroke-width="1" opacity="0.55"/>
+<text x="206" y="110" font-family="Georgia,serif" font-size="10" fill="#B71C1C" letter-spacing="3" font-weight="bold">EVERYTHING YOU NEED FOR</text>
+<text x="204" y="155" font-family="Georgia,serif" font-size="32" fill="#8B1E1E" font-weight="bold">Accounting Multiple Print</text>
+<rect x="204" y="170" width="240" height="2" rx="1" fill="#E53935" opacity="0.45"/>
+<text x="204" y="193" font-family="Georgia,serif" font-size="12" fill="#B71C1C" opacity="0.85">Choose how many copies to print for each</text>
+<text x="204" y="213" font-family="Georgia,serif" font-size="12" fill="#B71C1C" opacity="0.85">accounting document — set quantity and print at once</text>
+<text x="340" y="326" font-family="Georgia,serif" font-size="10" fill="#C62828" text-anchor="middle" opacity="0.45" letter-spacing="1.5">Smart Tech Solutions for Stellar Success</text>
 </svg>
