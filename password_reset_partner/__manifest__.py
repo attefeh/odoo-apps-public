@@ -18,8 +18,8 @@
     ],
     'images': [
         'static/description/cover.png',
-        'static/description/Screenshot 01.png',
-        'static/description/Screenshot 02.png',
+        'static/description/Screenshot01.png',
+        'static/description/Screenshot02.png',
     ],
     'price': 0,
     'currency': 'USD',
