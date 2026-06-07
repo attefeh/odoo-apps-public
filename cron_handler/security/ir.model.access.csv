@@ -1,5 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_cron_handler_user,cron.handler.user,model_cron_handler,cron_handler.group_cron_handler_user,1,0,0,0
-access_cron_handler_manager,cron.handler.manager,model_cron_handler,cron_handler.group_cron_handler_manager,1,1,1,1
-access_cron_handler_schedule_line_user,cron.handler.schedule.line.user,model_cron_handler_schedule_line,cron_handler.group_cron_handler_user,1,0,0,0
-access_cron_handler_schedule_line_manager,cron.handler.schedule.line.manager,model_cron_handler_schedule_line,cron_handler.group_cron_handler_manager,1,1,1,1
