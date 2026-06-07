@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_cron_handler_tree" model="ir.ui.view">
+        <field name="name">cron.handler.list</field>
+        <field name="model">cron.handler</field>
+        <field name="arch" type="xml">
+            <list string="Cron Handlers">
+                <field name="name"/>
+                <field name="cron_id" optional="show"/>
+                <field name="model_id" optional="show"/>
+                <field name="timezone" optional="show"/>
+                <field name="run_method" optional="hide"/>
+                <field name="company_id" groups="base.group_multi_company" optional="show"/>
+                <field name="is_active"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_cron_handler_form" model="ir.ui.view">
+        <field name="name">cron.handler.form</field>
+        <field name="model">cron.handler</field>
+        <field name="arch" type="xml">
+            <form string="Cron Handler">
+                <sheet>
+                    <div class="alert alert-info" role="alert" invisible="not cron_id">
+                        The linked Scheduled Action is deactivated while this handler
+                        is active, so it stops running on its own interval and runs
+                        only at the times defined below. It is re-activated if you
+                        clear the link or deactivate this handler.
+                    </div>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="is_active"/>
+                            <field name="timezone"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                        <group>
+                            <field name="cron_id"/>
+                            <field name="model_id" required="not cron_id" invisible="cron_id"/>
+                            <field name="run_method" required="not cron_id" invisible="cron_id"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Schedules" name="schedules">
+                            <field name="schedule_line_ids" nolabel="1" context="{'default_handler_id': id}">
+                                <list editable="bottom">
+                                    <field name="sequence" widget="handle"/>
+                                    <field name="is_active"/>
+                                    <field name="frequency"/>
+                                    <field name="hour"/>
+                                    <field name="weekday"
+                                           invisible="frequency != 'weekly'"
+                                           required="frequency == 'weekly'"/>
+                                    <field name="month_day"
+                                           invisible="frequency != 'monthly'"
+                                           required="frequency == 'monthly'"/>
+                                    <field name="last_run_at" readonly="1" optional="show"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_cron_handler" model="ir.actions.act_window">
+        <field name="name">Cron Handlers</field>
+        <field name="res_model">cron.handler</field>
+        <field name="view_mode">list,form</field>
+        <field name="groups_id" eval="[(4, ref('cron_handler.group_cron_handler_manager'))]"/>
+    </record>
+
+    <menuitem
+        id="menu_cron_handler"
+        name="Cron Handlers"
+        action="action_cron_handler"
+        parent="base.menu_custom"
+        groups="cron_handler.group_cron_handler_manager"
+        sequence="90"
+    />
+</odoo>

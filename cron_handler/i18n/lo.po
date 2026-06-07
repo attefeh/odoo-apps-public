@@ -1,0 +1,249 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* cron_handler
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-06 00:00+0000\n"
+"PO-Revision-Date: 2026-06-06 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: lo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+
+#. module: cron_handler
+#: model:ir.model,name:cron_handler.model_cron_handler
+#: model:ir.module.category,name:cron_handler.module_category_cron_handler
+#: model:ir.module.module,shortdesc:base.module_cron_handler
+#: model_terms:ir.ui.view,arch_db:cron_handler.view_cron_handler_form
+msgid "Cron Handler"
+msgstr "ຕົວຈັດການ Cron"
+
+#. module: cron_handler
+#: model:ir.model,name:cron_handler.model_cron_handler_schedule_line
+msgid "Cron Handler Schedule Line"
+msgstr "ແຖວຕາຕະລາງຕົວຈັດການ Cron"
+
+#. module: cron_handler
+#: model:ir.actions.act_window,name:cron_handler.action_cron_handler
+#: model:ir.ui.menu,name:cron_handler.menu_cron_handler
+#: model_terms:ir.ui.view,arch_db:cron_handler.view_cron_handler_tree
+msgid "Cron Handlers"
+msgstr "ຕົວຈັດການ Cron"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler__cron_id
+msgid "Scheduled Action"
+msgstr "Scheduled Action"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler__model_id
+msgid "Target Model"
+msgstr "ໂມເດລເປົ້າໝາຍ"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler__run_method
+msgid "Method name"
+msgstr "ຊື່ເມັດທອດ"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler__schedule_line_ids
+#: model_terms:ir.ui.view,arch_db:cron_handler.view_cron_handler_form
+msgid "Schedules"
+msgstr "ຕາຕະລາງ"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler_schedule_line__frequency
+msgid "Frequency"
+msgstr "ຄວາມຖີ່"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler_schedule_line__hour
+msgid "Hour of day"
+msgstr "ຊົ່ວໂມງຂອງມື້"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler_schedule_line__weekday
+msgid "Weekday"
+msgstr "ມື້ໃນອາທິດ"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler_schedule_line__month_day
+msgid "Day of month"
+msgstr "ມື້ໃນເດືອນ"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_cron_handler_schedule_line__last_run_at
+msgid "Last run"
+msgstr "ການແລ່ນຄັ້ງສຸດທ້າຍ"
+
+#. module: cron_handler
+#: model:ir.model.fields,field_description:cron_handler.field_ir_cron__handler_managed
+msgid "Managed by Cron Handler"
+msgstr "ຈັດການໂດຍຕົວຈັດການ Cron"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__frequency__daily
+msgid "Daily"
+msgstr "ປະຈຳວັນ"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__frequency__weekly
+msgid "Weekly"
+msgstr "ປະຈຳອາທິດ"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__frequency__monthly
+msgid "Monthly"
+msgstr "ປະຈຳເດືອນ"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__0
+msgid "Monday"
+msgstr "ວັນຈັນ"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__1
+msgid "Tuesday"
+msgstr "ວັນອັງຄານ"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__2
+msgid "Wednesday"
+msgstr "ວັນພຸດ"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__3
+msgid "Thursday"
+msgstr "ວັນພະຫັດ"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__4
+msgid "Friday"
+msgstr "ວັນສຸກ"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__5
+msgid "Saturday"
+msgstr "ວັນເສົາ"
+
+#. module: cron_handler
+#: model:ir.model.fields.selection,name:cron_handler.selection__cron_handler_schedule_line__weekday__6
+msgid "Sunday"
+msgstr "ວັນອາທິດ"
+
+#. module: cron_handler
+#: model:res.groups,name:cron_handler.group_cron_handler_user
+msgid "User"
+msgstr "ຜູ້ໃຊ້"
+
+#. module: cron_handler
+#: model:res.groups,name:cron_handler.group_cron_handler_manager
+msgid "Manager"
+msgstr "ຜູ້ຈັດການ"
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler__cron_id
+msgid "An existing Scheduled Action to run at the times below. While this handler is active the linked action is deactivated, so it stops running on its own interval and only runs on this schedule."
+msgstr "Scheduled Action ທີ່ມີຢູ່ແລ້ວ ເພື່ອແລ່ນຕາມເວລາທີ່ກຳນົດໄວ້ດ້ານລຸ່ມ. ໃນຂະນະທີ່ຕົວຈັດການນີ້ເຮັດວຽກຢູ່ ການກະທຳທີ່ເຊື່ອມໂຍງຈະຖືກປິດໃຊ້ງານ, ສະນັ້ນມັນຈະຢຸດແລ່ນຕາມໄລຍະຫ່າງຂອງຕົນເອງ ແລະ ແລ່ນສະເພາະຕາມຕາຕະລາງນີ້ເທົ່ານັ້ນ."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler__model_id
+msgid "Registered Odoo model that defines the method to run. Transient (wizard) models are hidden. Not needed when a Scheduled Action is linked."
+msgstr "ໂມເດລ Odoo ທີ່ລົງທະບຽນແລ້ວ ທີ່ກຳນົດເມັດທອດທີ່ຈະແລ່ນ. ໂມເດລ Transient (wizard) ຈະຖືກເຊື່ອງໄວ້. ບໍ່ຈຳເປັນເມື່ອມີການເຊື່ອມໂຍງ Scheduled Action."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler__run_method
+msgid "Name of a method on the target model. Called on the model recordset with no arguments (use env context or search handlers if needed). Not needed when a Scheduled Action is linked."
+msgstr "ຊື່ຂອງເມັດທອດໃນໂມເດລເປົ້າໝາຍ. ຖືກເອີ້ນໃນ recordset ຂອງໂມເດລໂດຍບໍ່ມີ argument (ໃຊ້ context ຂອງ env ຫຼື ຕົວຈັດການການຄົ້ນຫາ ຖ້າຈຳເປັນ). ບໍ່ຈຳເປັນເມື່ອມີການເຊື່ອມໂຍງ Scheduled Action."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler__timezone
+msgid "Local timezone used to match schedule times."
+msgstr "ເຂດເວລາທ້ອງຖິ່ນທີ່ໃຊ້ເພື່ອຈັບຄູ່ເວລາໃນຕາຕະລາງ."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler_schedule_line__hour
+msgid "Local hour (0–23). The dispatcher runs once per hour and matches this hour only."
+msgstr "ຊົ່ວໂມງທ້ອງຖິ່ນ (0–23). ຕົວສົ່ງແລ່ນໜຶ່ງຄັ້ງຕໍ່ຊົ່ວໂມງ ແລະ ຈັບຄູ່ສະເພາະຊົ່ວໂມງນີ້ເທົ່ານັ້ນ."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler_schedule_line__weekday
+msgid "Only used when frequency is Weekly."
+msgstr "ໃຊ້ສະເພາະເມື່ອຄວາມຖີ່ເປັນ ປະຈຳອາທິດ ເທົ່ານັ້ນ."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_cron_handler_schedule_line__month_day
+msgid "1–31. Only used when frequency is Monthly. If the month is shorter, the last day is used."
+msgstr "1–31. ໃຊ້ສະເພາະເມື່ອຄວາມຖີ່ເປັນ ປະຈຳເດືອນ ເທົ່ານັ້ນ. ຖ້າເດືອນສັ້ນກວ່າ, ຈະໃຊ້ມື້ສຸດທ້າຍ."
+
+#. module: cron_handler
+#: model:ir.model.fields,help:cron_handler.field_ir_cron__handler_managed
+msgid "Set automatically when a Cron Handler deactivates this scheduled action to take over its timing. The scheduled action is re-activated once no active handler manages it anymore."
+msgstr "ຖືກຕັ້ງໂດຍອັດຕະໂນມັດເມື່ອຕົວຈັດການ Cron ປິດໃຊ້ງານ Scheduled Action ນີ້ ເພື່ອຮັບຜິດຊອບເວລາຂອງມັນ. Scheduled Action ຈະຖືກເປີດໃຊ້ງານຄືນ ເມື່ອບໍ່ມີຕົວຈັດການທີ່ເຮັດວຽກອັນໃດຈັດການມັນອີກຕໍ່ໄປ."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+#, python-format
+msgid "Unknown model: %s"
+msgstr "ໂມເດລທີ່ບໍ່ຮູ້ຈັກ: %s"
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+#, python-format
+msgid "Model “%s” is abstract and cannot be used as a cron target."
+msgstr "ໂມເດລ “%s” ເປັນແບບ abstract ແລະ ບໍ່ສາມາດໃຊ້ເປັນເປົ້າໝາຍ cron ໄດ້."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+msgid "Set a linked Scheduled Action, or both a Target Model and a Method name."
+msgstr "ຕັ້ງ Scheduled Action ທີ່ເຊື່ອມໂຍງ, ຫຼື ທັງ ໂມເດລເປົ້າໝາຍ ແລະ ຊື່ເມັດທອດ."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+#, python-format
+msgid "Invalid timezone “%s”."
+msgstr "ເຂດເວລາ “%s” ບໍ່ຖືກຕ້ອງ."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+#, python-format
+msgid "No target configured for handler “%s”."
+msgstr "ບໍ່ມີເປົ້າໝາຍທີ່ກຳນົດໄວ້ສຳລັບຕົວຈັດການ “%s”."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+#, python-format
+msgid "Method “%s” is missing or not callable on model “%s”."
+msgstr "ເມັດທອດ “%s” ຫາຍໄປ ຫຼື ບໍ່ສາມາດເອີ້ນໄດ້ໃນໂມເດລ “%s”."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+msgid "Day of month must be between 1 and 31."
+msgstr "ມື້ໃນເດືອນຕ້ອງຢູ່ລະຫວ່າງ 1 ແລະ 31."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+msgid "Please set a weekday for weekly schedules."
+msgstr "ກະລຸນາຕັ້ງມື້ໃນອາທິດສຳລັບຕາຕະລາງປະຈຳອາທິດ."
+
+#. module: cron_handler
+#: code:addons/cron_handler/models/cron_handler.py:0
+msgid "Hour of day must be between 0 and 23."
+msgstr "ຊົ່ວໂມງຂອງມື້ຕ້ອງຢູ່ລະຫວ່າງ 0 ແລະ 23."
+
+#. module: cron_handler
+#: model_terms:ir.ui.view,arch_db:cron_handler.view_cron_handler_form
+msgid "The linked Scheduled Action is deactivated while this handler is active, so it stops running on its own interval and runs only at the times defined below. It is re-activated if you clear the link or deactivate this handler."
+msgstr "Scheduled Action ທີ່ເຊື່ອມໂຍງຈະຖືກປິດໃຊ້ງານ ໃນຂະນະທີ່ຕົວຈັດການນີ້ເຮັດວຽກຢູ່, ສະນັ້ນມັນຈະຢຸດແລ່ນຕາມໄລຍະຫ່າງຂອງຕົນເອງ ແລະ ແລ່ນສະເພາະຕາມເວລາທີ່ກຳນົດໄວ້ດ້ານລຸ່ມເທົ່ານັ້ນ. ມັນຈະຖືກເປີດໃຊ້ງານຄືນ ຖ້າທ່ານລຶບການເຊື່ອມໂຍງ ຫຼື ປິດໃຊ້ງານຕົວຈັດການນີ້."
+
+#. module: cron_handler
+#: model:ir.module.module,summary:base.module_cron_handler
+msgid "Run scheduled actions at a set time of day (3 PM daily, etc.) instead of fixed intervals"
+msgstr "ແລ່ນ scheduled actions ຕາມເວລາທີ່ກຳນົດໄວ້ໃນແຕ່ລະມື້ (ເຊັ່ນ 15:00 ປະຈຳວັນ) ແທນທີ່ຈະເປັນໄລຍະຫ່າງຄົງທີ່"

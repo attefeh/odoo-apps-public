@@ -2,25 +2,116 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b40a63e-17e4-458e-a1a5-de616fa4e19c" name="Changes" comment="ready to use">
-      <change afterPath="$PROJECT_DIR$/account_move_multiple_print/static/description/cover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cron_handler/static/description/cover.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cron_handler/static/description/icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/disable_tours/static/description/cover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/disable_tours/static/description/cover.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/disable_tours/static/description/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/disable_tours/static/description/icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/purchase_multiple_print/static/description/cover.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sale_multiple_print/static/description/cover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/claudeCodeEditorTabs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/README.rst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/__manifest__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/data/cron.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/af.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/am.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/ar.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/az.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/be.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/bg.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/bn.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/bs.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/ca.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/cron_handler.pot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/cs.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/da.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/de.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/de_CH.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/el.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/en_AU.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/en_CA.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/en_GB.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/en_IN.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/en_NZ.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/es.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/es_419.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/es_AR.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/es_BO.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/es_CL.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/es_CO.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/es_CR.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/es_DO.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/es_EC.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/es_GT.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/es_HN.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/es_MX.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/es_NI.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/es_PA.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/es_PE.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/es_PY.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/es_SV.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/es_UY.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/es_VE.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/et.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/eu.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/fa.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/fi.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/fil.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/fr.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/fr_BE.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/fr_CA.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/fr_CH.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/gl.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/gu.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/he.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/hi.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/hr.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/hu.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/id.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/is.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/it.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/ja.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/ka.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/kab.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/km.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/ko.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/lb.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/lo.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/lt.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/lv.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/mk.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/ml.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/mn.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/ms.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/my.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/nb.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/ne.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/nl.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/nl_BE.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/pl.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/pt.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/pt_BR.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/ro.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/ru.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/sk.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/sl.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/sq.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/sr.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/sr@latin.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/sv.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/sw.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/ta.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/te.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/th.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/tl.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/tr.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/uk.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/vi.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/zh_CN.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/zh_HK.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/i18n/zh_TW.po" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/models/cron_handler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/models/ir_cron.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/security/cron_handler_security.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/security/ir.model.access.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/static/description/cover.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cron_handler/views/cron_handler_views.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/account_move_multiple_print/static/description/cover.svg" beforeDir="false" afterPath="$PROJECT_DIR$/account_move_multiple_print/static/description/cover.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency_rate_guard/static/description/cover.png" beforeDir="false" afterPath="$PROJECT_DIR$/currency_rate_guard/static/description/cover.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/currency_rate_guard/static/description/cover.svg" beforeDir="false" afterPath="$PROJECT_DIR$/currency_rate_guard/static/description/cover.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/password_reset_partner/static/description/cover.png" beforeDir="false" afterPath="$PROJECT_DIR$/password_reset_partner/static/description/cover.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/password_reset_partner/static/description/cover.svg" beforeDir="false" afterPath="$PROJECT_DIR$/password_reset_partner/static/description/cover.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/purchase_multiple_print/static/description/cover.svg" beforeDir="false" afterPath="$PROJECT_DIR$/purchase_multiple_print/static/description/cover.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sale_multiple_print/static/description/cover.svg" beforeDir="false" afterPath="$PROJECT_DIR$/sale_multiple_print/static/description/cover.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/update_pricelist/static/description/cover.png" beforeDir="false" afterPath="$PROJECT_DIR$/update_pricelist/static/description/cover.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/update_pricelist/static/description/cover.svg" beforeDir="false" afterPath="$PROJECT_DIR$/update_pricelist/static/description/cover.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,21 +181,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.odoo-bin.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "19.0",
-    "last_opened_file_path": "/home/attefeh/PycharmProjects/odoo-public-apps",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "aDefault"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.odoo-bin.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;19.0&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/attefeh/PycharmProjects/AmlaakEnergy&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;aDefault&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -224,7 +315,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780688546466</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="ready to use">
+      <option name="closed" value="true" />
+      <created>1780693638464</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1780693638464</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
