@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-03 00:00+0000\n"
-"PO-Revision-Date: 2026-06-03 00:00+0000\n"
+"POT-Creation-Date: 2026-06-11 00:00+0000\n"
+"PO-Revision-Date: 2026-06-11 00:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ml\n"
@@ -16,36 +16,10 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-
 #. module: currency_rate_guard
-#: model:ir.module.module,shortdesc:base.module_currency_rate_guard
-msgid "Currency Rate Guard"
-msgstr "കറൻസി നിരക്ക് ഗാർഡ്"
-
-#. module: currency_rate_guard
-#: model:ir.module.module,summary:base.module_currency_rate_guard
-msgid "Block confirmation/posting of purchase orders, vendor bills, customer invoices and payments when today's currency rate is missing for guarded currencies. Daily reminder to accountants."
-msgstr "സംരക്ഷിത കറൻസികൾക്ക് ഇന്നത്തെ കറൻസി നിരക്ക് ലഭ്യമല്ലാത്തപ്പോൾ പർച്ചേസ് ഓർഡറുകൾ, വെണ്ടർ ബില്ലുകൾ, ഉപഭോക്തൃ ഇൻവോയ്സുകൾ, പേയ്മെന്റുകൾ എന്നിവയുടെ സ്ഥിരീകരണം/പോസ്റ്റിംഗ് തടയുന്നു. അക്കൗണ്ടന്റുമാർക്ക് ദൈനംദിന ഓർമ്മപ്പെടുത്തൽ."
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_res_currency__rate_guard_required
-msgid "Require Daily Rate"
-msgstr "ദൈനംദിന നിരക്ക് ആവശ്യമാണ്"
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,help:currency_rate_guard.field_res_currency__rate_guard_required
-msgid "If set, posting/confirming any document in this currency is blocked unless a currency rate exists for today."
-msgstr "സജ്ജമാക്കിയാൽ, ഇന്നത്തേക്ക് കറൻസി നിരക്ക് നിലവിലില്ലെങ്കിൽ ഈ കറൻസിയിലുള്ള ഏതൊരു രേഖയും പോസ്റ്റ് ചെയ്യുന്നതോ സ്ഥിരീകരിക്കുന്നതോ തടയപ്പെടും."
-
-#. module: currency_rate_guard
-#: model:ir.model,name:currency_rate_guard.model_currency_rate_quick_entry_wizard
-msgid "Quick Entry for Today's Currency Rate"
-msgstr "ഇന്നത്തെ കറൻസി നിരക്കിനായുള്ള ദ്രുത എൻട്രി"
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__currency_id
-msgid "Currency"
-msgstr "കറൻസി"
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Cancel"
+msgstr "റദ്ദാക്കുക"
 
 #. module: currency_rate_guard
 #: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_id
@@ -58,37 +32,84 @@ msgid "Company Currency"
 msgstr "കമ്പനി കറൻസി"
 
 #. module: currency_rate_guard
+#: model:ir.module.module,summary:base.module_currency_rate_guard
+msgid "Block confirmation/posting of purchase orders, vendor bills, customer invoices and payments when today's currency rate is missing for guarded currencies."
+msgstr "സംരക്ഷിത കറൻസികൾക്ക് ഇന്നത്തെ കറൻസി നിരക്ക് ലഭ്യമല്ലാത്തപ്പോൾ പർച്ചേസ് ഓർഡറുകൾ, വെണ്ടർ ബില്ലുകൾ, ഉപഭോക്തൃ ഇൻവോയ്സുകൾ, പേയ്മെന്റുകൾ എന്നിവയുടെ സ്ഥിരീകരണം/പോസ്റ്റിംഗ് തടയുന്നു."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_account_move__used_company_rate
+msgid "Company-currency exchange rate applied for this document's invoice date."
+msgstr "ഈ രേഖയുടെ ഇൻവോയ്സ് തീയതിക്കായി പ്രയോഗിച്ച കമ്പനി-കറൻസി വിനിമയ നിരക്ക്."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_purchase_order__used_company_rate
+msgid "Company-currency exchange rate applied for this order's approval date."
+msgstr "ഈ ഓർഡറിന്റെ അംഗീകാര തീയതിക്കായി പ്രയോഗിച്ച കമ്പനി-കറൻസി വിനിമയ നിരക്ക്."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_account_payment__used_company_rate
+msgid "Company-currency exchange rate applied for this payment's date."
+msgstr "ഈ പേയ്മെന്റിന്റെ തീയതിക്കായി പ്രയോഗിച്ച കമ്പനി-കറൻസി വിനിമയ നിരക്ക്."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__currency_id
+msgid "Currency"
+msgstr "കറൻസി"
+
+#. module: currency_rate_guard
+#: model:ir.module.module,shortdesc:base.module_currency_rate_guard
+msgid "Currency Rate Guard"
+msgstr "കറൻസി നിരക്ക് ഗാർഡ്"
+
+#. module: currency_rate_guard
 #: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__date
 msgid "Date"
 msgstr "തീയതി"
 
 #. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
-msgid "Rate"
-msgstr "നിരക്ക്"
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,help:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
-msgid "How many units of the company currency equal 1 unit of the selected currency (e.g. 1 OMR = X IRR)."
-msgstr "തിരഞ്ഞെടുത്ത കറൻസിയുടെ 1 യൂണിറ്റിന് തുല്യമായ കമ്പനി കറൻസിയുടെ എത്ര യൂണിറ്റുകൾ (ഉദാ. 1 OMR = X IRR)."
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "Enter Rate for %(date)s"
+msgstr "%(date)s-നായുള്ള നിരക്ക് നൽകുക"
 
 #. module: currency_rate_guard
 #: model:ir.actions.act_window,name:currency_rate_guard.action_currency_rate_quick_entry_wizard
 #: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
-#: code:addons/currency_rate_guard/models/res_currency.py:0
-#, python-format
 msgid "Enter Today's Rate"
 msgstr "ഇന്നത്തെ നിരക്ക് നൽകുക"
 
 #. module: currency_rate_guard
-#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
-msgid "Save Rate"
-msgstr "നിരക്ക് സംരക്ഷിക്കുക"
+#: model:ir.model.fields,field_description:currency_rate_guard.field_account_move__used_company_rate
+#: model:ir.model.fields,field_description:currency_rate_guard.field_account_payment__used_company_rate
+#: model:ir.model.fields,field_description:currency_rate_guard.field_purchase_order__used_company_rate
+msgid "Exchange Rate Used"
+msgstr "ഉപയോഗിച്ച വിനിമയ നിരക്ക്"
 
 #. module: currency_rate_guard
-#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
-msgid "Cancel"
-msgstr "റദ്ദാക്കുക"
+#: model:ir.model.fields,help:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_rate
+msgid "How many units of the selected currency equal 1 unit of the company currency (e.g. 1 OMR = X IRR)."
+msgstr "കമ്പനി കറൻസിയുടെ 1 യൂണിറ്റിന് തുല്യമായ തിരഞ്ഞെടുത്ത കറൻസിയുടെ എത്ര യൂണിറ്റുകൾ (ഉദാ. 1 OMR = X IRR)."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "If set, posting/confirming any document in this currency is blocked unless a currency rate exists for today."
+msgstr "സജ്ജമാക്കിയാൽ, ഇന്നത്തേക്ക് കറൻസി നിരക്ക് നിലവിലില്ലെങ്കിൽ ഈ കറൻസിയിലുള്ള ഏതൊരു രേഖയും പോസ്റ്റ് ചെയ്യുന്നതോ സ്ഥിരീകരിക്കുന്നതോ തടയപ്പെടും."
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "No exchange rate has been registered for %(currency)s on %(date)s. Please enter the rate for that date before continuing."
+msgstr "%(date)s-ന് %(currency)s-നായി ഒരു വിനിമയ നിരക്കും രജിസ്റ്റർ ചെയ്തിട്ടില്ല. തുടരുന്നതിന് മുമ്പ് ദയവായി ആ തീയതിക്കായുള്ള നിരക്ക് നൽകുക."
+
+#. module: currency_rate_guard
+#: model:ir.model,name:currency_rate_guard.model_currency_rate_quick_entry_wizard
+msgid "Quick Entry for Today's Currency Rate"
+msgstr "ഇന്നത്തെ കറൻസി നിരക്കിനായുള്ള ദ്രുത എൻട്രി"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_rate
+msgid "Rate"
+msgstr "നിരക്ക്"
 
 #. module: currency_rate_guard
 #: code:addons/currency_rate_guard/wizard/currency_rate_quick_entry.py:0
@@ -97,7 +118,35 @@ msgid "Rate must be strictly positive."
 msgstr "നിരക്ക് കർശനമായി പോസിറ്റീവ് ആയിരിക്കണം."
 
 #. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "Require Daily Rate"
+msgstr "ദൈനംദിന നിരക്ക് ആവശ്യമാണ്"
+
+#. module: currency_rate_guard
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Save Rate"
+msgstr "നിരക്ക് സംരക്ഷിക്കുക"
+
+#. module: currency_rate_guard
 #: code:addons/currency_rate_guard/models/res_currency.py:0
 #, python-format
-msgid "No exchange rate has been registered for %(currency)s on %(date)s. Please enter today's rate before continuing."
-msgstr "%(date)s-ന് %(currency)s-നായി ഒരു വിനിമയ നിരക്കും രജിസ്റ്റർ ചെയ്തിട്ടില്ല. തുടരുന്നതിന് മുമ്പ് ദയവായി ഇന്നത്തെ നിരക്ക് നൽകുക."
+msgid "The rate for %(currency)s on %(date)s is already used by %(doc)s and can no longer be changed or removed. Delete that document first if you need to modify this rate."
+msgstr "%(date)s-ന് %(currency)s-നായുള്ള നിരക്ക് ഇതിനകം %(doc)s ഉപയോഗിക്കുന്നു, ഇനി മാറ്റാനോ നീക്കം ചെയ്യാനോ കഴിയില്ല. ഈ നിരക്ക് പരിഷ്കരിക്കണമെങ്കിൽ ആദ്യം ആ രേഖ ഇല്ലാതാക്കുക."
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "invoice %s"
+msgstr "ഇൻവോയ്സ് %s"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "payment %s"
+msgstr "പേയ്മെന്റ് %s"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "purchase order %s"
+msgstr "പർച്ചേസ് ഓർഡർ %s"

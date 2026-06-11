@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-03 00:00+0000\n"
-"PO-Revision-Date: 2026-06-03 00:00+0000\n"
+"POT-Creation-Date: 2026-06-11 00:00+0000\n"
+"PO-Revision-Date: 2026-06-11 00:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: my\n"
@@ -16,88 +16,137 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-
-#. module: currency_rate_guard
-#: model:ir.module.module,shortdesc:base.module_currency_rate_guard
-msgid "Currency Rate Guard"
-msgstr ""
-
-#. module: currency_rate_guard
-#: model:ir.module.module,summary:base.module_currency_rate_guard
-msgid "Block confirmation/posting of purchase orders, vendor bills, customer invoices and payments when today's currency rate is missing for guarded currencies. Daily reminder to accountants."
-msgstr ""
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_res_currency__rate_guard_required
-msgid "Require Daily Rate"
-msgstr ""
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,help:currency_rate_guard.field_res_currency__rate_guard_required
-msgid "If set, posting/confirming any document in this currency is blocked unless a currency rate exists for today."
-msgstr ""
-
-#. module: currency_rate_guard
-#: model:ir.model,name:currency_rate_guard.model_currency_rate_quick_entry_wizard
-msgid "Quick Entry for Today's Currency Rate"
-msgstr ""
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__currency_id
-msgid "Currency"
-msgstr ""
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_id
-msgid "Company"
-msgstr ""
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_currency_id
-msgid "Company Currency"
-msgstr ""
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__date
-msgid "Date"
-msgstr ""
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
-msgid "Rate"
-msgstr ""
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,help:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
-msgid "How many units of the company currency equal 1 unit of the selected currency (e.g. 1 OMR = X IRR)."
-msgstr ""
-
-#. module: currency_rate_guard
-#: model:ir.actions.act_window,name:currency_rate_guard.action_currency_rate_quick_entry_wizard
-#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
-#: code:addons/currency_rate_guard/models/res_currency.py:0
-#, python-format
-msgid "Enter Today's Rate"
-msgstr ""
-
-#. module: currency_rate_guard
-#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
-msgid "Save Rate"
-msgstr ""
-
 #. module: currency_rate_guard
 #: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
 msgid "Cancel"
 msgstr "ပယ်ဖျက်ပါ"
 
 #. module: currency_rate_guard
-#: code:addons/currency_rate_guard/wizard/currency_rate_quick_entry.py:0
-#, python-format
-msgid "Rate must be strictly positive."
-msgstr ""
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_id
+msgid "Company"
+msgstr "ကုမ္ပဏီ"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_currency_id
+msgid "Company Currency"
+msgstr "ကုမ္ပဏီ ငွေကြေး"
+
+#. module: currency_rate_guard
+#: model:ir.module.module,summary:base.module_currency_rate_guard
+msgid "Block confirmation/posting of purchase orders, vendor bills, customer invoices and payments when today's currency rate is missing for guarded currencies."
+msgstr "ကာကွယ်ထားသော ငွေကြေးများအတွက် ယနေ့ ငွေလဲနှုန်း မရှိသေးပါက ဝယ်ယူမှု အော်ဒါများ၊ ရောင်းသူ ဘီလ်များ၊ ဖောက်သည် ငွေတောင်းခံလွှာများနှင့် ငွေပေးချေမှုများကို အတည်ပြုခြင်း/တင်သွင်းခြင်းမပြုနိုင်အောင် ပိတ်ဆို့ပါ။"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_account_move__used_company_rate
+msgid "Company-currency exchange rate applied for this document's invoice date."
+msgstr "ဤစာရွက်စာတမ်း၏ ငွေတောင်းခံလွှာ ရက်စွဲအတွက် အသုံးပြုထားသော ကုမ္ပဏီ-ငွေကြေး ငွေလဲနှုန်း။"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_purchase_order__used_company_rate
+msgid "Company-currency exchange rate applied for this order's approval date."
+msgstr "ဤအော်ဒါ၏ အတည်ပြု ရက်စွဲအတွက် အသုံးပြုထားသော ကုမ္ပဏီ-ငွေကြေး ငွေလဲနှုန်း။"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_account_payment__used_company_rate
+msgid "Company-currency exchange rate applied for this payment's date."
+msgstr "ဤငွေပေးချေမှု၏ ရက်စွဲအတွက် အသုံးပြုထားသော ကုမ္ပဏီ-ငွေကြေး ငွေလဲနှုန်း။"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__currency_id
+msgid "Currency"
+msgstr "ငွေကြေး"
+
+#. module: currency_rate_guard
+#: model:ir.module.module,shortdesc:base.module_currency_rate_guard
+msgid "Currency Rate Guard"
+msgstr "ငွေလဲနှုန်း အစောင့်"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__date
+msgid "Date"
+msgstr "ရက်စွဲ"
 
 #. module: currency_rate_guard
 #: code:addons/currency_rate_guard/models/res_currency.py:0
 #, python-format
-msgid "No exchange rate has been registered for %(currency)s on %(date)s. Please enter today's rate before continuing."
-msgstr ""
+msgid "Enter Rate for %(date)s"
+msgstr "%(date)s အတွက် နှုန်းထား ထည့်သွင်းပါ"
+
+#. module: currency_rate_guard
+#: model:ir.actions.act_window,name:currency_rate_guard.action_currency_rate_quick_entry_wizard
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Enter Today's Rate"
+msgstr "ယနေ့ နှုန်းထား ထည့်သွင်းပါ"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_account_move__used_company_rate
+#: model:ir.model.fields,field_description:currency_rate_guard.field_account_payment__used_company_rate
+#: model:ir.model.fields,field_description:currency_rate_guard.field_purchase_order__used_company_rate
+msgid "Exchange Rate Used"
+msgstr "အသုံးပြုထားသော ငွေလဲနှုန်း"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_rate
+msgid "How many units of the selected currency equal 1 unit of the company currency (e.g. 1 OMR = X IRR)."
+msgstr "ရွေးချယ်ထားသော ငွေကြေး မည်မျှသည် ကုမ္ပဏီ ငွေကြေး ၁ ယူနစ်နှင့် ညီသနည်း (ဥပမာ 1 OMR = X IRR)။"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "If set, posting/confirming any document in this currency is blocked unless a currency rate exists for today."
+msgstr "သတ်မှတ်ထားပါက ယနေ့အတွက် ငွေလဲနှုန်း မရှိမချင်း ဤငွေကြေးဖြင့် စာရွက်စာတမ်းမည်သည်ကိုမဆို တင်သွင်းခြင်း/အတည်ပြုခြင်းကို ပိတ်ဆို့ထားသည်။"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "No exchange rate has been registered for %(currency)s on %(date)s. Please enter the rate for that date before continuing."
+msgstr "%(date)s တွင် %(currency)s အတွက် ငွေလဲနှုန်း မှတ်ပုံတင်ထားခြင်း မရှိပါ။ ဆက်လက်မဆောင်ရွက်မီ ထိုရက်စွဲအတွက် နှုန်းထားကို ထည့်သွင်းပါ။"
+
+#. module: currency_rate_guard
+#: model:ir.model,name:currency_rate_guard.model_currency_rate_quick_entry_wizard
+msgid "Quick Entry for Today's Currency Rate"
+msgstr "ယနေ့ ငွေလဲနှုန်းအတွက် အမြန် ထည့်သွင်းမှု"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_rate
+msgid "Rate"
+msgstr "နှုန်းထား"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/wizard/currency_rate_quick_entry.py:0
+#, python-format
+msgid "Rate must be strictly positive."
+msgstr "နှုန်းထားသည် အပြုသဘော တန်ဖိုးဖြစ်ရမည်။"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "Require Daily Rate"
+msgstr "နေ့စဉ် နှုန်းထား လိုအပ်သည်"
+
+#. module: currency_rate_guard
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Save Rate"
+msgstr "နှုန်းထား သိမ်းဆည်းပါ"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "The rate for %(currency)s on %(date)s is already used by %(doc)s and can no longer be changed or removed. Delete that document first if you need to modify this rate."
+msgstr "%(date)s တွင် %(currency)s အတွက် နှုန်းထားကို %(doc)s က အသုံးပြုပြီးဖြစ်၍ ပြောင်းလဲ၍ သို့မဟုတ် ဖယ်ရှား၍ မရတော့ပါ။ ဤနှုန်းထားကို ပြင်ဆင်လိုပါက ထိုစာရွက်စာတမ်းကို ဦးစွာ ဖျက်ပါ။"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "invoice %s"
+msgstr "ငွေတောင်းခံလွှာ %s"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "payment %s"
+msgstr "ငွေပေးချေမှု %s"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "purchase order %s"
+msgstr "ဝယ်ယူမှု အော်ဒါ %s"

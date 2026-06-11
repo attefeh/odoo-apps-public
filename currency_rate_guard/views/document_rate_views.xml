@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Customer invoices / vendor bills -->
+    <record id="view_move_form_used_rate" model="ir.ui.view">
+        <field name="name">account.move.form.used.rate</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <field name="currency_id" position="after">
+                <field name="used_company_rate"
+                       invisible="currency_id == company_currency_id"/>
+            </field>
+        </field>
+    </record>
+
+    <!-- Payments -->
+    <record id="view_account_payment_form_used_rate" model="ir.ui.view">
+        <field name="name">account.payment.form.used.rate</field>
+        <field name="model">account.payment</field>
+        <field name="inherit_id" ref="account.view_account_payment_form"/>
+        <field name="arch" type="xml">
+            <field name="amount" position="after">
+                <field name="company_currency_id" invisible="1"/>
+                <field name="used_company_rate"
+                       invisible="currency_id == company_currency_id"/>
+            </field>
+        </field>
+    </record>
+
+    <!-- Purchase orders -->
+    <record id="view_purchase_order_form_used_rate" model="ir.ui.view">
+        <field name="name">purchase.order.form.used.rate</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <field name="currency_id" position="after">
+                <field name="company_currency_id" invisible="1"/>
+                <field name="used_company_rate"
+                       invisible="currency_id == company_currency_id"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>
