@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0\n"
+"Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-03 00:00+0000\n"
-"PO-Revision-Date: 2026-06-03 00:00+0000\n"
+"POT-Creation-Date: 2026-06-11 00:00+0000\n"
+"PO-Revision-Date: 2026-06-11 00:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ro\n"
@@ -16,36 +16,10 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-
 #. module: currency_rate_guard
-#: model:ir.module.module,shortdesc:base.module_currency_rate_guard
-msgid "Currency Rate Guard"
-msgstr "Gardian al Cursului Valutar"
-
-#. module: currency_rate_guard
-#: model:ir.module.module,summary:base.module_currency_rate_guard
-msgid "Block confirmation/posting of purchase orders, vendor bills, customer invoices and payments when today's currency rate is missing for guarded currencies. Daily reminder to accountants."
-msgstr "Blochează confirmarea/înregistrarea comenzilor de achiziție, a facturilor de la furnizori, a facturilor către clienți și a plăților atunci când lipsește cursul valutar de astăzi pentru monedele protejate. Memento zilnic pentru contabili."
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_res_currency__rate_guard_required
-msgid "Require Daily Rate"
-msgstr "Necesită Curs Zilnic"
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,help:currency_rate_guard.field_res_currency__rate_guard_required
-msgid "If set, posting/confirming any document in this currency is blocked unless a currency rate exists for today."
-msgstr "Dacă este setat, înregistrarea/confirmarea oricărui document în această monedă este blocată dacă nu există un curs valutar pentru astăzi."
-
-#. module: currency_rate_guard
-#: model:ir.model,name:currency_rate_guard.model_currency_rate_quick_entry_wizard
-msgid "Quick Entry for Today's Currency Rate"
-msgstr "Introducere Rapidă a Cursului Valutar de Astăzi"
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__currency_id
-msgid "Currency"
-msgstr "Monedă"
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Cancel"
+msgstr "Anulează"
 
 #. module: currency_rate_guard
 #: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_id
@@ -58,37 +32,84 @@ msgid "Company Currency"
 msgstr "Moneda Companiei"
 
 #. module: currency_rate_guard
+#: model:ir.module.module,summary:base.module_currency_rate_guard
+msgid "Block confirmation/posting of purchase orders, vendor bills, customer invoices and payments when today's currency rate is missing for guarded currencies."
+msgstr "Blochează confirmarea/înregistrarea comenzilor de achiziție, a facturilor de la furnizori, a facturilor către clienți și a plăților atunci când lipsește cursul valutar de astăzi pentru monedele protejate."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_account_move__used_company_rate
+msgid "Company-currency exchange rate applied for this document's invoice date."
+msgstr "Cursul de schimb în moneda companiei aplicat pentru data facturii acestui document."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_purchase_order__used_company_rate
+msgid "Company-currency exchange rate applied for this order's approval date."
+msgstr "Cursul de schimb în moneda companiei aplicat pentru data aprobării acestei comenzi."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_account_payment__used_company_rate
+msgid "Company-currency exchange rate applied for this payment's date."
+msgstr "Cursul de schimb în moneda companiei aplicat pentru data acestei plăți."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__currency_id
+msgid "Currency"
+msgstr "Monedă"
+
+#. module: currency_rate_guard
+#: model:ir.module.module,shortdesc:base.module_currency_rate_guard
+msgid "Currency Rate Guard"
+msgstr "Gardian al Cursului Valutar"
+
+#. module: currency_rate_guard
 #: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__date
 msgid "Date"
 msgstr "Dată"
 
 #. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
-msgid "Rate"
-msgstr "Curs"
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,help:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
-msgid "How many units of the company currency equal 1 unit of the selected currency (e.g. 1 OMR = X IRR)."
-msgstr "Câte unități din moneda companiei echivalează cu 1 unitate din moneda selectată (de ex. 1 OMR = X IRR)."
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "Enter Rate for %(date)s"
+msgstr "Introduceți Cursul pentru %(date)s"
 
 #. module: currency_rate_guard
 #: model:ir.actions.act_window,name:currency_rate_guard.action_currency_rate_quick_entry_wizard
 #: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
-#: code:addons/currency_rate_guard/models/res_currency.py:0
-#, python-format
 msgid "Enter Today's Rate"
 msgstr "Introduceți Cursul de Astăzi"
 
 #. module: currency_rate_guard
-#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
-msgid "Save Rate"
-msgstr "Salvați Cursul"
+#: model:ir.model.fields,field_description:currency_rate_guard.field_account_move__used_company_rate
+#: model:ir.model.fields,field_description:currency_rate_guard.field_account_payment__used_company_rate
+#: model:ir.model.fields,field_description:currency_rate_guard.field_purchase_order__used_company_rate
+msgid "Exchange Rate Used"
+msgstr "Curs de Schimb Utilizat"
 
 #. module: currency_rate_guard
-#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
-msgid "Cancel"
-msgstr "Anulează"
+#: model:ir.model.fields,help:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_rate
+msgid "How many units of the selected currency equal 1 unit of the company currency (e.g. 1 OMR = X IRR)."
+msgstr "Câte unități din moneda selectată echivalează cu 1 unitate din moneda companiei (de ex. 1 OMR = X IRR)."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "If set, posting/confirming any document in this currency is blocked unless a currency rate exists for today."
+msgstr "Dacă este setat, înregistrarea/confirmarea oricărui document în această monedă este blocată dacă nu există un curs valutar pentru astăzi."
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "No exchange rate has been registered for %(currency)s on %(date)s. Please enter the rate for that date before continuing."
+msgstr "Nu a fost înregistrat niciun curs de schimb pentru %(currency)s la data de %(date)s. Vă rugăm să introduceți cursul pentru acea dată înainte de a continua."
+
+#. module: currency_rate_guard
+#: model:ir.model,name:currency_rate_guard.model_currency_rate_quick_entry_wizard
+msgid "Quick Entry for Today's Currency Rate"
+msgstr "Introducere Rapidă a Cursului Valutar de Astăzi"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_rate
+msgid "Rate"
+msgstr "Curs"
 
 #. module: currency_rate_guard
 #: code:addons/currency_rate_guard/wizard/currency_rate_quick_entry.py:0
@@ -97,7 +118,35 @@ msgid "Rate must be strictly positive."
 msgstr "Cursul trebuie să fie strict pozitiv."
 
 #. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "Require Daily Rate"
+msgstr "Necesită Curs Zilnic"
+
+#. module: currency_rate_guard
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Save Rate"
+msgstr "Salvați Cursul"
+
+#. module: currency_rate_guard
 #: code:addons/currency_rate_guard/models/res_currency.py:0
 #, python-format
-msgid "No exchange rate has been registered for %(currency)s on %(date)s. Please enter today's rate before continuing."
-msgstr "Nu a fost înregistrat niciun curs de schimb pentru %(currency)s la data de %(date)s. Vă rugăm să introduceți cursul de astăzi înainte de a continua."
+msgid "The rate for %(currency)s on %(date)s is already used by %(doc)s and can no longer be changed or removed. Delete that document first if you need to modify this rate."
+msgstr "Cursul pentru %(currency)s la data de %(date)s este deja utilizat de %(doc)s și nu mai poate fi modificat sau eliminat. Ștergeți mai întâi acel document dacă trebuie să modificați acest curs."
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "invoice %s"
+msgstr "factura %s"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "payment %s"
+msgstr "plata %s"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "purchase order %s"
+msgstr "comanda de achiziție %s"

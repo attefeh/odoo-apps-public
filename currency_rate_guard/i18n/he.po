@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0\n"
+"Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-03 00:00+0000\n"
-"PO-Revision-Date: 2026-06-03 00:00+0000\n"
+"POT-Creation-Date: 2026-06-11 00:00+0000\n"
+"PO-Revision-Date: 2026-06-11 00:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: he\n"
@@ -16,36 +16,10 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-
 #. module: currency_rate_guard
-#: model:ir.module.module,shortdesc:base.module_currency_rate_guard
-msgid "Currency Rate Guard"
-msgstr "שומר שער מטבע"
-
-#. module: currency_rate_guard
-#: model:ir.module.module,summary:base.module_currency_rate_guard
-msgid "Block confirmation/posting of purchase orders, vendor bills, customer invoices and payments when today's currency rate is missing for guarded currencies. Daily reminder to accountants."
-msgstr "חסום אישור/רישום של הזמנות רכש, חשבוניות ספק, חשבוניות לקוח ותשלומים כאשר שער המטבע של היום חסר עבור מטבעות מנוטרים. תזכורת יומית לרואי חשבון."
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_res_currency__rate_guard_required
-msgid "Require Daily Rate"
-msgstr "דרוש שער יומי"
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,help:currency_rate_guard.field_res_currency__rate_guard_required
-msgid "If set, posting/confirming any document in this currency is blocked unless a currency rate exists for today."
-msgstr "אם מוגדר, רישום/אישור של מסמך כלשהו במטבע זה ייחסם אלא אם קיים שער מטבע להיום."
-
-#. module: currency_rate_guard
-#: model:ir.model,name:currency_rate_guard.model_currency_rate_quick_entry_wizard
-msgid "Quick Entry for Today's Currency Rate"
-msgstr "הזנה מהירה של שער המטבע של היום"
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__currency_id
-msgid "Currency"
-msgstr "מטבע"
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Cancel"
+msgstr "ביטול"
 
 #. module: currency_rate_guard
 #: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_id
@@ -58,37 +32,84 @@ msgid "Company Currency"
 msgstr "מטבע החברה"
 
 #. module: currency_rate_guard
+#: model:ir.module.module,summary:base.module_currency_rate_guard
+msgid "Block confirmation/posting of purchase orders, vendor bills, customer invoices and payments when today's currency rate is missing for guarded currencies."
+msgstr "חסום אישור/רישום של הזמנות רכש, חשבוניות ספק, חשבוניות לקוח ותשלומים כאשר שער המטבע של היום חסר עבור מטבעות מנוטרים."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_account_move__used_company_rate
+msgid "Company-currency exchange rate applied for this document's invoice date."
+msgstr "שער החליפין למטבע החברה שהוחל עבור תאריך החשבונית של מסמך זה."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_purchase_order__used_company_rate
+msgid "Company-currency exchange rate applied for this order's approval date."
+msgstr "שער החליפין למטבע החברה שהוחל עבור תאריך האישור של הזמנה זו."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_account_payment__used_company_rate
+msgid "Company-currency exchange rate applied for this payment's date."
+msgstr "שער החליפין למטבע החברה שהוחל עבור תאריך התשלום הזה."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__currency_id
+msgid "Currency"
+msgstr "מטבע"
+
+#. module: currency_rate_guard
+#: model:ir.module.module,shortdesc:base.module_currency_rate_guard
+msgid "Currency Rate Guard"
+msgstr "שומר שער מטבע"
+
+#. module: currency_rate_guard
 #: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__date
 msgid "Date"
 msgstr "תאריך"
 
 #. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
-msgid "Rate"
-msgstr "שער"
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,help:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
-msgid "How many units of the company currency equal 1 unit of the selected currency (e.g. 1 OMR = X IRR)."
-msgstr "כמה יחידות של מטבע החברה שוות ליחידה אחת של המטבע הנבחר (לדוגמה 1 OMR = X IRR)."
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "Enter Rate for %(date)s"
+msgstr "הזן שער עבור %(date)s"
 
 #. module: currency_rate_guard
 #: model:ir.actions.act_window,name:currency_rate_guard.action_currency_rate_quick_entry_wizard
 #: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
-#: code:addons/currency_rate_guard/models/res_currency.py:0
-#, python-format
 msgid "Enter Today's Rate"
 msgstr "הזן את שער היום"
 
 #. module: currency_rate_guard
-#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
-msgid "Save Rate"
-msgstr "שמור שער"
+#: model:ir.model.fields,field_description:currency_rate_guard.field_account_move__used_company_rate
+#: model:ir.model.fields,field_description:currency_rate_guard.field_account_payment__used_company_rate
+#: model:ir.model.fields,field_description:currency_rate_guard.field_purchase_order__used_company_rate
+msgid "Exchange Rate Used"
+msgstr "שער החליפין שנעשה בו שימוש"
 
 #. module: currency_rate_guard
-#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
-msgid "Cancel"
-msgstr "ביטול"
+#: model:ir.model.fields,help:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_rate
+msgid "How many units of the selected currency equal 1 unit of the company currency (e.g. 1 OMR = X IRR)."
+msgstr "כמה יחידות של המטבע הנבחר שוות ליחידה אחת של מטבע החברה (לדוגמה 1 OMR = X IRR)."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "If set, posting/confirming any document in this currency is blocked unless a currency rate exists for today."
+msgstr "אם מוגדר, רישום/אישור של מסמך כלשהו במטבע זה ייחסם אלא אם קיים שער מטבע להיום."
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "No exchange rate has been registered for %(currency)s on %(date)s. Please enter the rate for that date before continuing."
+msgstr "לא נרשם שער חליפין עבור %(currency)s בתאריך %(date)s. אנא הזן את השער עבור תאריך זה לפני שתמשיך."
+
+#. module: currency_rate_guard
+#: model:ir.model,name:currency_rate_guard.model_currency_rate_quick_entry_wizard
+msgid "Quick Entry for Today's Currency Rate"
+msgstr "הזנה מהירה של שער המטבע של היום"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_rate
+msgid "Rate"
+msgstr "שער"
 
 #. module: currency_rate_guard
 #: code:addons/currency_rate_guard/wizard/currency_rate_quick_entry.py:0
@@ -97,7 +118,35 @@ msgid "Rate must be strictly positive."
 msgstr "השער חייב להיות חיובי ממש."
 
 #. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "Require Daily Rate"
+msgstr "דרוש שער יומי"
+
+#. module: currency_rate_guard
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Save Rate"
+msgstr "שמור שער"
+
+#. module: currency_rate_guard
 #: code:addons/currency_rate_guard/models/res_currency.py:0
 #, python-format
-msgid "No exchange rate has been registered for %(currency)s on %(date)s. Please enter today's rate before continuing."
-msgstr "לא נרשם שער חליפין עבור %(currency)s בתאריך %(date)s. אנא הזן את שער היום לפני שתמשיך."
+msgid "The rate for %(currency)s on %(date)s is already used by %(doc)s and can no longer be changed or removed. Delete that document first if you need to modify this rate."
+msgstr "השער עבור %(currency)s בתאריך %(date)s כבר נמצא בשימוש על ידי %(doc)s ולא ניתן עוד לשנותו או להסירו. מחק תחילה מסמך זה אם עליך לשנות שער זה."
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "invoice %s"
+msgstr "חשבונית %s"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "payment %s"
+msgstr "תשלום %s"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "purchase order %s"
+msgstr "הזמנת רכש %s"

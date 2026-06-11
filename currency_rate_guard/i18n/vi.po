@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0\n"
+"Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-03 00:00+0000\n"
-"PO-Revision-Date: 2026-06-03 00:00+0000\n"
+"POT-Creation-Date: 2026-06-11 00:00+0000\n"
+"PO-Revision-Date: 2026-06-11 00:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: vi\n"
@@ -16,36 +16,10 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-
 #. module: currency_rate_guard
-#: model:ir.module.module,shortdesc:base.module_currency_rate_guard
-msgid "Currency Rate Guard"
-msgstr "Bảo vệ Tỷ giá Tiền tệ"
-
-#. module: currency_rate_guard
-#: model:ir.module.module,summary:base.module_currency_rate_guard
-msgid "Block confirmation/posting of purchase orders, vendor bills, customer invoices and payments when today's currency rate is missing for guarded currencies. Daily reminder to accountants."
-msgstr "Chặn xác nhận/ghi sổ đơn mua hàng, hóa đơn nhà cung cấp, hóa đơn khách hàng và thanh toán khi thiếu tỷ giá tiền tệ của hôm nay cho các loại tiền được bảo vệ. Nhắc nhở hàng ngày cho kế toán viên."
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_res_currency__rate_guard_required
-msgid "Require Daily Rate"
-msgstr "Yêu cầu Tỷ giá Hàng ngày"
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,help:currency_rate_guard.field_res_currency__rate_guard_required
-msgid "If set, posting/confirming any document in this currency is blocked unless a currency rate exists for today."
-msgstr "Nếu được đặt, việc ghi sổ/xác nhận bất kỳ chứng từ nào bằng loại tiền này sẽ bị chặn trừ khi có tỷ giá tiền tệ cho hôm nay."
-
-#. module: currency_rate_guard
-#: model:ir.model,name:currency_rate_guard.model_currency_rate_quick_entry_wizard
-msgid "Quick Entry for Today's Currency Rate"
-msgstr "Nhập nhanh Tỷ giá Tiền tệ Hôm nay"
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__currency_id
-msgid "Currency"
-msgstr "Tiền tệ"
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Cancel"
+msgstr "Hủy"
 
 #. module: currency_rate_guard
 #: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_id
@@ -58,37 +32,84 @@ msgid "Company Currency"
 msgstr "Tiền tệ Công ty"
 
 #. module: currency_rate_guard
+#: model:ir.module.module,summary:base.module_currency_rate_guard
+msgid "Block confirmation/posting of purchase orders, vendor bills, customer invoices and payments when today's currency rate is missing for guarded currencies."
+msgstr "Chặn xác nhận/ghi sổ đơn mua hàng, hóa đơn nhà cung cấp, hóa đơn khách hàng và thanh toán khi thiếu tỷ giá tiền tệ của hôm nay cho các loại tiền được bảo vệ."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_account_move__used_company_rate
+msgid "Company-currency exchange rate applied for this document's invoice date."
+msgstr "Tỷ giá hối đoái theo tiền tệ công ty được áp dụng cho ngày hóa đơn của chứng từ này."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_purchase_order__used_company_rate
+msgid "Company-currency exchange rate applied for this order's approval date."
+msgstr "Tỷ giá hối đoái theo tiền tệ công ty được áp dụng cho ngày phê duyệt của đơn hàng này."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_account_payment__used_company_rate
+msgid "Company-currency exchange rate applied for this payment's date."
+msgstr "Tỷ giá hối đoái theo tiền tệ công ty được áp dụng cho ngày của khoản thanh toán này."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__currency_id
+msgid "Currency"
+msgstr "Tiền tệ"
+
+#. module: currency_rate_guard
+#: model:ir.module.module,shortdesc:base.module_currency_rate_guard
+msgid "Currency Rate Guard"
+msgstr "Bảo vệ Tỷ giá Tiền tệ"
+
+#. module: currency_rate_guard
 #: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__date
 msgid "Date"
 msgstr "Ngày"
 
 #. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
-msgid "Rate"
-msgstr "Tỷ giá"
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,help:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
-msgid "How many units of the company currency equal 1 unit of the selected currency (e.g. 1 OMR = X IRR)."
-msgstr "Bao nhiêu đơn vị tiền tệ của công ty bằng 1 đơn vị của loại tiền được chọn (ví dụ 1 OMR = X IRR)."
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "Enter Rate for %(date)s"
+msgstr "Nhập Tỷ giá cho %(date)s"
 
 #. module: currency_rate_guard
 #: model:ir.actions.act_window,name:currency_rate_guard.action_currency_rate_quick_entry_wizard
 #: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
-#: code:addons/currency_rate_guard/models/res_currency.py:0
-#, python-format
 msgid "Enter Today's Rate"
 msgstr "Nhập Tỷ giá Hôm nay"
 
 #. module: currency_rate_guard
-#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
-msgid "Save Rate"
-msgstr "Lưu Tỷ giá"
+#: model:ir.model.fields,field_description:currency_rate_guard.field_account_move__used_company_rate
+#: model:ir.model.fields,field_description:currency_rate_guard.field_account_payment__used_company_rate
+#: model:ir.model.fields,field_description:currency_rate_guard.field_purchase_order__used_company_rate
+msgid "Exchange Rate Used"
+msgstr "Tỷ giá Hối đoái Đã sử dụng"
 
 #. module: currency_rate_guard
-#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
-msgid "Cancel"
-msgstr "Hủy"
+#: model:ir.model.fields,help:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_rate
+msgid "How many units of the selected currency equal 1 unit of the company currency (e.g. 1 OMR = X IRR)."
+msgstr "Bao nhiêu đơn vị của loại tiền được chọn bằng 1 đơn vị tiền tệ của công ty (ví dụ 1 OMR = X IRR)."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "If set, posting/confirming any document in this currency is blocked unless a currency rate exists for today."
+msgstr "Nếu được đặt, việc ghi sổ/xác nhận bất kỳ chứng từ nào bằng loại tiền này sẽ bị chặn trừ khi có tỷ giá tiền tệ cho hôm nay."
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "No exchange rate has been registered for %(currency)s on %(date)s. Please enter the rate for that date before continuing."
+msgstr "Chưa có tỷ giá hối đoái nào được đăng ký cho %(currency)s vào %(date)s. Vui lòng nhập tỷ giá cho ngày đó trước khi tiếp tục."
+
+#. module: currency_rate_guard
+#: model:ir.model,name:currency_rate_guard.model_currency_rate_quick_entry_wizard
+msgid "Quick Entry for Today's Currency Rate"
+msgstr "Nhập nhanh Tỷ giá Tiền tệ Hôm nay"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_rate
+msgid "Rate"
+msgstr "Tỷ giá"
 
 #. module: currency_rate_guard
 #: code:addons/currency_rate_guard/wizard/currency_rate_quick_entry.py:0
@@ -97,7 +118,35 @@ msgid "Rate must be strictly positive."
 msgstr "Tỷ giá phải là số dương tuyệt đối."
 
 #. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "Require Daily Rate"
+msgstr "Yêu cầu Tỷ giá Hàng ngày"
+
+#. module: currency_rate_guard
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Save Rate"
+msgstr "Lưu Tỷ giá"
+
+#. module: currency_rate_guard
 #: code:addons/currency_rate_guard/models/res_currency.py:0
 #, python-format
-msgid "No exchange rate has been registered for %(currency)s on %(date)s. Please enter today's rate before continuing."
-msgstr "Chưa có tỷ giá hối đoái nào được đăng ký cho %(currency)s vào %(date)s. Vui lòng nhập tỷ giá hôm nay trước khi tiếp tục."
+msgid "The rate for %(currency)s on %(date)s is already used by %(doc)s and can no longer be changed or removed. Delete that document first if you need to modify this rate."
+msgstr "Tỷ giá cho %(currency)s vào %(date)s đã được sử dụng bởi %(doc)s và không thể thay đổi hoặc xóa được nữa. Hãy xóa chứng từ đó trước nếu bạn cần sửa đổi tỷ giá này."
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "invoice %s"
+msgstr "hóa đơn %s"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "payment %s"
+msgstr "khoản thanh toán %s"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "purchase order %s"
+msgstr "đơn mua hàng %s"

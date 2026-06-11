@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0\n"
+"Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-03 00:00+0000\n"
-"PO-Revision-Date: 2026-06-03 00:00+0000\n"
+"POT-Creation-Date: 2026-06-11 00:00+0000\n"
+"PO-Revision-Date: 2026-06-11 00:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: sw\n"
@@ -16,36 +16,10 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-
 #. module: currency_rate_guard
-#: model:ir.module.module,shortdesc:base.module_currency_rate_guard
-msgid "Currency Rate Guard"
-msgstr "Mlinzi wa Kiwango cha Sarafu"
-
-#. module: currency_rate_guard
-#: model:ir.module.module,summary:base.module_currency_rate_guard
-msgid "Block confirmation/posting of purchase orders, vendor bills, customer invoices and payments when today's currency rate is missing for guarded currencies. Daily reminder to accountants."
-msgstr "Zuia uthibitishaji/uchapishaji wa oda za ununuzi, ankara za wachuuzi, ankara za wateja na malipo wakati kiwango cha sarafu cha leo hakipo kwa sarafu zinazolindwa. Kikumbusho cha kila siku kwa wahasibu."
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_res_currency__rate_guard_required
-msgid "Require Daily Rate"
-msgstr "Hitaji Kiwango cha Kila Siku"
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,help:currency_rate_guard.field_res_currency__rate_guard_required
-msgid "If set, posting/confirming any document in this currency is blocked unless a currency rate exists for today."
-msgstr "Ikiwekwa, uchapishaji/uthibitishaji wa hati yoyote katika sarafu hii unazuiwa isipokuwa kiwango cha sarafu kipo kwa leo."
-
-#. module: currency_rate_guard
-#: model:ir.model,name:currency_rate_guard.model_currency_rate_quick_entry_wizard
-msgid "Quick Entry for Today's Currency Rate"
-msgstr "Uingizaji wa Haraka wa Kiwango cha Sarafu cha Leo"
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__currency_id
-msgid "Currency"
-msgstr "Sarafu"
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Cancel"
+msgstr "Ghairi"
 
 #. module: currency_rate_guard
 #: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_id
@@ -58,37 +32,84 @@ msgid "Company Currency"
 msgstr "Sarafu ya Kampuni"
 
 #. module: currency_rate_guard
+#: model:ir.module.module,summary:base.module_currency_rate_guard
+msgid "Block confirmation/posting of purchase orders, vendor bills, customer invoices and payments when today's currency rate is missing for guarded currencies."
+msgstr "Zuia uthibitishaji/uchapishaji wa oda za ununuzi, ankara za wachuuzi, ankara za wateja na malipo wakati kiwango cha sarafu cha leo hakipo kwa sarafu zinazolindwa."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_account_move__used_company_rate
+msgid "Company-currency exchange rate applied for this document's invoice date."
+msgstr "Kiwango cha ubadilishaji cha sarafu ya kampuni kilichotumika kwa tarehe ya ankara ya hati hii."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_purchase_order__used_company_rate
+msgid "Company-currency exchange rate applied for this order's approval date."
+msgstr "Kiwango cha ubadilishaji cha sarafu ya kampuni kilichotumika kwa tarehe ya idhini ya oda hii."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_account_payment__used_company_rate
+msgid "Company-currency exchange rate applied for this payment's date."
+msgstr "Kiwango cha ubadilishaji cha sarafu ya kampuni kilichotumika kwa tarehe ya malipo haya."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__currency_id
+msgid "Currency"
+msgstr "Sarafu"
+
+#. module: currency_rate_guard
+#: model:ir.module.module,shortdesc:base.module_currency_rate_guard
+msgid "Currency Rate Guard"
+msgstr "Mlinzi wa Kiwango cha Sarafu"
+
+#. module: currency_rate_guard
 #: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__date
 msgid "Date"
 msgstr "Tarehe"
 
 #. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
-msgid "Rate"
-msgstr "Kiwango"
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,help:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
-msgid "How many units of the company currency equal 1 unit of the selected currency (e.g. 1 OMR = X IRR)."
-msgstr "Ni vipimo vingapi vya sarafu ya kampuni vinavyolingana na kipimo 1 cha sarafu iliyochaguliwa (mf. 1 OMR = X IRR)."
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "Enter Rate for %(date)s"
+msgstr "Ingiza Kiwango cha %(date)s"
 
 #. module: currency_rate_guard
 #: model:ir.actions.act_window,name:currency_rate_guard.action_currency_rate_quick_entry_wizard
 #: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
-#: code:addons/currency_rate_guard/models/res_currency.py:0
-#, python-format
 msgid "Enter Today's Rate"
 msgstr "Ingiza Kiwango cha Leo"
 
 #. module: currency_rate_guard
-#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
-msgid "Save Rate"
-msgstr "Hifadhi Kiwango"
+#: model:ir.model.fields,field_description:currency_rate_guard.field_account_move__used_company_rate
+#: model:ir.model.fields,field_description:currency_rate_guard.field_account_payment__used_company_rate
+#: model:ir.model.fields,field_description:currency_rate_guard.field_purchase_order__used_company_rate
+msgid "Exchange Rate Used"
+msgstr "Kiwango cha Ubadilishaji Kilichotumika"
 
 #. module: currency_rate_guard
-#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
-msgid "Cancel"
-msgstr "Ghairi"
+#: model:ir.model.fields,help:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_rate
+msgid "How many units of the selected currency equal 1 unit of the company currency (e.g. 1 OMR = X IRR)."
+msgstr "Ni vipimo vingapi vya sarafu iliyochaguliwa vinavyolingana na kipimo 1 cha sarafu ya kampuni (mf. 1 OMR = X IRR)."
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "If set, posting/confirming any document in this currency is blocked unless a currency rate exists for today."
+msgstr "Ikiwekwa, uchapishaji/uthibitishaji wa hati yoyote katika sarafu hii unazuiwa isipokuwa kiwango cha sarafu kipo kwa leo."
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "No exchange rate has been registered for %(currency)s on %(date)s. Please enter the rate for that date before continuing."
+msgstr "Hakuna kiwango cha ubadilishaji kilichosajiliwa kwa %(currency)s tarehe %(date)s. Tafadhali ingiza kiwango cha tarehe hiyo kabla ya kuendelea."
+
+#. module: currency_rate_guard
+#: model:ir.model,name:currency_rate_guard.model_currency_rate_quick_entry_wizard
+msgid "Quick Entry for Today's Currency Rate"
+msgstr "Uingizaji wa Haraka wa Kiwango cha Sarafu cha Leo"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_rate
+msgid "Rate"
+msgstr "Kiwango"
 
 #. module: currency_rate_guard
 #: code:addons/currency_rate_guard/wizard/currency_rate_quick_entry.py:0
@@ -97,7 +118,35 @@ msgid "Rate must be strictly positive."
 msgstr "Kiwango lazima kiwe chanya kabisa."
 
 #. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "Require Daily Rate"
+msgstr "Hitaji Kiwango cha Kila Siku"
+
+#. module: currency_rate_guard
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Save Rate"
+msgstr "Hifadhi Kiwango"
+
+#. module: currency_rate_guard
 #: code:addons/currency_rate_guard/models/res_currency.py:0
 #, python-format
-msgid "No exchange rate has been registered for %(currency)s on %(date)s. Please enter today's rate before continuing."
-msgstr "Hakuna kiwango cha ubadilishaji kilichosajiliwa kwa %(currency)s tarehe %(date)s. Tafadhali ingiza kiwango cha leo kabla ya kuendelea."
+msgid "The rate for %(currency)s on %(date)s is already used by %(doc)s and can no longer be changed or removed. Delete that document first if you need to modify this rate."
+msgstr "Kiwango cha %(currency)s tarehe %(date)s tayari kinatumika na %(doc)s na hakiwezi tena kubadilishwa au kuondolewa. Futa hati hiyo kwanza ikiwa unahitaji kurekebisha kiwango hiki."
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "invoice %s"
+msgstr "ankara %s"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "payment %s"
+msgstr "malipo %s"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "purchase order %s"
+msgstr "oda ya ununuzi %s"

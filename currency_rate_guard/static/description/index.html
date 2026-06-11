@@ -10,23 +10,28 @@
         <h1 style="color:#6B5300; font-size:30px; line-height:1.2; text-align:center; font-weight:700; letter-spacing:1px; margin:0 0 16px;">🛡️ Currency Rate Guard</h1>
 
         <p style="font-size:15px; line-height:1.6; margin:8px 0 15px; text-align:center; color:#5B5B5B;">
-            Stop documents from being posted or confirmed in a foreign currency when today's
-            exchange rate is missing — and let accountants enter the rate on the spot.
+            Stop documents from being posted or confirmed in a foreign currency when the
+            exchange rate for their date is missing — and let accountants enter the rate on
+            the spot, then carry on exactly where they left off.
         </p>
 
         <h2 style="color:#6B5300; font-size:21px; line-height:1.3; font-weight:700; letter-spacing:1px; margin:32px 0 12px; border-bottom:2px solid #efe4c0; padding-bottom:4px;">✨ Key Features</h2>
         <ul style="font-size:15px; line-height:1.6; margin:8px 0 24px; padding-left:22px;">
             <li style="margin:7px 0;">Mark any currency as <strong>Require Daily Rate</strong> from the Currencies list or form</li>
-            <li style="margin:7px 0;">Blocks <strong>confirming purchase orders</strong>, <strong>posting vendor bills &amp; customer invoices</strong>, and <strong>posting payments</strong> in a guarded currency when today's rate is missing</li>
-            <li style="margin:7px 0;">Shows a clear, actionable warning with a one-click <strong>Enter Today's Rate</strong> button</li>
-            <li style="margin:7px 0;">A <strong>quick-entry wizard</strong> registers today's rate without leaving your workflow</li>
+            <li style="margin:7px 0;">Blocks <strong>confirming purchase orders</strong>, <strong>posting vendor bills &amp; customer invoices</strong>, <strong>posting payments</strong>, and <strong>registering payments</strong> in a guarded currency when the rate for the document's date is missing</li>
+            <li style="margin:7px 0;">The rate is checked against the <strong>document's own date</strong> — the invoice date, the purchase approval date, or the payment date — not just today</li>
+            <li style="margin:7px 0;">Shows a clear, actionable warning with a one-click <strong>Enter Rate</strong> button</li>
+            <li style="margin:7px 0;">A <strong>quick-entry wizard</strong> registers the missing rate without leaving your workflow, pre-filled with the nearest known rate</li>
+            <li style="margin:7px 0;"><strong>Resumes your action automatically</strong> — once the rate is saved, the original post/confirm is replayed for you</li>
+            <li style="margin:7px 0;">Displays the <strong>Exchange Rate Used</strong> on invoices, payments and purchase orders so the applied rate is always visible</li>
+            <li style="margin:7px 0;"><strong>Protects rates already in use</strong> — a rate relied on by a posted document can no longer be edited or deleted by mistake</li>
             <li style="margin:7px 0;"><strong>Multi-company aware</strong> — the rate is checked per company</li>
             <li style="margin:7px 0;">Interface translated into <strong>90+ languages</strong></li>
         </ul>
 
         <h2 style="color:#6B5300; font-size:21px; line-height:1.3; font-weight:700; letter-spacing:1px; margin:32px 0 12px; border-bottom:2px solid #efe4c0; padding-bottom:4px;">✅ Compatibility</h2>
         <ul style="font-size:15px; line-height:1.6; margin:8px 0 24px; padding-left:22px;">
-            <li style="margin:7px 0;">Odoo version: 19.0, 18.0</li>
+            <li style="margin:7px 0;">Odoo version: 18.0</li>
             <li style="margin:7px 0;">Editions: Community and Enterprise</li>
             <li style="margin:7px 0;">Hosting: Odoo.sh, On-Premise</li>
         </ul>
@@ -39,21 +44,21 @@
         </div>
 
         <div style="background:#faf4e2; border:2px solid #B8860B; border-radius:18px; padding:16px; margin:0 0 26px; text-align:center;">
-            <img src="screenshot02.png" alt="Blocking warning with Enter Today's Rate" style="display:block; width:100%; max-width:100%; height:auto; border-radius:12px; border:2px solid #fff; box-sizing:border-box;">
+            <img src="screenshot02.png" alt="Blocking warning with one-click Enter Rate" style="display:block; width:100%; max-width:100%; height:auto; border-radius:12px; border:2px solid #fff; box-sizing:border-box;">
             <div style="margin-top:12px; color:#6B5300; font-size:15px;">Posting is blocked with a one-click action to fix it</div>
         </div>
 
         <div style="background:#faf4e2; border:2px solid #B8860B; border-radius:18px; padding:16px; margin:0 0 26px; text-align:center;">
             <img src="screenshot03.png" alt="Quick rate entry wizard" style="display:block; width:100%; max-width:100%; height:auto; border-radius:12px; border:2px solid #fff; box-sizing:border-box;">
-            <div style="margin-top:12px; color:#6B5300; font-size:15px;">Enter today's rate in the quick-entry wizard</div>
+            <div style="margin-top:12px; color:#6B5300; font-size:15px;">Enter the missing rate in the quick-entry wizard</div>
         </div>
 
         <h2 style="color:#6B5300; font-size:21px; line-height:1.3; font-weight:700; letter-spacing:1px; margin:32px 0 12px; border-bottom:2px solid #efe4c0; padding-bottom:4px;">🛠️ Usage</h2>
         <ul style="font-size:15px; line-height:1.6; margin:8px 0 24px; padding-left:22px;">
             <li style="margin:7px 0;">Open <strong>Accounting → Configuration → Currencies</strong> and tick <strong>Require Daily Rate</strong> on each currency you want guarded.</li>
-            <li style="margin:7px 0;">When a document in that currency is confirmed/posted without today's rate, a warning appears.</li>
-            <li style="margin:7px 0;">Click <strong>Enter Today's Rate</strong>, type the rate, and <strong>Save Rate</strong>.</li>
-            <li style="margin:7px 0;">The document can then be posted or confirmed as usual.</li>
+            <li style="margin:7px 0;">When a document in that currency is confirmed/posted without a rate for its date, a warning appears.</li>
+            <li style="margin:7px 0;">Click <strong>Enter Rate</strong>, adjust the pre-filled value, and <strong>Save Rate</strong>.</li>
+            <li style="margin:7px 0;">The action you started resumes automatically and the document is posted or confirmed.</li>
         </ul>
 
         <h2 style="color:#6B5300; font-size:21px; line-height:1.3; font-weight:700; letter-spacing:1px; margin:32px 0 12px; border-bottom:2px solid #efe4c0; padding-bottom:4px;">📦 Installation</h2>
@@ -68,8 +73,7 @@
             Developed by <strong>Attefeh Falah</strong> at <strong>Tech Stars SPC</strong> — For support or customization, contact
             <a href="mailto:attefehfalah@gmail.com" style="color:#B8860B; text-decoration:none;">attefehfalah@gmail.com</a>
             or visit
-            <a href="https://www.attefehfalah.com" style="color:#B8860B; text-decoration:none;">www.attefehfalah.com</a>
-            and <a href="https://www.techstarssolution.com" style="color:#B8860B; text-decoration:none;">www.techstarssolution.com</a>.
+            <a href="https://www.attefehfalah.com" style="color:#B8860B; text-decoration:none;">www.attefehfalah.com</a>.
         </p>
     </div>
 </body>

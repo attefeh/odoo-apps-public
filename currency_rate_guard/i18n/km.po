@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 18.0\n"
+"Project-Id-Version: Odoo Server 19.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-03 00:00+0000\n"
-"PO-Revision-Date: 2026-06-03 00:00+0000\n"
+"POT-Creation-Date: 2026-06-11 00:00+0000\n"
+"PO-Revision-Date: 2026-06-11 00:00+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: km\n"
@@ -16,36 +16,10 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
-
 #. module: currency_rate_guard
-#: model:ir.module.module,shortdesc:base.module_currency_rate_guard
-msgid "Currency Rate Guard"
-msgstr "អ្នកការពារអត្រាប្តូរប្រាក់"
-
-#. module: currency_rate_guard
-#: model:ir.module.module,summary:base.module_currency_rate_guard
-msgid "Block confirmation/posting of purchase orders, vendor bills, customer invoices and payments when today's currency rate is missing for guarded currencies. Daily reminder to accountants."
-msgstr "ទប់ស្កាត់ការបញ្ជាក់/ការចុះបញ្ជីនៃបញ្ជាទិញ វិក្កយបត្រអ្នកផ្គត់ផ្គង់ វិក្កយបត្រអតិថិជន និងការទូទាត់ នៅពេលដែលអត្រាប្តូរប្រាក់ថ្ងៃនេះអវត្តមានសម្រាប់រូបិយប័ណ្ណដែលត្រូវបានការពារ។ ការរំលឹកប្រចាំថ្ងៃដល់គណនេយ្យករ។"
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_res_currency__rate_guard_required
-msgid "Require Daily Rate"
-msgstr "តម្រូវឱ្យមានអត្រាប្រចាំថ្ងៃ"
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,help:currency_rate_guard.field_res_currency__rate_guard_required
-msgid "If set, posting/confirming any document in this currency is blocked unless a currency rate exists for today."
-msgstr "ប្រសិនបើបានកំណត់ ការចុះបញ្ជី/ការបញ្ជាក់ឯកសារណាមួយក្នុងរូបិយប័ណ្ណនេះត្រូវបានទប់ស្កាត់ លុះត្រាតែមានអត្រាប្តូរប្រាក់សម្រាប់ថ្ងៃនេះ។"
-
-#. module: currency_rate_guard
-#: model:ir.model,name:currency_rate_guard.model_currency_rate_quick_entry_wizard
-msgid "Quick Entry for Today's Currency Rate"
-msgstr "ការបញ្ចូលរហ័សសម្រាប់អត្រាប្តូរប្រាក់ថ្ងៃនេះ"
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__currency_id
-msgid "Currency"
-msgstr "រូបិយប័ណ្ណ"
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Cancel"
+msgstr "បោះបង់"
 
 #. module: currency_rate_guard
 #: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_id
@@ -58,37 +32,84 @@ msgid "Company Currency"
 msgstr "រូបិយប័ណ្ណក្រុមហ៊ុន"
 
 #. module: currency_rate_guard
+#: model:ir.module.module,summary:base.module_currency_rate_guard
+msgid "Block confirmation/posting of purchase orders, vendor bills, customer invoices and payments when today's currency rate is missing for guarded currencies."
+msgstr "ទប់ស្កាត់ការបញ្ជាក់/ការចុះបញ្ជីនៃបញ្ជាទិញ វិក្កយបត្រអ្នកផ្គត់ផ្គង់ វិក្កយបត្រអតិថិជន និងការទូទាត់ នៅពេលដែលអត្រាប្តូរប្រាក់ថ្ងៃនេះអវត្តមានសម្រាប់រូបិយប័ណ្ណដែលត្រូវបានការពារ។"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_account_move__used_company_rate
+msgid "Company-currency exchange rate applied for this document's invoice date."
+msgstr "អត្រាប្តូររូបិយប័ណ្ណក្រុមហ៊ុនដែលបានអនុវត្តសម្រាប់កាលបរិច្ឆេទវិក្កយបត្រនៃឯកសារនេះ។"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_purchase_order__used_company_rate
+msgid "Company-currency exchange rate applied for this order's approval date."
+msgstr "អត្រាប្តូររូបិយប័ណ្ណក្រុមហ៊ុនដែលបានអនុវត្តសម្រាប់កាលបរិច្ឆេទអនុម័តនៃបញ្ជាទិញនេះ។"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_account_payment__used_company_rate
+msgid "Company-currency exchange rate applied for this payment's date."
+msgstr "អត្រាប្តូររូបិយប័ណ្ណក្រុមហ៊ុនដែលបានអនុវត្តសម្រាប់កាលបរិច្ឆេទនៃការទូទាត់នេះ។"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__currency_id
+msgid "Currency"
+msgstr "រូបិយប័ណ្ណ"
+
+#. module: currency_rate_guard
+#: model:ir.module.module,shortdesc:base.module_currency_rate_guard
+msgid "Currency Rate Guard"
+msgstr "អ្នកការពារអត្រាប្តូរប្រាក់"
+
+#. module: currency_rate_guard
 #: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__date
 msgid "Date"
 msgstr "កាលបរិច្ឆេទ"
 
 #. module: currency_rate_guard
-#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
-msgid "Rate"
-msgstr "អត្រា"
-
-#. module: currency_rate_guard
-#: model:ir.model.fields,help:currency_rate_guard.field_currency_rate_quick_entry_wizard__inverse_company_rate
-msgid "How many units of the company currency equal 1 unit of the selected currency (e.g. 1 OMR = X IRR)."
-msgstr "តើរូបិយប័ណ្ណក្រុមហ៊ុនប៉ុន្មានឯកតាស្មើនឹង 1 ឯកតានៃរូបិយប័ណ្ណដែលបានជ្រើសរើស (ឧ. 1 OMR = X IRR)។"
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "Enter Rate for %(date)s"
+msgstr "បញ្ចូលអត្រាសម្រាប់ %(date)s"
 
 #. module: currency_rate_guard
 #: model:ir.actions.act_window,name:currency_rate_guard.action_currency_rate_quick_entry_wizard
 #: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
-#: code:addons/currency_rate_guard/models/res_currency.py:0
-#, python-format
 msgid "Enter Today's Rate"
 msgstr "បញ្ចូលអត្រាថ្ងៃនេះ"
 
 #. module: currency_rate_guard
-#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
-msgid "Save Rate"
-msgstr "រក្សាទុកអត្រា"
+#: model:ir.model.fields,field_description:currency_rate_guard.field_account_move__used_company_rate
+#: model:ir.model.fields,field_description:currency_rate_guard.field_account_payment__used_company_rate
+#: model:ir.model.fields,field_description:currency_rate_guard.field_purchase_order__used_company_rate
+msgid "Exchange Rate Used"
+msgstr "អត្រាប្តូរប្រាក់ដែលបានប្រើ"
 
 #. module: currency_rate_guard
-#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
-msgid "Cancel"
-msgstr "បោះបង់"
+#: model:ir.model.fields,help:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_rate
+msgid "How many units of the selected currency equal 1 unit of the company currency (e.g. 1 OMR = X IRR)."
+msgstr "តើរូបិយប័ណ្ណដែលបានជ្រើសរើសប៉ុន្មានឯកតាស្មើនឹង 1 ឯកតានៃរូបិយប័ណ្ណក្រុមហ៊ុន (ឧ. 1 OMR = X IRR)។"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,help:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "If set, posting/confirming any document in this currency is blocked unless a currency rate exists for today."
+msgstr "ប្រសិនបើបានកំណត់ ការចុះបញ្ជី/ការបញ្ជាក់ឯកសារណាមួយក្នុងរូបិយប័ណ្ណនេះត្រូវបានទប់ស្កាត់ លុះត្រាតែមានអត្រាប្តូរប្រាក់សម្រាប់ថ្ងៃនេះ។"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "No exchange rate has been registered for %(currency)s on %(date)s. Please enter the rate for that date before continuing."
+msgstr "គ្មានអត្រាប្តូរប្រាក់ត្រូវបានចុះបញ្ជីសម្រាប់ %(currency)s នៅ %(date)s ទេ។ សូមបញ្ចូលអត្រាសម្រាប់កាលបរិច្ឆេទនោះមុនពេលបន្ត។"
+
+#. module: currency_rate_guard
+#: model:ir.model,name:currency_rate_guard.model_currency_rate_quick_entry_wizard
+msgid "Quick Entry for Today's Currency Rate"
+msgstr "ការបញ្ចូលរហ័សសម្រាប់អត្រាប្តូរប្រាក់ថ្ងៃនេះ"
+
+#. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_currency_rate_quick_entry_wizard__company_rate
+msgid "Rate"
+msgstr "អត្រា"
 
 #. module: currency_rate_guard
 #: code:addons/currency_rate_guard/wizard/currency_rate_quick_entry.py:0
@@ -97,7 +118,35 @@ msgid "Rate must be strictly positive."
 msgstr "អត្រាត្រូវតែវិជ្ជមានយ៉ាងតឹងរ៉ឹង។"
 
 #. module: currency_rate_guard
+#: model:ir.model.fields,field_description:currency_rate_guard.field_res_currency__rate_guard_required
+msgid "Require Daily Rate"
+msgstr "តម្រូវឱ្យមានអត្រាប្រចាំថ្ងៃ"
+
+#. module: currency_rate_guard
+#: model_terms:ir.ui.view,arch_db:currency_rate_guard.view_currency_rate_quick_entry_wizard_form
+msgid "Save Rate"
+msgstr "រក្សាទុកអត្រា"
+
+#. module: currency_rate_guard
 #: code:addons/currency_rate_guard/models/res_currency.py:0
 #, python-format
-msgid "No exchange rate has been registered for %(currency)s on %(date)s. Please enter today's rate before continuing."
-msgstr "គ្មានអត្រាប្តូរប្រាក់ត្រូវបានចុះបញ្ជីសម្រាប់ %(currency)s នៅ %(date)s ទេ។ សូមបញ្ចូលអត្រាថ្ងៃនេះមុនពេលបន្ត។"
+msgid "The rate for %(currency)s on %(date)s is already used by %(doc)s and can no longer be changed or removed. Delete that document first if you need to modify this rate."
+msgstr "អត្រាសម្រាប់ %(currency)s នៅ %(date)s ត្រូវបានប្រើរួចហើយដោយ %(doc)s ហើយមិនអាចត្រូវបានផ្លាស់ប្តូរ ឬដកចេញបានទៀតទេ។ សូមលុបឯកសារនោះជាមុនសិន ប្រសិនបើអ្នកត្រូវការកែប្រែអត្រានេះ។"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "invoice %s"
+msgstr "វិក្កយបត្រ %s"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "payment %s"
+msgstr "ការទូទាត់ %s"
+
+#. module: currency_rate_guard
+#: code:addons/currency_rate_guard/models/res_currency.py:0
+#, python-format
+msgid "purchase order %s"
+msgstr "បញ្ជាទិញ %s"

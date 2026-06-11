@@ -2,7 +2,7 @@
     "name": "Currency Rate Guard",
     "summary": "Block confirmation/posting of purchase orders, vendor bills, "
                "customer invoices and payments when today's currency rate is "
-               "missing for guarded currencies. Daily reminder to accountants.",
+               "missing for guarded currencies.",
     "version": "18.0.1.0.0",
     "category": "Accounting/Accounting",
     "license": "LGPL-3",
@@ -21,6 +21,7 @@
     "data": [
         "security/ir.model.access.csv",
         "views/res_currency_views.xml",
+        "views/document_rate_views.xml",
         "wizard/currency_rate_quick_entry_views.xml",
     ],
     "installable": True,
