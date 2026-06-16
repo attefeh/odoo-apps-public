@@ -7,11 +7,14 @@
         <field name="arch" type="xml">
             <form string="Enter Today's Rate">
                 <group>
+                    <field name="resume_model" invisible="1"/>
+                    <field name="resume_res_id" invisible="1"/>
+                    <field name="resume_method" invisible="1"/>
                     <field name="currency_id"/>
                     <field name="company_id" groups="base.group_multi_company"/>
                     <field name="company_currency_id"/>
                     <field name="date"/>
-                    <field name="inverse_company_rate"/>
+                    <field name="company_rate"/>
                 </group>
                 <footer>
                     <button name="action_save"

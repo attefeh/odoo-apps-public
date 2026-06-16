@@ -5,7 +5,7 @@
         <field name="name">sale.multiple.print.wizard.form</field>
         <field name="model">sale.multiple.print.wizard</field>
         <field name="arch" type="xml">
-            <form string="Print Multiple Copies">
+            <form string="Print Copies">
                 <group>
                     <field name="order_id" readonly="1"/>
                     <field name="copies"/>
@@ -24,7 +24,7 @@
     </record>
 
     <record id="action_sale_multiple_print_wizard" model="ir.actions.act_window">
-        <field name="name">Print Multiple Copies</field>
+        <field name="name">Print Copies</field>
         <field name="res_model">sale.multiple.print.wizard</field>
         <field name="view_mode">form</field>
         <field name="target">new</field>
