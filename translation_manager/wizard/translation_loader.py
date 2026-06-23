@@ -5,18 +5,30 @@ from odoo.exceptions import UserError
 
 class TranslationLoader(models.TransientModel):
     _name = 'translation.loader'
-    _description = 'Load Translated Terms'
+    _description = 'Refresh Translated Terms'
 
     def _default_langs(self):
         return self.env['res.lang'].search(
             [('active', '=', True), ('code', '!=', 'en_US')])
 
+    model_ids = fields.Many2many(
+        'ir.model', string='Models',
+        help="Limit to these models. Leave empty to load every model.")
+    module_ids = fields.Many2many(
+        'ir.module.module', string='Modules',
+        domain=[('state', '=', 'installed')],
+        help="Limit to these modules — both their field/view terms and their "
+             "code terms. Leave empty to load every installed module.")
+    lang_ids = fields.Many2many(
+        'res.lang', string='Languages', default=_default_langs,
+        domain=[('active', '=', True), ('code', '!=', 'en_US')],
+        help="Languages to load. Leave empty to load every active language.")
+
     @api.model
     def action_open_loader(self):
-        """Open the loader wizard, but only when there is something to
+        """Open the refresh wizard, but only when there is something to
         translate. With a single active language (the default English-only
-        setup) there is no target language, so alert the user instead of
-        showing an unusable wizard."""
+        setup) there is no target language, so alert the user instead."""
         if self.env['res.lang'].search_count([('active', '=', True)]) <= 1:
             raise UserError(_(
                 "Translation Manager needs more than one active language.\n\n"
@@ -27,55 +39,21 @@ class TranslationLoader(models.TransientModel):
         return self.env['ir.actions.act_window']._for_xml_id(
             'translation_manager.action_translation_loader')
 
-    scope = fields.Selection(
-        [('all', 'All installed modules'), ('filter', 'Selected models / modules')],
-        string='Scope', default='all', required=True)
-    lang_ids = fields.Many2many(
-        'res.lang', string='Languages', default=_default_langs,
-        domain=[('active', '=', True)], required=True)
-    load_db = fields.Boolean(
-        string='Field, View & Menu translations', default=True,
-        help="Translatable model fields, view architectures (buttons/menus/"
-             "labels), action names, selection labels, email templates, ...")
-    load_code = fields.Boolean(
-        string='Code translations (errors / JS)', default=True,
-        help="Python messages and web/JavaScript strings from the modules' "
-             ".po files.")
-    model_ids = fields.Many2many(
-        'ir.model', string='Models',
-        help="Limit database terms to these models (Filtered scope).")
-    module_ids = fields.Many2many(
-        'ir.module.module', string='Modules',
-        domain=[('state', '=', 'installed')],
-        help="Limit code terms to these modules (Filtered scope).")
-    record_limit = fields.Integer(
-        string='Max records per model', default=0,
-        help="0 = no limit. Cap the number of records scanned per model to "
-             "keep loading fast on large databases.")
-    purge_first = fields.Boolean(
-        string='Clear existing terms first', default=True)
-
     def action_load(self):
         self.ensure_one()
-        if not self.load_db and not self.load_code:
-            raise UserError(_("Select at least one kind of term to load."))
-        lang_codes = self.lang_ids.mapped('code')
-        model_names = self.model_ids.mapped('model') if self.scope == 'filter' else None
-        module_names = self.module_ids.mapped('name') if self.scope == 'filter' else None
-
+        lang_codes = (self.lang_ids.mapped('code')
+                      or self._default_langs().mapped('code'))
         counts = self.env['translation.term'].load_terms(
             lang_codes=lang_codes,
-            model_names=model_names,
-            module_names=module_names,
-            load_db=self.load_db,
-            load_code=self.load_code,
-            record_limit=self.record_limit,
-            purge=self.purge_first,
+            model_names=self.model_ids.mapped('model') or None,
+            module_names=self.module_ids.mapped('name') or None,
         )
-
         action = self.env['ir.actions.act_window']._for_xml_id(
             'translation_manager.action_translation_term')
-        action['context'] = {'search_default_to_translate': 0}
+        action['context'] = {
+            'search_default_to_translate': 0,
+            'search_default_group_lang': 1,
+        }
         action['help'] = _(
             "Loaded %(db)s field/view terms and %(code)s code terms.",
             db=counts.get('db', 0), code=counts.get('code', 0))

@@ -103,9 +103,9 @@
         <field name="context">{'search_default_group_lang': 1}</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">No translated terms loaded yet</p>
-            <p>Use <b>Load / Refresh Terms</b> to populate the list with the
-               translatable fields, views, menus and code strings of your
-               installed modules.</p>
+            <p>Terms load automatically when modules are installed, upgraded or
+               uninstalled. Use <b>Refresh Terms</b> to (re)load them on demand
+               for chosen models, modules or languages.</p>
         </field>
     </record>
 
@@ -120,7 +120,7 @@
               action="action_translation_term"
               sequence="10"/>
     <menuitem id="menu_translation_loader"
-              name="Load / Refresh Terms"
+              name="Refresh Terms"
               parent="menu_translation_manager_root"
               action="action_translation_loader_open"
               sequence="20"/>

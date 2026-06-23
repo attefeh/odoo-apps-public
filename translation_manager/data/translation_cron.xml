@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!--
+        Triggered on demand by the schema-change auto-sync (see
+        translation.term._auto_sync_on_schema_change). The weekly schedule is
+        only a light safety net so newly added data records are picked up even
+        without a module change.
+    -->
+    <record id="ir_cron_sync_terms" model="ir.cron">
+        <field name="name">Translation Manager: Sync Translated Terms</field>
+        <field name="model_id" ref="model_translation_term"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_sync_terms()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">weeks</field>
+        <field name="nextcall" eval="(DateTime.now() + timedelta(weeks=1))"/>
+        <field name="active" eval="True"/>
+    </record>
+</odoo>

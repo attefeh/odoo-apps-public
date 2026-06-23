@@ -19,6 +19,10 @@ TERM_TYPES = [
 DB_TYPES = ('model', 'model_term')
 CODE_TYPES = ('code_python', 'code_web')
 
+# Stores the fingerprint of the translatable-field set so a registry reload can
+# tell whether a module install/upgrade/uninstall changed what is translatable.
+PARAM_FINGERPRINT = 'translation_manager.translatable_fields_fingerprint'
+
 
 class TranslationTerm(models.Model):
     _name = 'translation.term'
@@ -175,30 +179,132 @@ class TranslationTerm(models.Model):
         return ctp.build_override_map(self.env)
 
     # ------------------------------------------------------------------
+    # Auto-sync on schema change (module install / upgrade / uninstall)
+    # ------------------------------------------------------------------
+    def _register_hook(self):
+        """After every registry load, resync terms when the set of translatable
+        fields changed (a module added or removed translatable fields). The
+        check is cheap; the heavy reload is deferred to the sync cron so module
+        installs/upgrades are never blocked."""
+        super()._register_hook()
+        try:
+            self.env['translation.term']._auto_sync_on_schema_change()
+        except Exception:  # never break registry loading
+            _logger.exception("translation_manager: auto-sync hook failed")
+
+    @api.model
+    def _translatable_fields_fingerprint(self):
+        """A hash of every (model, field) that is translatable and stored."""
+        parts = []
+        for name in self.env.registry.models:
+            if name not in self.env:
+                continue
+            model = self.env[name]
+            if model._abstract or model._transient:
+                continue
+            for fname, field in model._fields.items():
+                if field.translate and field.store and getattr(
+                        field, 'column_type', None):
+                    parts.append(u'%s.%s' % (name, fname))
+        parts.sort()
+        return hashlib.sha1(u'|'.join(parts).encode('utf-8')).hexdigest()
+
+    @api.model
+    def _auto_sync_on_schema_change(self):
+        icp = self.env['ir.config_parameter'].sudo()
+        fingerprint = self._translatable_fields_fingerprint()
+        if icp.get_param(PARAM_FINGERPRINT) == fingerprint:
+            return
+        cron = self.env.ref(
+            'translation_manager.ir_cron_sync_terms', raise_if_not_found=False)
+        if not cron:
+            # _register_hook can run before our data is loaded on first install;
+            # don't store the fingerprint yet so a later call retries.
+            return
+        # remember this schema so we only resync when it actually changes
+        icp.set_param(PARAM_FINGERPRINT, fingerprint)
+        # nothing to translate without a second language; the manual refresh or
+        # the safety-net cron will populate once one is activated
+        if self.env['res.lang'].sudo().search_count(
+                [('active', '=', True), ('code', '!=', 'en_US')]) == 0:
+            return
+        cron._trigger()
+
+    @api.model
+    def _cron_sync_terms(self):
+        """Upkeep run: drop stale terms, then (re)load everything for all active
+        languages. Triggered automatically when translatable fields change, and
+        on the cron's own safety-net schedule."""
+        langs = self.env['res.lang'].sudo().search(
+            [('active', '=', True), ('code', '!=', 'en_US')]).mapped('code')
+        if not langs:
+            return
+        self._prune_stale_terms()
+        self.load_terms(lang_codes=langs)
+
+    @api.model
+    def _prune_stale_terms(self):
+        """Remove terms whose field/model no longer exists or whose module is no
+        longer installed (handles uninstall and field removal)."""
+        stale = self.browse()
+        for rec in self.sudo().search([('term_type', 'in', list(DB_TYPES))]):
+            if rec.model_name not in self.env:
+                stale |= rec
+                continue
+            field = self.env[rec.model_name]._fields.get(rec.field_name)
+            if not field or not field.translate:
+                stale |= rec
+        installed = self.env['ir.module.module'].sudo().search(
+            [('state', '=', 'installed')]).mapped('name')
+        stale |= self.sudo().search(
+            [('term_type', 'in', list(CODE_TYPES)),
+             ('module', 'not in', list(installed))])
+        if stale:
+            stale.with_context(translation_no_push=True).sudo().unlink()
+
+    # ------------------------------------------------------------------
     # Loading engine
     # ------------------------------------------------------------------
     @api.model
     def load_terms(self, lang_codes, model_names=None, module_names=None,
-                   load_db=True, load_code=True, record_limit=0, purge=False):
-        """Populate ``translation.term`` rows. Returns a counters dict."""
+                   record_limit=0):
+        """Populate ``translation.term`` rows. Returns a counters dict.
+
+        ``model_names`` and ``module_names`` are optional scopes that cross-fill:
+        choosing a module loads both its field/view terms (the models it owns)
+        and its code terms; choosing a model also loads the code terms of the
+        module that owns it. Empty scopes load everything."""
         lang_codes = [c for c in (lang_codes or []) if c and c != 'en_US']
         if not lang_codes:
             raise UserError(_("Select at least one language other than English (en_US)."))
+        model_set, module_set = self._expand_scope(model_names, module_names)
         counts = {'db': 0, 'code': 0}
-
-        if purge:
-            domain = []
-            if model_names:
-                domain = [('model_name', 'in', list(model_names))]
-            elif module_names and not load_db:
-                domain = [('module', 'in', list(module_names))]
-            self.sudo().search(domain).unlink()
-
-        if load_db:
-            counts['db'] = self._load_db_terms(lang_codes, model_names, record_limit)
-        if load_code:
-            counts['code'] = self._load_code_terms(lang_codes, module_names)
+        counts['db'] = self._load_db_terms(lang_codes, model_set, record_limit)
+        counts['code'] = self._load_code_terms(lang_codes, module_set)
         return counts
+
+    @api.model
+    def _expand_scope(self, model_names, module_names):
+        """Turn the model/module selection into the concrete (models, modules)
+        sets to scan. A chosen module pulls in the models it owns; a chosen model
+        pulls in its owning module. Returns (None, None) when nothing is scoped
+        (load everything)."""
+        if not model_names and not module_names:
+            return None, None
+        model_set = set(model_names or [])
+        module_set = set(module_names or [])
+        if module_set:
+            for name in self.env.registry.models:
+                if name not in self.env:
+                    continue
+                if getattr(self.env[name], '_original_module', None) in module_set:
+                    model_set.add(name)
+        for name in (model_names or []):
+            if name in self.env:
+                owner = getattr(self.env[name], '_original_module', None)
+                if owner:
+                    module_set.add(owner)
+        return (model_set or None), (module_set or None)
 
     def _load_db_terms(self, lang_codes, model_names, record_limit):
         Term = self.env['translation.term'].with_context(
