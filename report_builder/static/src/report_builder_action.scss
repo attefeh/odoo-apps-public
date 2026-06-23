@@ -1,0 +1,65 @@
+.o_report_builder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    background: #f6f6f6;
+
+    .o_rb_toolbar {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 6px 10px;
+        border-bottom: 1px solid #d0d0d0;
+        background: #fff;
+
+        .o_rb_title {
+            font-weight: 600;
+        }
+        .o_rb_spacer {
+            flex: 1 1 auto;
+        }
+    }
+
+    .o_rb_body {
+        flex: 1 1 auto;
+        display: flex;
+        min-height: 0;
+    }
+
+    .o_rb_left,
+    .o_rb_right {
+        width: 240px;
+        overflow-y: auto;
+        background: #fff;
+        border-right: 1px solid #e0e0e0;
+    }
+    .o_rb_right {
+        border-right: none;
+        border-left: 1px solid #e0e0e0;
+    }
+
+    .o_rb_center {
+        flex: 1 1 auto;
+        min-width: 0;
+        display: flex;
+    }
+    .o_rb_canvas {
+        flex: 1 1 auto;
+    }
+
+    .o_rb_panel_title {
+        padding: 6px 10px;
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #666;
+        background: #f0f0f0;
+        border-bottom: 1px solid #e6e6e6;
+    }
+
+    // Keep GrapesJS chrome contained within the editor only.
+    .gjs-one-bg {
+        background-color: #fff;
+    }
+}

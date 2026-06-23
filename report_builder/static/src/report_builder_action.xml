@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="report_builder.Editor">
+        <div class="o_report_builder">
+            <div class="o_rb_toolbar">
+                <button class="btn btn-light btn-sm" t-on-click="onBack">
+                    <i class="fa fa-arrow-left"/> Back
+                </button>
+                <span class="o_rb_title" t-esc="state.name"/>
+                <span class="o_rb_model badge text-bg-secondary" t-esc="state.model"/>
+                <div class="o_rb_spacer"/>
+                <button class="btn btn-secondary btn-sm" t-on-click="onSave"
+                        t-att-disabled="state.busy">
+                    <i class="fa fa-save"/> Save
+                </button>
+                <button class="btn btn-primary btn-sm" t-on-click="onPublish"
+                        t-att-disabled="state.busy">
+                    <i class="fa fa-cloud-upload"/> Publish
+                </button>
+                <button class="btn btn-info btn-sm" t-on-click="onPreview"
+                        t-att-disabled="state.busy">
+                    <i class="fa fa-file-pdf-o"/> Print Preview
+                </button>
+            </div>
+            <div class="o_rb_body">
+                <div class="o_rb_left">
+                    <div class="o_rb_panel_title">Blocks</div>
+                    <div t-ref="blocks" class="o_rb_blocks"/>
+                </div>
+                <div class="o_rb_center">
+                    <div t-ref="canvas" class="o_rb_canvas"/>
+                </div>
+                <div class="o_rb_right">
+                    <div class="o_rb_panel_title">Properties</div>
+                    <div t-ref="traits" class="o_rb_traits"/>
+                    <div class="o_rb_panel_title">Style</div>
+                    <div t-ref="styles" class="o_rb_styles"/>
+                    <div class="o_rb_panel_title">Layers</div>
+                    <div t-ref="layers" class="o_rb_layers"/>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

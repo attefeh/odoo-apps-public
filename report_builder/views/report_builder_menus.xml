@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_report_builder_root"
+              name="Report Builder"
+              web_icon="report_builder,static/description/icon.png"
+              sequence="95"
+              groups="group_report_builder_manager"/>
+
+    <menuitem id="menu_report_builder_new"
+              name="New Report"
+              parent="menu_report_builder_root"
+              action="action_report_builder_new"
+              sequence="10"/>
+
+    <menuitem id="menu_report_builder_templates"
+              name="Report Templates"
+              parent="menu_report_builder_root"
+              action="action_report_builder_template"
+              sequence="20"/>
+</odoo>
