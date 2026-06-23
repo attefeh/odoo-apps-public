@@ -4,42 +4,24 @@
         <field name="name">translation.loader.form</field>
         <field name="model">translation.loader</field>
         <field name="arch" type="xml">
-            <form string="Load Translated Terms">
+            <form string="Refresh Translated Terms">
                 <sheet>
                     <div class="oe_title">
-                        <h1>Load / Refresh Terms</h1>
+                        <h1>Refresh Translated Terms</h1>
                     </div>
+                    <p>
+                        Pick what to (re)load. Leave a field empty to include
+                        everything. Terms are also refreshed automatically when
+                        a module is installed, upgraded or uninstalled.
+                    </p>
                     <group>
-                        <group>
-                            <field name="scope" widget="radio"/>
-                            <field name="load_db"/>
-                            <field name="load_code"/>
-                        </group>
-                        <group>
-                            <field name="record_limit"/>
-                            <field name="purge_first"/>
-                        </group>
-                    </group>
-                    <group string="Filters" invisible="scope != 'filter'">
-                        <field name="model_ids" widget="many2many_tags"
-                               options="{'no_create': True}"
-                               invisible="not load_db"/>
                         <field name="module_ids" widget="many2many_tags"
-                               options="{'no_create': True}"
-                               invisible="not load_code"/>
-                    </group>
-                    <group string="Languages">
-                        <field name="lang_ids" string="Languages"
-                               widget="many2many_tags"
+                               options="{'no_create': True}"/>
+                        <field name="model_ids" widget="many2many_tags"
+                               options="{'no_create': True}"/>
+                        <field name="lang_ids" widget="many2many_tags"
                                options="{'no_create': True}"/>
                     </group>
-                    <div class="alert alert-warning" role="alert"
-                         invisible="scope != 'all'">
-                        Loading every term of every installed module for all
-                        selected languages can be heavy on a large database.
-                        Use the <b>Selected models / modules</b> scope for
-                        day-to-day work.
-                    </div>
                 </sheet>
                 <footer>
                     <button name="action_load" type="object" string="Load"
@@ -51,7 +33,7 @@
     </record>
 
     <record id="action_translation_loader" model="ir.actions.act_window">
-        <field name="name">Load / Refresh Terms</field>
+        <field name="name">Refresh Translated Terms</field>
         <field name="res_model">translation.loader</field>
         <field name="view_mode">form</field>
         <field name="target">new</field>
@@ -59,7 +41,7 @@
 
     <!-- Guard: only open the wizard when more than one language is active. -->
     <record id="action_translation_loader_open" model="ir.actions.server">
-        <field name="name">Load / Refresh Terms</field>
+        <field name="name">Refresh Terms</field>
         <field name="model_id" ref="model_translation_loader"/>
         <field name="state">code</field>
         <field name="code">action = model.action_open_loader()</field>

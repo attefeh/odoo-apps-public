@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Translation Manager (Translated Terms)',
-    'version': '18.0.1.0.0',
+    'version': '19.0.1.0.0',
     'category': 'Technical',
     'summary': 'Bring back the Translated Terms list: edit field, view, menu, '
                'action and code (errors/buttons/JS) translations for every language',
@@ -38,9 +38,11 @@ How it works
 ------------
 
 #. Open **Settings > Translations > Translated Terms**.
-#. Click **Load / Refresh Terms** to populate the list (all installed modules
-   and all active languages by default; you can scope it by model, module and
-   language).
+#. The list is kept in sync automatically: whenever a module is installed,
+   upgraded or uninstalled, the set of translatable terms is refreshed in the
+   background (a light weekly cron also picks up new data records).
+#. Need an immediate refresh? Use **Refresh Terms** and optionally scope it by
+   module, model and language (all optional — leave empty to load everything).
 #. Edit the **Translation** column inline. Database edits are written straight
    back to the record; code edits are stored as overrides and served to both
    the server and the web client.
@@ -48,9 +50,9 @@ How it works
 Notes
 -----
 
-* Loading *everything* on a large database can be heavy — use the model /
-  module / language filters in the loader for day-to-day work.
-* For code terms, the loader lists terms that already exist in the installed
+* Loading *everything* on a large database can be heavy — scope **Refresh
+  Terms** by module, model or language for day-to-day work.
+* For code terms, the list shows terms that already exist in the installed
   ``.po`` files. You can also add a code override manually (New) when you know
   the exact source string of an error or button.
     """,
@@ -62,6 +64,7 @@ Notes
     'depends': ['base', 'web'],
     'data': [
         'security/ir.model.access.csv',
+        'data/translation_cron.xml',
         'wizard/translation_loader_views.xml',
         'views/translation_term_views.xml',
     ],
