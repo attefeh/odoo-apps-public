@@ -20,10 +20,6 @@
                             <field name="purge_first"/>
                         </group>
                     </group>
-                    <group string="Languages">
-                        <field name="lang_ids" nolabel="1" widget="many2many_tags"
-                               options="{'no_create': True}"/>
-                    </group>
                     <group string="Filters" invisible="scope != 'filter'">
                         <field name="model_ids" widget="many2many_tags"
                                options="{'no_create': True}"
@@ -31,6 +27,11 @@
                         <field name="module_ids" widget="many2many_tags"
                                options="{'no_create': True}"
                                invisible="not load_code"/>
+                    </group>
+                    <group string="Languages">
+                        <field name="lang_ids" string="Languages"
+                               widget="many2many_tags"
+                               options="{'no_create': True}"/>
                     </group>
                     <div class="alert alert-warning" role="alert"
                          invisible="scope != 'all'">
