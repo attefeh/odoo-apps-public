@@ -1,0 +1,39 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* product_unique_name
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-23 00:00+0000\n"
+"PO-Revision-Date: 2026-06-23 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ta\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: product_unique_name
+#: code:addons/product_unique_name/models/product_template.py:0
+#, python-format
+msgid "A product named \"%(name)s\" already exists (%(ref)s). Product names must be unique."
+msgstr "\"%(name)s\" எனப் பெயரிடப்பட்ட தயாரிப்பு ஏற்கனவே உள்ளது (%(ref)s). தயாரிப்புப் பெயர்கள் தனித்துவமாக இருக்க வேண்டும்."
+
+#. module: product_unique_name
+#: code:addons/product_unique_name/models/product_product.py:0
+#, python-format
+msgid "A product variant named \"%(name)s\" already exists (%(ref)s). Variant names must be unique."
+msgstr "\"%(name)s\" எனப் பெயரிடப்பட்ட தயாரிப்பு வகை ஏற்கனவே உள்ளது (%(ref)s). வகைப் பெயர்கள் தனித்துவமாக இருக்க வேண்டும்."
+
+#. module: product_unique_name
+#: model:ir.module.module,summary:base.module_product_unique_name
+msgid "Prevent duplicate product and variant names — block creating or renaming a product or variant to a name that already exists."
+msgstr "நகல் தயாரிப்பு மற்றும் வகைப் பெயர்களைத் தடுக்கவும் — ஏற்கனவே இருக்கும் பெயரில் ஒரு தயாரிப்பு அல்லது வகையை உருவாக்குவதையோ மறுபெயரிடுவதையோ தடுக்கவும்."
+
+#. module: product_unique_name
+#: model:ir.module.module,shortdesc:base.module_product_unique_name
+msgid "Product Unique Name"
+msgstr "தயாரிப்பின் தனித்துவமான பெயர்"
