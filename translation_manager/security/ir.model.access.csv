@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_translation_term_manager,translation.term.manager,model_translation_term,base.group_system,1,1,1,1
+access_translation_loader_manager,translation.loader.manager,model_translation_loader,base.group_system,1,1,1,1
