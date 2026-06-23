@@ -11,6 +11,22 @@ class TranslationLoader(models.TransientModel):
         return self.env['res.lang'].search(
             [('active', '=', True), ('code', '!=', 'en_US')])
 
+    @api.model
+    def action_open_loader(self):
+        """Open the loader wizard, but only when there is something to
+        translate. With a single active language (the default English-only
+        setup) there is no target language, so alert the user instead of
+        showing an unusable wizard."""
+        if self.env['res.lang'].search_count([('active', '=', True)]) <= 1:
+            raise UserError(_(
+                "Translation Manager needs more than one active language.\n\n"
+                "Only English (en_US) is active right now, so there is nothing "
+                "to translate yet. Activate at least one more language under "
+                "Settings ‣ Translations ‣ Languages, then open this "
+                "menu again."))
+        return self.env['ir.actions.act_window']._for_xml_id(
+            'translation_manager.action_translation_loader')
+
     scope = fields.Selection(
         [('all', 'All installed modules'), ('filter', 'Selected models / modules')],
         string='Scope', default='all', required=True)
