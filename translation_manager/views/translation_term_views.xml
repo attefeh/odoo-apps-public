@@ -122,6 +122,6 @@
     <menuitem id="menu_translation_loader"
               name="Load / Refresh Terms"
               parent="menu_translation_manager_root"
-              action="action_translation_loader"
+              action="action_translation_loader_open"
               sequence="20"/>
 </odoo>

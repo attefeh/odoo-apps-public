@@ -55,4 +55,12 @@
         <field name="view_mode">form</field>
         <field name="target">new</field>
     </record>
+
+    <!-- Guard: only open the wizard when more than one language is active. -->
+    <record id="action_translation_loader_open" model="ir.actions.server">
+        <field name="name">Load / Refresh Terms</field>
+        <field name="model_id" ref="model_translation_loader"/>
+        <field name="state">code</field>
+        <field name="code">action = model.action_open_loader()</field>
+    </record>
 </odoo>
