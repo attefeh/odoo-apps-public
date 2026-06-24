@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Translation Manager (Translated Terms)',
-    'version': '19.0.1.0.0',
+    'version': '18.0.1.0.0',
     'category': 'Technical',
     'summary': 'Bring back the Translated Terms list: edit field, view, menu, '
                'action and code (errors/buttons/JS) translations for every language',
