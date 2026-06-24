@@ -247,13 +247,21 @@ class TranslationTerm(models.Model):
         """Remove terms whose field/model no longer exists or whose module is no
         longer installed (handles uninstall and field removal)."""
         stale = self.browse()
-        for rec in self.sudo().search([('term_type', 'in', list(DB_TYPES))]):
-            if rec.model_name not in self.env:
-                stale |= rec
-                continue
-            field = self.env[rec.model_name]._fields.get(rec.field_name)
+        # only the distinct (model, field) pairs need checking, not every row
+        groups = self.sudo().read_group(
+            [('term_type', 'in', list(DB_TYPES))],
+            ['model_name', 'field_name'],
+            ['model_name', 'field_name'], lazy=False)
+        for g in groups:
+            model_name = g.get('model_name')
+            field_name = g.get('field_name')
+            field = (self.env[model_name]._fields.get(field_name)
+                     if model_name and model_name in self.env else None)
             if not field or not field.translate:
-                stale |= rec
+                stale |= self.sudo().search([
+                    ('term_type', 'in', list(DB_TYPES)),
+                    ('model_name', '=', model_name),
+                    ('field_name', '=', field_name)])
         installed = self.env['ir.module.module'].sudo().search(
             [('state', '=', 'installed')]).mapped('name')
         stale |= self.sudo().search(
@@ -398,8 +406,10 @@ class TranslationTerm(models.Model):
                         if src in (None, '', False):
                             continue
                         value = tr.get('value') or ''
-                        # whole-value fields fall back to en_US when untranslated
-                        if not is_term and value == src:
+                        # an untranslated term echoes its source (whole-value
+                        # fields fall back to en_US, per-term fields repeat the
+                        # term); show it as "to translate" rather than done
+                        if value == src:
                             value = ''
                         buffer.append({
                             'term_type': term_type,
