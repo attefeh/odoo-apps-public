@@ -19,10 +19,6 @@ TERM_TYPES = [
 DB_TYPES = ('model', 'model_term')
 CODE_TYPES = ('code_python', 'code_web')
 
-# Stores the fingerprint of the translatable-field set so a registry reload can
-# tell whether a module install/upgrade/uninstall changed what is translatable.
-PARAM_FINGERPRINT = 'translation_manager.translatable_fields_fingerprint'
-
 
 class TranslationTerm(models.Model):
     _name = 'translation.term'
@@ -179,69 +175,8 @@ class TranslationTerm(models.Model):
         return ctp.build_override_map(self.env)
 
     # ------------------------------------------------------------------
-    # Auto-sync on schema change (module install / upgrade / uninstall)
+    # Maintenance
     # ------------------------------------------------------------------
-    def _register_hook(self):
-        """After every registry load, resync terms when the set of translatable
-        fields changed (a module added or removed translatable fields). The
-        check is cheap; the heavy reload is deferred to the sync cron so module
-        installs/upgrades are never blocked."""
-        super()._register_hook()
-        try:
-            self.env['translation.term']._auto_sync_on_schema_change()
-        except Exception:  # never break registry loading
-            _logger.exception("translation_manager: auto-sync hook failed")
-
-    @api.model
-    def _translatable_fields_fingerprint(self):
-        """A hash of every (model, field) that is translatable and stored."""
-        parts = []
-        for name in self.env.registry.models:
-            if name not in self.env:
-                continue
-            model = self.env[name]
-            if model._abstract or model._transient:
-                continue
-            for fname, field in model._fields.items():
-                if field.translate and field.store and getattr(
-                        field, 'column_type', None):
-                    parts.append(u'%s.%s' % (name, fname))
-        parts.sort()
-        return hashlib.sha1(u'|'.join(parts).encode('utf-8')).hexdigest()
-
-    @api.model
-    def _auto_sync_on_schema_change(self):
-        icp = self.env['ir.config_parameter'].sudo()
-        fingerprint = self._translatable_fields_fingerprint()
-        if icp.get_param(PARAM_FINGERPRINT) == fingerprint:
-            return
-        cron = self.env.ref(
-            'translation_manager.ir_cron_sync_terms', raise_if_not_found=False)
-        if not cron:
-            # _register_hook can run before our data is loaded on first install;
-            # don't store the fingerprint yet so a later call retries.
-            return
-        # remember this schema so we only resync when it actually changes
-        icp.set_param(PARAM_FINGERPRINT, fingerprint)
-        # nothing to translate without a second language; the manual refresh or
-        # the safety-net cron will populate once one is activated
-        if self.env['res.lang'].sudo().search_count(
-                [('active', '=', True), ('code', '!=', 'en_US')]) == 0:
-            return
-        cron._trigger()
-
-    @api.model
-    def _cron_sync_terms(self):
-        """Upkeep run: drop stale terms, then (re)load everything for all active
-        languages. Triggered automatically when translatable fields change, and
-        on the cron's own safety-net schedule."""
-        langs = self.env['res.lang'].sudo().search(
-            [('active', '=', True), ('code', '!=', 'en_US')]).mapped('code')
-        if not langs:
-            return
-        self._prune_stale_terms()
-        self.load_terms(lang_codes=langs)
-
     @api.model
     def _prune_stale_terms(self):
         """Remove terms whose field/model no longer exists or whose module is no
@@ -290,6 +225,9 @@ class TranslationTerm(models.Model):
         lang_codes = [c for c in (lang_codes or []) if c and c != 'en_US']
         if not lang_codes:
             raise UserError(_("Select at least one language other than English (en_US)."))
+        # a full (unscoped) refresh also drops terms that no longer exist
+        if not model_names and not module_names:
+            self._prune_stale_terms()
         targets = self._db_targets(model_names, module_names)
         # code terms come per-module; a chosen model also pulls its owner module
         module_set = set(module_names or [])
@@ -429,44 +367,73 @@ class TranslationTerm(models.Model):
         return created
 
     def _load_code_terms(self, lang_codes, module_names):
-        from odoo.tools.translate import code_translations
+        """Load every code source term (Python ``_()``/``_lt()``, JS ``_t()``
+        and QWeb static templates), translated or not.
+
+        Odoo's runtime cache only holds *translated* code strings, so we use the
+        same extractor as the .pot export (``TranslationModuleReader``) to
+        enumerate the full source set, then look up each language's value (empty
+        when still untranslated)."""
+        from odoo.tools.translate import (
+            TranslationModuleReader, code_translations,
+            JAVASCRIPT_TRANSLATION_COMMENT)
         Term = self.env['translation.term'].with_context(
             translation_no_push=True).sudo()
         lang_recs = self.env['res.lang'].sudo().search([('code', 'in', lang_codes)])
         lang_by_code = {l.code: l.id for l in lang_recs}
+        modules = list(module_names) if module_names else ['all']
 
-        if module_names:
-            modules = list(module_names)
-        else:
-            modules = self.env['ir.module.module'].sudo().search(
-                [('state', '=', 'installed')]).mapped('name')
+        # 1) extract the source terms once (lang=None -> sources only)
+        try:
+            reader = TranslationModuleReader(
+                self.env.cr, modules=modules, lang=None)
+        except Exception:
+            _logger.exception("translation_manager: code term extraction failed")
+            return 0
+        sources = set()  # (module, kind, src)
+        for module, ttype, _name, _res_id, source, _value, comments in reader:
+            if ttype != 'code' or not source:
+                continue
+            kind = ('code_web' if JAVASCRIPT_TRANSLATION_COMMENT in comments
+                    else 'code_python')
+            sources.add((module, kind, source))
+
+        # 2) resolve each language's value from the per-module .po caches
+        py_cache = {}
+        web_cache = {}
+
+        def _value(module, kind, src, code):
+            key = (module, code)
+            if kind == 'code_python':
+                d = py_cache.get(key)
+                if d is None:
+                    try:
+                        d = dict(code_translations.get_python_translations(module, code))
+                    except Exception:
+                        d = {}
+                    py_cache[key] = d
+                return d.get(src, '')
+            d = web_cache.get(key)
+            if d is None:
+                try:
+                    web = code_translations.get_web_translations(module, code)
+                    d = {m['id']: m['string'] for m in web.get('messages', ())}
+                except Exception:
+                    d = {}
+                web_cache[key] = d
+            return d.get(src, '')
 
         created = 0
         buffer = []
-        for module in modules:
+        for module, kind, src in sources:
             for code in lang_codes:
                 lang_id = lang_by_code.get(code)
                 if not lang_id:
                     continue
-                try:
-                    py = code_translations.get_python_translations(module, code)
-                except Exception:
-                    py = {}
-                for src, value in (py or {}).items():
-                    buffer.append({
-                        'term_type': 'code_python', 'lang_id': lang_id,
-                        'module': module, 'src': src, 'value': value or '',
-                    })
-                try:
-                    web = code_translations.get_web_translations(module, code)
-                    web_items = {m['id']: m['string'] for m in web.get('messages', ())}
-                except Exception:
-                    web_items = {}
-                for src, value in web_items.items():
-                    buffer.append({
-                        'term_type': 'code_web', 'lang_id': lang_id,
-                        'module': module, 'src': src, 'value': value or '',
-                    })
+                buffer.append({
+                    'term_type': kind, 'lang_id': lang_id, 'module': module,
+                    'src': src, 'value': _value(module, kind, src, code) or '',
+                })
                 if len(buffer) >= 1000:
                     created += self._upsert_terms(Term, buffer)
                     buffer = []

@@ -11,8 +11,9 @@
                     </div>
                     <p>
                         Pick what to (re)load. Leave a field empty to include
-                        everything. Terms are also refreshed automatically when
-                        a module is installed, upgraded or uninstalled.
+                        everything. This loads every translatable term —
+                        Python, JavaScript, QWeb, field, view and menu — for the
+                        chosen languages, whether already translated or not.
                     </p>
                     <group>
                         <field name="module_ids" widget="many2many_tags"
