@@ -270,49 +270,81 @@ class TranslationTerm(models.Model):
                    record_limit=0):
         """Populate ``translation.term`` rows. Returns a counters dict.
 
-        ``model_names`` and ``module_names`` are optional scopes that cross-fill:
-        choosing a module loads both its field/view terms (the models it owns)
-        and its code terms; choosing a model also loads the code terms of the
-        module that owns it. Empty scopes load everything."""
+        ``model_names`` and ``module_names`` are optional, cross-filling scopes:
+
+        * a **model** loads every record of that model (its field/view terms),
+          plus the code terms of the module that owns the model;
+        * a **module** loads the terms of every record it owns — field labels,
+          menus, views, action names, selections, mail templates, ... resolved
+          through ``ir.model.data`` — plus its code terms.
+
+        Empty scopes load everything."""
         lang_codes = [c for c in (lang_codes or []) if c and c != 'en_US']
         if not lang_codes:
             raise UserError(_("Select at least one language other than English (en_US)."))
-        model_set, module_set = self._expand_scope(model_names, module_names)
-        counts = {'db': 0, 'code': 0}
-        counts['db'] = self._load_db_terms(lang_codes, model_set, record_limit)
-        counts['code'] = self._load_code_terms(lang_codes, module_set)
-        return counts
-
-    @api.model
-    def _expand_scope(self, model_names, module_names):
-        """Turn the model/module selection into the concrete (models, modules)
-        sets to scan. A chosen module pulls in the models it owns; a chosen model
-        pulls in its owning module. Returns (None, None) when nothing is scoped
-        (load everything)."""
-        if not model_names and not module_names:
-            return None, None
-        model_set = set(model_names or [])
+        targets = self._db_targets(model_names, module_names)
+        # code terms come per-module; a chosen model also pulls its owner module
         module_set = set(module_names or [])
-        if module_set:
-            for name in self.env.registry.models:
-                if name not in self.env:
-                    continue
-                if getattr(self.env[name], '_original_module', None) in module_set:
-                    model_set.add(name)
         for name in (model_names or []):
             if name in self.env:
                 owner = getattr(self.env[name], '_original_module', None)
                 if owner:
                     module_set.add(owner)
-        return (model_set or None), (module_set or None)
+        counts = {'db': 0, 'code': 0}
+        counts['db'] = self._load_db_terms(lang_codes, targets, record_limit)
+        counts['code'] = self._load_code_terms(lang_codes, module_set or None)
+        return counts
 
-    def _load_db_terms(self, lang_codes, model_names, record_limit):
+    @api.model
+    def _db_targets(self, model_names, module_names):
+        """Resolve which records to scan for database terms.
+
+        Returns ``None`` (every model, every record) or a dict
+        ``{model_name: None | set(res_ids)}`` where ``None`` means all records of
+        that model and a set limits to the specific records a module owns. A
+        module's records are found through ``ir.model.data`` so its field labels,
+        menus, views and actions — which live on ``base``-owned models — are
+        included, not just the models the module itself defines."""
+        if not model_names and not module_names:
+            return None
+        targets = {}
+        for name in (model_names or []):
+            targets[name] = None  # all records of an explicitly chosen model
+        if module_names:
+            data = self.env['ir.model.data'].sudo().search(
+                [('module', 'in', list(module_names))])
+            for d in data:
+                if not d.model or not d.res_id:
+                    continue
+                cur = targets.get(d.model, 'missing')
+                if cur is None:
+                    continue  # already loading every record of this model
+                if cur == 'missing':
+                    targets[d.model] = set()
+                targets[d.model].add(d.res_id)
+        return targets
+
+    def _owner_modules(self, model_names):
+        """Map ``(model, res_id) -> module`` from ``ir.model.data`` so each term
+        is attributed to the module that owns the record (a sale menu reads as
+        ``sale``, not ``base``). Consistent across full and scoped loads."""
+        owner = {}
+        data = self.env['ir.model.data'].sudo().search(
+            [('model', 'in', list(model_names))])
+        for d in data:
+            if d.res_id:
+                owner.setdefault((d.model, d.res_id), d.module)
+        return owner
+
+    def _load_db_terms(self, lang_codes, targets, record_limit):
         Term = self.env['translation.term'].with_context(
             translation_no_push=True, active_test=False).sudo()
         lang_recs = self.env['res.lang'].sudo().search(
             [('code', 'in', lang_codes)])
         lang_by_code = {l.code: l.id for l in lang_recs}
-        names = list(model_names) if model_names else list(self.env.registry.models.keys())
+        names = (list(targets.keys()) if targets is not None
+                 else list(self.env.registry.models.keys()))
+        owner_by = self._owner_modules(names)
 
         created = 0
         buffer = []
@@ -328,15 +360,24 @@ class TranslationTerm(models.Model):
             ]
             if not tfields:
                 continue
+            ids = targets.get(model_name) if targets is not None else None
             try:
-                records = model.sudo().with_context(
-                    active_test=False, prefetch_langs=True).search([])
+                base = model.sudo().with_context(
+                    active_test=False, prefetch_langs=True)
+                if ids is None:
+                    records = base.search([])
+                    if record_limit:
+                        records = records[:record_limit]
+                else:
+                    records = base.browse(sorted(ids)).exists()
             except Exception:
-                _logger.debug("translation_manager: cannot search %s", model_name)
+                _logger.debug("translation_manager: cannot read %s", model_name)
                 continue
-            if record_limit:
-                records = records[:record_limit]
+            default_module = model._original_module if hasattr(
+                model, '_original_module') else None
             for record in records:
+                term_module = owner_by.get(
+                    (model_name, record.id), default_module)
                 try:
                     res_name = record.display_name
                 except Exception:
@@ -363,7 +404,7 @@ class TranslationTerm(models.Model):
                         buffer.append({
                             'term_type': term_type,
                             'lang_id': lang_by_code[lang],
-                            'module': model._original_module if hasattr(model, '_original_module') else None,
+                            'module': term_module,
                             'model_name': model_name,
                             'field_name': field.name,
                             'res_id': record.id,
