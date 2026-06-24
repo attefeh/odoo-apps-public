@@ -1,3 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_report_builder_template_manager,report.builder.template.manager,model_report_builder_template,group_report_builder_manager,1,1,1,1
-access_report_builder_new_manager,report.builder.new.manager,model_report_builder_new,group_report_builder_manager,1,1,1,1
