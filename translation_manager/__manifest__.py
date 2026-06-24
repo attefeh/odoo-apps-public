@@ -26,23 +26,23 @@ What you can translate
     menu entry and static text inside a view.
   * Menu names, window-action names, selection labels, email templates, etc.
 
-* **Code terms** that come from the modules' ``.po`` files:
+* **Code terms** extracted from the module source code:
 
-  * Server-side Python messages (``_()`` errors, warnings).
-  * Web / JavaScript strings (``_t()`` buttons, client notifications).
+  * Server-side Python messages (``_()`` / ``_lt()`` errors, warnings).
+  * Web / JavaScript strings (``_t()`` buttons, client notifications) and
+    static QWeb templates.
 
-  Code terms are applied through a translation-loading override, so your edits
-  take effect without touching the module source.
+  Every code term is collected, whether already translated or not, so you can
+  translate from scratch. Code edits are applied through a translation-loading
+  override, so they take effect without touching the module source.
 
 How it works
 ------------
 
 #. Open **Settings > Translations > Translated Terms**.
-#. The list is kept in sync automatically: whenever a module is installed,
-   upgraded or uninstalled, the set of translatable terms is refreshed in the
-   background (a light weekly cron also picks up new data records).
-#. Need an immediate refresh? Use **Refresh Terms** and optionally scope it by
-   module, model and language (all optional — leave empty to load everything).
+#. Use **Refresh Terms** to load them. Scope it by module, model and language
+   (all optional — leave empty to load everything). Loading is manual: it runs
+   only when you ask for it.
 #. Edit the **Translation** column inline. Database edits are written straight
    back to the record; code edits are stored as overrides and served to both
    the server and the web client.
@@ -52,8 +52,8 @@ Notes
 
 * Loading *everything* on a large database can be heavy — scope **Refresh
   Terms** by module, model or language for day-to-day work.
-* For code terms, the list shows terms that already exist in the installed
-  ``.po`` files. You can also add a code override manually (New) when you know
+* Code terms are read straight from the source, so untranslated strings show up
+  too. You can also add a code override manually (New) when you know
   the exact source string of an error or button.
     """,
     'author': 'Attefeh Falah',
@@ -64,12 +64,10 @@ Notes
     'depends': ['base', 'web'],
     'data': [
         'security/ir.model.access.csv',
-        'data/translation_cron.xml',
         'wizard/translation_loader_views.xml',
         'views/translation_term_views.xml',
     ],
     'license': 'LGPL-3',
-    'post_init_hook': 'post_init_hook',
     'installable': True,
     'application': True,
     'auto_install': False,

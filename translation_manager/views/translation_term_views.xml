@@ -103,9 +103,10 @@
         <field name="context">{'search_default_group_lang': 1}</field>
         <field name="help" type="html">
             <p class="o_view_nocontent_smiling_face">No translated terms loaded yet</p>
-            <p>Terms load automatically when modules are installed, upgraded or
-               uninstalled. Use <b>Refresh Terms</b> to (re)load them on demand
-               for chosen models, modules or languages.</p>
+            <p>Use <b>Refresh Terms</b> to load them for chosen models, modules
+               or languages (leave empty for everything). Every translatable
+               term is collected — Python, JavaScript, QWeb, fields, views and
+               menus — whether already translated or not.</p>
         </field>
     </record>
 
