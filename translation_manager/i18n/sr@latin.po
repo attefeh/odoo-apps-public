@@ -1,0 +1,315 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* translation_manager
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-24 00:00+0000\n"
+"PO-Revision-Date: 2026-06-24 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sr@latin\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_loader_form
+msgid "Cancel"
+msgstr "Otkaži"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Code (errors/JS)"
+msgstr "Kod (greške/JS)"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__is_override
+msgid "Code Override"
+msgstr "Zamena koda"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Code Overrides"
+msgstr "Zamene koda"
+
+#. module: translation_manager
+#. odoo-python
+#: code:addons/translation_manager/models/translation_term.py:0
+msgid ""
+"Could not store the translation for %(model)s.%(field)s (record %(rid)s): "
+"%(err)s"
+msgstr "Nije moguće sačuvati prevod za %(model)s.%(field)s (zapis %(rid)s): %(err)s"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__create_uid
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__create_uid
+msgid "Created by"
+msgstr "Kreirao"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__create_date
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__create_date
+msgid "Created on"
+msgstr "Kreirano"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__display_name
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__display_name
+msgid "Display Name"
+msgstr "Prikazno ime"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__field_name
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__term_type__model
+msgid "Field"
+msgstr "Polje"
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__term_type__model_term
+msgid "Field Term"
+msgstr "Termin polja"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Fields"
+msgstr "Polja"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__id
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__id
+msgid "ID"
+msgstr "ID"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__term_key
+msgid "Key"
+msgstr "Ključ"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__lang_id
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Language"
+msgstr "Jezik"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__lang_ids
+msgid "Languages"
+msgstr "Jezici"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_loader__lang_ids
+msgid "Languages to load. Leave empty to load every active language."
+msgstr "Jezici za učitavanje. Ostavite prazno da biste učitali sve aktivne jezike."
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__write_uid
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__write_uid
+msgid "Last Updated by"
+msgstr "Poslednji put ažurirao"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__write_date
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__write_date
+msgid "Last Updated on"
+msgstr "Poslednji put ažurirano"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_loader__model_ids
+msgid "Limit to these models. Leave empty to load every model."
+msgstr "Ograniči na ove modele. Ostavite prazno da biste učitali sve modele."
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_loader__module_ids
+msgid ""
+"Limit to these modules — both their field/view terms and their code terms. "
+"Leave empty to load every installed module."
+msgstr "Ograniči na ove module — kako njihove termine polja/prikaza, tako i termine u kodu. Ostavite prazno da biste učitali sve instalirane module."
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_loader_form
+msgid "Load"
+msgstr "Učitaj"
+
+#. module: translation_manager
+#. odoo-python
+#: code:addons/translation_manager/wizard/translation_loader.py:0
+msgid "Loaded %(db)s field/view terms and %(code)s code terms."
+msgstr "Učitano je %(db)s termina polja/prikaza i %(code)s termina u kodu."
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__lang
+msgid "Locale Code"
+msgstr "Kod lokala"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__model_name
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Model"
+msgstr "Model"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__model_ids
+msgid "Models"
+msgstr "Modeli"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__module
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Module"
+msgstr "Modul"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__module_ids
+msgid "Modules"
+msgstr "Moduli"
+
+#. module: translation_manager
+#: model_terms:ir.actions.act_window,help:translation_manager.action_translation_term
+msgid "No translated terms loaded yet"
+msgstr "Još uvek nema učitanih prevedenih termina"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_loader_form
+msgid ""
+"Pick what to (re)load. Leave a field empty to include\n"
+"                        everything. This loads every translatable term —\n"
+"                        Python, JavaScript, QWeb, field, view and menu — for the\n"
+"                        chosen languages, whether already translated or not."
+msgstr "Izaberite šta da (ponovo) učitate. Ostavite polje prazno da biste uključili\n                        sve. Ovo učitava svaki prevodivi termin —\n                        Python, JavaScript, QWeb, polje, prikaz i meni — za\n                        izabrane jezike, bez obzira na to da li su već prevedeni ili ne."
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__res_name
+msgid "Record"
+msgstr "Zapis"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__res_id
+msgid "Record ID"
+msgstr "ID zapisa"
+
+#. module: translation_manager
+#: model:ir.actions.server,name:translation_manager.action_translation_loader_open
+#: model:ir.ui.menu,name:translation_manager.menu_translation_loader
+msgid "Refresh Terms"
+msgstr "Osveži termine"
+
+#. module: translation_manager
+#: model:ir.actions.act_window,name:translation_manager.action_translation_loader
+#: model:ir.model,name:translation_manager.model_translation_loader
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_loader_form
+msgid "Refresh Translated Terms"
+msgstr "Osveži prevedene termine"
+
+#. module: translation_manager
+#. odoo-python
+#: code:addons/translation_manager/models/translation_term.py:0
+msgid "Select at least one language other than English (en_US)."
+msgstr "Izaberite bar jedan jezik osim engleskog (en_US)."
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__term_type__code_python
+msgid "Server Code"
+msgstr "Serverski kod"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_term__is_override
+msgid ""
+"Set on code terms whose value was edited by a user; only these are served on"
+" top of the module .po files."
+msgstr "Postavlja se na termine u kodu čiju je vrednost uredio korisnik; samo se oni prikazuju povrh .po datoteka modula."
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Source / Translation"
+msgstr "Izvor / Prevod"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__src
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_form
+msgid "Source Term (en_US)"
+msgstr "Izvorni termin (en_US)"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__state
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Status"
+msgstr "Status"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_term__lang
+msgid "This field is used to set/get locales for user"
+msgstr "Ovo polje se koristi za postavljanje/dobijanje lokala za korisnika"
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__state__to_translate
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "To Translate"
+msgstr "Za prevod"
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__state__translated
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Translated"
+msgstr "Prevedeno"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_form
+msgid "Translated Term"
+msgstr "Prevedeni termin"
+
+#. module: translation_manager
+#: model:ir.actions.act_window,name:translation_manager.action_translation_term
+#: model:ir.ui.menu,name:translation_manager.menu_translation_term
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_list
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Translated Terms"
+msgstr "Prevedeni termini"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__value
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_form
+msgid "Translation"
+msgstr "Prevod"
+
+#. module: translation_manager
+#: model:ir.ui.menu,name:translation_manager.menu_translation_manager_section
+msgid "Translation Manager"
+msgstr "Menadžer prevoda"
+
+#. module: translation_manager
+#. odoo-python
+#: code:addons/translation_manager/wizard/translation_loader.py:0
+msgid ""
+"Translation Manager needs more than one active language.\n"
+"\n"
+"Only English (en_US) is active right now, so there is nothing to translate yet. Activate at least one more language under Settings ‣ Translations ‣ Languages, then open this menu again."
+msgstr "Menadžeru prevoda je potrebno više od jednog aktivnog jezika.\n\nTrenutno je aktivan samo engleski (en_US), pa još uvek nema šta da se prevodi. Aktivirajte bar još jedan jezik u Podešavanja ‣ Prevodi ‣ Jezici, a zatim ponovo otvorite ovaj meni."
+
+#. module: translation_manager
+#: model:ir.model,name:translation_manager.model_translation_term
+msgid "Translation Term"
+msgstr "Termin prevoda"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__term_type
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Type"
+msgstr "Tip"
+
+#. module: translation_manager
+#: model_terms:ir.actions.act_window,help:translation_manager.action_translation_term
+msgid ""
+"Use <b>Refresh Terms</b> to load them for chosen models, modules\n"
+"               or languages (leave empty for everything). Every translatable\n"
+"               term is collected — Python, JavaScript, QWeb, fields, views and\n"
+"               menus — whether already translated or not."
+msgstr "Koristite <b>Osveži termine</b> da biste ih učitali za izabrane modele, module\n               ili jezike (ostavite prazno za sve). Prikuplja se svaki prevodivi\n               termin — Python, JavaScript, QWeb, polja, prikazi i\n               meniji — bez obzira na to da li su već prevedeni ili ne."
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__term_type__code_web
+msgid "Web / JS Code"
+msgstr "Veb / JS kod"

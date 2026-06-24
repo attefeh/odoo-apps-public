@@ -1,0 +1,315 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* translation_manager
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-24 00:00+0000\n"
+"PO-Revision-Date: 2026-06-24 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: te\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_loader_form
+msgid "Cancel"
+msgstr "రద్దు చేయి"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Code (errors/JS)"
+msgstr "కోడ్ (లోపాలు/JS)"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__is_override
+msgid "Code Override"
+msgstr "కోడ్ ఓవర్‌రైడ్"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Code Overrides"
+msgstr "కోడ్ ఓవర్‌రైడ్‌లు"
+
+#. module: translation_manager
+#. odoo-python
+#: code:addons/translation_manager/models/translation_term.py:0
+msgid ""
+"Could not store the translation for %(model)s.%(field)s (record %(rid)s): "
+"%(err)s"
+msgstr "%(model)s.%(field)s (రికార్డ్ %(rid)s) కోసం అనువాదాన్ని నిల్వ చేయలేకపోయాం: %(err)s"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__create_uid
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__create_uid
+msgid "Created by"
+msgstr "సృష్టించినవారు"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__create_date
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__create_date
+msgid "Created on"
+msgstr "సృష్టించిన తేదీ"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__display_name
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__display_name
+msgid "Display Name"
+msgstr "ప్రదర్శన పేరు"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__field_name
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__term_type__model
+msgid "Field"
+msgstr "ఫీల్డ్"
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__term_type__model_term
+msgid "Field Term"
+msgstr "ఫీల్డ్ పదం"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Fields"
+msgstr "ఫీల్డ్‌లు"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__id
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__id
+msgid "ID"
+msgstr "ఐడీ"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__term_key
+msgid "Key"
+msgstr "కీ"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__lang_id
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Language"
+msgstr "భాష"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__lang_ids
+msgid "Languages"
+msgstr "భాషలు"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_loader__lang_ids
+msgid "Languages to load. Leave empty to load every active language."
+msgstr "లోడ్ చేయవలసిన భాషలు. ప్రతి క్రియాశీల భాషను లోడ్ చేయడానికి ఖాళీగా ఉంచండి."
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__write_uid
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__write_uid
+msgid "Last Updated by"
+msgstr "చివరిగా నవీకరించినవారు"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__write_date
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__write_date
+msgid "Last Updated on"
+msgstr "చివరిగా నవీకరించిన తేదీ"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_loader__model_ids
+msgid "Limit to these models. Leave empty to load every model."
+msgstr "ఈ మోడల్‌లకు పరిమితం చేయండి. ప్రతి మోడల్‌ను లోడ్ చేయడానికి ఖాళీగా ఉంచండి."
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_loader__module_ids
+msgid ""
+"Limit to these modules — both their field/view terms and their code terms. "
+"Leave empty to load every installed module."
+msgstr "ఈ మాడ్యూల్‌లకు పరిమితం చేయండి — వాటి ఫీల్డ్/వీక్షణ పదాలు మరియు కోడ్ పదాలు రెండూ. ప్రతి ఇన్‌స్టాల్ చేసిన మాడ్యూల్‌ను లోడ్ చేయడానికి ఖాళీగా ఉంచండి."
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_loader_form
+msgid "Load"
+msgstr "లోడ్ చేయి"
+
+#. module: translation_manager
+#. odoo-python
+#: code:addons/translation_manager/wizard/translation_loader.py:0
+msgid "Loaded %(db)s field/view terms and %(code)s code terms."
+msgstr "%(db)s ఫీల్డ్/వీక్షణ పదాలు మరియు %(code)s కోడ్ పదాలు లోడ్ చేయబడ్డాయి."
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__lang
+msgid "Locale Code"
+msgstr "లొకేల్ కోడ్"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__model_name
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Model"
+msgstr "మోడల్"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__model_ids
+msgid "Models"
+msgstr "మోడల్‌లు"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__module
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Module"
+msgstr "మాడ్యూల్"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__module_ids
+msgid "Modules"
+msgstr "మాడ్యూల్‌లు"
+
+#. module: translation_manager
+#: model_terms:ir.actions.act_window,help:translation_manager.action_translation_term
+msgid "No translated terms loaded yet"
+msgstr "ఇంకా ఏ అనువదిత పదాలు లోడ్ చేయబడలేదు"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_loader_form
+msgid ""
+"Pick what to (re)load. Leave a field empty to include\n"
+"                        everything. This loads every translatable term —\n"
+"                        Python, JavaScript, QWeb, field, view and menu — for the\n"
+"                        chosen languages, whether already translated or not."
+msgstr "ఏమి (మళ్ళీ) లోడ్ చేయాలో ఎంచుకోండి. అన్నింటినీ చేర్చడానికి\n                        ఫీల్డ్‌ను ఖాళీగా ఉంచండి. ఇది ఎంచుకున్న భాషల కోసం ప్రతి అనువదించదగిన పదాన్ని లోడ్ చేస్తుంది —\n                        Python, JavaScript, QWeb, ఫీల్డ్, వీక్షణ మరియు మెను — అవి\n                        ఇప్పటికే అనువదించబడినా లేదా కాకపోయినా."
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__res_name
+msgid "Record"
+msgstr "రికార్డ్"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__res_id
+msgid "Record ID"
+msgstr "రికార్డ్ ఐడీ"
+
+#. module: translation_manager
+#: model:ir.actions.server,name:translation_manager.action_translation_loader_open
+#: model:ir.ui.menu,name:translation_manager.menu_translation_loader
+msgid "Refresh Terms"
+msgstr "పదాలను రిఫ్రెష్ చేయి"
+
+#. module: translation_manager
+#: model:ir.actions.act_window,name:translation_manager.action_translation_loader
+#: model:ir.model,name:translation_manager.model_translation_loader
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_loader_form
+msgid "Refresh Translated Terms"
+msgstr "అనువదిత పదాలను రిఫ్రెష్ చేయి"
+
+#. module: translation_manager
+#. odoo-python
+#: code:addons/translation_manager/models/translation_term.py:0
+msgid "Select at least one language other than English (en_US)."
+msgstr "ఇంగ్లీష్ (en_US) కాకుండా కనీసం ఒక భాషను ఎంచుకోండి."
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__term_type__code_python
+msgid "Server Code"
+msgstr "సర్వర్ కోడ్"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_term__is_override
+msgid ""
+"Set on code terms whose value was edited by a user; only these are served on"
+" top of the module .po files."
+msgstr "వినియోగదారు ద్వారా విలువ సవరించబడిన కోడ్ పదాలపై సెట్ చేయండి; ఇవి మాత్రమే మాడ్యూల్ .po ఫైళ్ళ పైన అందించబడతాయి."
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Source / Translation"
+msgstr "మూలం / అనువాదం"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__src
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_form
+msgid "Source Term (en_US)"
+msgstr "మూల పదం (en_US)"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__state
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Status"
+msgstr "స్థితి"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_term__lang
+msgid "This field is used to set/get locales for user"
+msgstr "ఈ ఫీల్డ్ వినియోగదారు కోసం లొకేల్‌లను సెట్/పొందడానికి ఉపయోగించబడుతుంది"
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__state__to_translate
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "To Translate"
+msgstr "అనువదించవలసినవి"
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__state__translated
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Translated"
+msgstr "అనువదించబడింది"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_form
+msgid "Translated Term"
+msgstr "అనువదిత పదం"
+
+#. module: translation_manager
+#: model:ir.actions.act_window,name:translation_manager.action_translation_term
+#: model:ir.ui.menu,name:translation_manager.menu_translation_term
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_list
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Translated Terms"
+msgstr "అనువదిత పదాలు"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__value
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_form
+msgid "Translation"
+msgstr "అనువాదం"
+
+#. module: translation_manager
+#: model:ir.ui.menu,name:translation_manager.menu_translation_manager_section
+msgid "Translation Manager"
+msgstr "అనువాద నిర్వాహకుడు"
+
+#. module: translation_manager
+#. odoo-python
+#: code:addons/translation_manager/wizard/translation_loader.py:0
+msgid ""
+"Translation Manager needs more than one active language.\n"
+"\n"
+"Only English (en_US) is active right now, so there is nothing to translate yet. Activate at least one more language under Settings ‣ Translations ‣ Languages, then open this menu again."
+msgstr "అనువాద నిర్వాహకుడికి ఒకటి కంటే ఎక్కువ క్రియాశీల భాష అవసరం.\n\nప్రస్తుతం ఇంగ్లీష్ (en_US) మాత్రమే క్రియాశీలంగా ఉంది, కాబట్టి ఇంకా అనువదించడానికి ఏమీ లేదు. సెట్టింగ్‌లు ‣ అనువాదాలు ‣ భాషలు కింద కనీసం మరో ఒక భాషను క్రియాశీలం చేసి, ఆపై ఈ మెనూను మళ్ళీ తెరవండి."
+
+#. module: translation_manager
+#: model:ir.model,name:translation_manager.model_translation_term
+msgid "Translation Term"
+msgstr "అనువాద పదం"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__term_type
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Type"
+msgstr "రకం"
+
+#. module: translation_manager
+#: model_terms:ir.actions.act_window,help:translation_manager.action_translation_term
+msgid ""
+"Use <b>Refresh Terms</b> to load them for chosen models, modules\n"
+"               or languages (leave empty for everything). Every translatable\n"
+"               term is collected — Python, JavaScript, QWeb, fields, views and\n"
+"               menus — whether already translated or not."
+msgstr "ఎంచుకున్న మోడల్‌లు, మాడ్యూల్‌లు లేదా భాషల కోసం వాటిని లోడ్ చేయడానికి <b>పదాలను రిఫ్రెష్ చేయి</b> ఉపయోగించండి (అన్నింటికీ ఖాళీగా ఉంచండి). ప్రతి అనువదించదగిన\n               పదం సేకరించబడుతుంది — Python, JavaScript, QWeb, ఫీల్డ్‌లు, వీక్షణలు మరియు\n               మెనూలు — అవి ఇప్పటికే అనువదించబడినా లేదా కాకపోయినా."
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__term_type__code_web
+msgid "Web / JS Code"
+msgstr "వెబ్ / JS కోడ్"

@@ -1,0 +1,315 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* translation_manager
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-24 00:00+0000\n"
+"PO-Revision-Date: 2026-06-24 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_loader_form
+msgid "Cancel"
+msgstr "გაუქმება"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Code (errors/JS)"
+msgstr "კოდი (შეცდომები/JS)"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__is_override
+msgid "Code Override"
+msgstr "კოდის გადაფარვა"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Code Overrides"
+msgstr "კოდის გადაფარვები"
+
+#. module: translation_manager
+#. odoo-python
+#: code:addons/translation_manager/models/translation_term.py:0
+msgid ""
+"Could not store the translation for %(model)s.%(field)s (record %(rid)s): "
+"%(err)s"
+msgstr "ვერ მოხერხდა თარგმანის შენახვა %(model)s.%(field)s-სთვის (ჩანაწერი %(rid)s): %(err)s"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__create_uid
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__create_uid
+msgid "Created by"
+msgstr "შემქმნელი"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__create_date
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__create_date
+msgid "Created on"
+msgstr "შექმნის თარიღი"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__display_name
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__display_name
+msgid "Display Name"
+msgstr "საჩვენებელი სახელი"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__field_name
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__term_type__model
+msgid "Field"
+msgstr "ველი"
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__term_type__model_term
+msgid "Field Term"
+msgstr "ველის ტერმინი"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Fields"
+msgstr "ველები"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__id
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__id
+msgid "ID"
+msgstr "ID"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__term_key
+msgid "Key"
+msgstr "გასაღები"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__lang_id
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Language"
+msgstr "ენა"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__lang_ids
+msgid "Languages"
+msgstr "ენები"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_loader__lang_ids
+msgid "Languages to load. Leave empty to load every active language."
+msgstr "ჩასატვირთი ენები. დატოვეთ ცარიელი ყველა აქტიური ენის ჩასატვირთად."
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__write_uid
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__write_uid
+msgid "Last Updated by"
+msgstr "ბოლოს განაახლა"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__write_date
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__write_date
+msgid "Last Updated on"
+msgstr "ბოლოს განახლების თარიღი"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_loader__model_ids
+msgid "Limit to these models. Leave empty to load every model."
+msgstr "შეზღუდვა ამ მოდელებით. დატოვეთ ცარიელი ყველა მოდელის ჩასატვირთად."
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_loader__module_ids
+msgid ""
+"Limit to these modules — both their field/view terms and their code terms. "
+"Leave empty to load every installed module."
+msgstr "შეზღუდვა ამ მოდულებით — როგორც მათი ველის/ხედის ტერმინები, ისე კოდის ტერმინები. დატოვეთ ცარიელი ყველა დაყენებული მოდულის ჩასატვირთად."
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_loader_form
+msgid "Load"
+msgstr "ჩატვირთვა"
+
+#. module: translation_manager
+#. odoo-python
+#: code:addons/translation_manager/wizard/translation_loader.py:0
+msgid "Loaded %(db)s field/view terms and %(code)s code terms."
+msgstr "ჩაიტვირთა %(db)s ველის/ხედის ტერმინი და %(code)s კოდის ტერმინი."
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__lang
+msgid "Locale Code"
+msgstr "ლოკალის კოდი"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__model_name
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Model"
+msgstr "მოდელი"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__model_ids
+msgid "Models"
+msgstr "მოდელები"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__module
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Module"
+msgstr "მოდული"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__module_ids
+msgid "Modules"
+msgstr "მოდულები"
+
+#. module: translation_manager
+#: model_terms:ir.actions.act_window,help:translation_manager.action_translation_term
+msgid "No translated terms loaded yet"
+msgstr "თარგმნილი ტერმინები ჯერ არ ჩატვირთულა"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_loader_form
+msgid ""
+"Pick what to (re)load. Leave a field empty to include\n"
+"                        everything. This loads every translatable term —\n"
+"                        Python, JavaScript, QWeb, field, view and menu — for the\n"
+"                        chosen languages, whether already translated or not."
+msgstr "აირჩიეთ, რა (ხელახლა) ჩაიტვირთოს. დატოვეთ ველი ცარიელი, რომ მოიცვას\n                        ყველაფერი. ეს ჩატვირთავს ყველა სათარგმნ ტერმინს —\n                        Python, JavaScript, QWeb, ველი, ხედი და მენიუ — \n                        არჩეული ენებისთვის, მიუხედავად იმისა, უკვე თარგმნილია თუ არა."
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__res_name
+msgid "Record"
+msgstr "ჩანაწერი"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__res_id
+msgid "Record ID"
+msgstr "ჩანაწერის ID"
+
+#. module: translation_manager
+#: model:ir.actions.server,name:translation_manager.action_translation_loader_open
+#: model:ir.ui.menu,name:translation_manager.menu_translation_loader
+msgid "Refresh Terms"
+msgstr "ტერმინების განახლება"
+
+#. module: translation_manager
+#: model:ir.actions.act_window,name:translation_manager.action_translation_loader
+#: model:ir.model,name:translation_manager.model_translation_loader
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_loader_form
+msgid "Refresh Translated Terms"
+msgstr "თარგმნილი ტერმინების განახლება"
+
+#. module: translation_manager
+#. odoo-python
+#: code:addons/translation_manager/models/translation_term.py:0
+msgid "Select at least one language other than English (en_US)."
+msgstr "აირჩიეთ მინიმუმ ერთი ენა ინგლისურის (en_US) გარდა."
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__term_type__code_python
+msgid "Server Code"
+msgstr "სერვერის კოდი"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_term__is_override
+msgid ""
+"Set on code terms whose value was edited by a user; only these are served on"
+" top of the module .po files."
+msgstr "დაყენებულია იმ კოდის ტერმინებზე, რომელთა მნიშვნელობა მომხმარებელმა შეასწორა; მხოლოდ ესენი მიეწოდება მოდულის .po ფაილების ზემოდან."
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Source / Translation"
+msgstr "წყარო / თარგმანი"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__src
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_form
+msgid "Source Term (en_US)"
+msgstr "საწყისი ტერმინი (en_US)"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__state
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Status"
+msgstr "სტატუსი"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_term__lang
+msgid "This field is used to set/get locales for user"
+msgstr "ეს ველი გამოიყენება მომხმარებლის ლოკალების დასაყენებლად/მისაღებად"
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__state__to_translate
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "To Translate"
+msgstr "სათარგმნი"
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__state__translated
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Translated"
+msgstr "თარგმნილი"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_form
+msgid "Translated Term"
+msgstr "თარგმნილი ტერმინი"
+
+#. module: translation_manager
+#: model:ir.actions.act_window,name:translation_manager.action_translation_term
+#: model:ir.ui.menu,name:translation_manager.menu_translation_term
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_list
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Translated Terms"
+msgstr "თარგმნილი ტერმინები"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__value
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_form
+msgid "Translation"
+msgstr "თარგმანი"
+
+#. module: translation_manager
+#: model:ir.ui.menu,name:translation_manager.menu_translation_manager_section
+msgid "Translation Manager"
+msgstr "თარგმანის მენეჯერი"
+
+#. module: translation_manager
+#. odoo-python
+#: code:addons/translation_manager/wizard/translation_loader.py:0
+msgid ""
+"Translation Manager needs more than one active language.\n"
+"\n"
+"Only English (en_US) is active right now, so there is nothing to translate yet. Activate at least one more language under Settings ‣ Translations ‣ Languages, then open this menu again."
+msgstr "თარგმანის მენეჯერს სჭირდება ერთზე მეტი აქტიური ენა.\n\nამჟამად აქტიურია მხოლოდ ინგლისური (en_US), ამიტომ ჯერჯერობით სათარგმნი არაფერია. გაააქტიურეთ მინიმუმ კიდევ ერთი ენა ბილიკზე პარამეტრები ‣ თარგმანები ‣ ენები, შემდეგ კი ხელახლა გახსენით ეს მენიუ."
+
+#. module: translation_manager
+#: model:ir.model,name:translation_manager.model_translation_term
+msgid "Translation Term"
+msgstr "თარგმანის ტერმინი"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__term_type
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Type"
+msgstr "ტიპი"
+
+#. module: translation_manager
+#: model_terms:ir.actions.act_window,help:translation_manager.action_translation_term
+msgid ""
+"Use <b>Refresh Terms</b> to load them for chosen models, modules\n"
+"               or languages (leave empty for everything). Every translatable\n"
+"               term is collected — Python, JavaScript, QWeb, fields, views and\n"
+"               menus — whether already translated or not."
+msgstr "გამოიყენეთ <b>ტერმინების განახლება</b> მათ ჩასატვირთად არჩეული მოდელების, მოდულების\n               ან ენებისთვის (დატოვეთ ცარიელი ყველაფრისთვის). გროვდება ყველა სათარგმნი\n               ტერმინი — Python, JavaScript, QWeb, ველები, ხედები და\n               მენიუები — მიუხედავად იმისა, უკვე თარგმნილია თუ არა."
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__term_type__code_web
+msgid "Web / JS Code"
+msgstr "Web / JS კოდი"

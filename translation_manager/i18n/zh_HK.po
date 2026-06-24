@@ -1,0 +1,315 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* translation_manager
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-24 00:00+0000\n"
+"PO-Revision-Date: 2026-06-24 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_HK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_loader_form
+msgid "Cancel"
+msgstr "取消"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Code (errors/JS)"
+msgstr "程式碼（錯誤/JS）"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__is_override
+msgid "Code Override"
+msgstr "程式碼覆寫"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Code Overrides"
+msgstr "程式碼覆寫"
+
+#. module: translation_manager
+#. odoo-python
+#: code:addons/translation_manager/models/translation_term.py:0
+msgid ""
+"Could not store the translation for %(model)s.%(field)s (record %(rid)s): "
+"%(err)s"
+msgstr "無法儲存 %(model)s.%(field)s（記錄 %(rid)s）的翻譯：%(err)s"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__create_uid
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__create_uid
+msgid "Created by"
+msgstr "建立人"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__create_date
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__create_date
+msgid "Created on"
+msgstr "建立日期"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__display_name
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__display_name
+msgid "Display Name"
+msgstr "顯示名稱"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__field_name
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__term_type__model
+msgid "Field"
+msgstr "欄位"
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__term_type__model_term
+msgid "Field Term"
+msgstr "欄位術語"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Fields"
+msgstr "欄位"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__id
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__id
+msgid "ID"
+msgstr "ID"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__term_key
+msgid "Key"
+msgstr "鍵"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__lang_id
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Language"
+msgstr "語言"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__lang_ids
+msgid "Languages"
+msgstr "語言"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_loader__lang_ids
+msgid "Languages to load. Leave empty to load every active language."
+msgstr "要載入的語言。留空則載入所有已啟用的語言。"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__write_uid
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__write_uid
+msgid "Last Updated by"
+msgstr "最後更新人"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__write_date
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__write_date
+msgid "Last Updated on"
+msgstr "最後更新日期"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_loader__model_ids
+msgid "Limit to these models. Leave empty to load every model."
+msgstr "限定於這些模型。留空則載入所有模型。"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_loader__module_ids
+msgid ""
+"Limit to these modules — both their field/view terms and their code terms. "
+"Leave empty to load every installed module."
+msgstr "限定於這些模組——包括其欄位/檢視術語和程式碼術語。留空則載入所有已安裝的模組。"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_loader_form
+msgid "Load"
+msgstr "載入"
+
+#. module: translation_manager
+#. odoo-python
+#: code:addons/translation_manager/wizard/translation_loader.py:0
+msgid "Loaded %(db)s field/view terms and %(code)s code terms."
+msgstr "已載入 %(db)s 個欄位/檢視術語和 %(code)s 個程式碼術語。"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__lang
+msgid "Locale Code"
+msgstr "地區設定代碼"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__model_name
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Model"
+msgstr "模型"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__model_ids
+msgid "Models"
+msgstr "模型"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__module
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Module"
+msgstr "模組"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__module_ids
+msgid "Modules"
+msgstr "模組"
+
+#. module: translation_manager
+#: model_terms:ir.actions.act_window,help:translation_manager.action_translation_term
+msgid "No translated terms loaded yet"
+msgstr "尚未載入任何已翻譯術語"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_loader_form
+msgid ""
+"Pick what to (re)load. Leave a field empty to include\n"
+"                        everything. This loads every translatable term —\n"
+"                        Python, JavaScript, QWeb, field, view and menu — for the\n"
+"                        chosen languages, whether already translated or not."
+msgstr "選擇要（重新）載入的內容。將欄位留空以包含\n                        所有內容。此操作將為所選語言載入每一個可翻譯術語——\n                        Python、JavaScript、QWeb、欄位、檢視和選單——\n                        無論是否已翻譯。"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__res_name
+msgid "Record"
+msgstr "記錄"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__res_id
+msgid "Record ID"
+msgstr "記錄 ID"
+
+#. module: translation_manager
+#: model:ir.actions.server,name:translation_manager.action_translation_loader_open
+#: model:ir.ui.menu,name:translation_manager.menu_translation_loader
+msgid "Refresh Terms"
+msgstr "重新整理術語"
+
+#. module: translation_manager
+#: model:ir.actions.act_window,name:translation_manager.action_translation_loader
+#: model:ir.model,name:translation_manager.model_translation_loader
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_loader_form
+msgid "Refresh Translated Terms"
+msgstr "重新整理已翻譯術語"
+
+#. module: translation_manager
+#. odoo-python
+#: code:addons/translation_manager/models/translation_term.py:0
+msgid "Select at least one language other than English (en_US)."
+msgstr "請至少選擇一種英文 (en_US) 以外的語言。"
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__term_type__code_python
+msgid "Server Code"
+msgstr "伺服器程式碼"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_term__is_override
+msgid ""
+"Set on code terms whose value was edited by a user; only these are served on"
+" top of the module .po files."
+msgstr "在值已被使用者編輯過的程式碼術語上設定；只有這些術語會在模組 .po 檔案之上生效。"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Source / Translation"
+msgstr "來源 / 翻譯"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__src
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_form
+msgid "Source Term (en_US)"
+msgstr "來源術語 (en_US)"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__state
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Status"
+msgstr "狀態"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_term__lang
+msgid "This field is used to set/get locales for user"
+msgstr "此欄位用於設定/取得使用者的地區設定"
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__state__to_translate
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "To Translate"
+msgstr "待翻譯"
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__state__translated
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Translated"
+msgstr "已翻譯"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_form
+msgid "Translated Term"
+msgstr "已翻譯術語"
+
+#. module: translation_manager
+#: model:ir.actions.act_window,name:translation_manager.action_translation_term
+#: model:ir.ui.menu,name:translation_manager.menu_translation_term
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_list
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Translated Terms"
+msgstr "已翻譯術語"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__value
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_form
+msgid "Translation"
+msgstr "翻譯"
+
+#. module: translation_manager
+#: model:ir.ui.menu,name:translation_manager.menu_translation_manager_section
+msgid "Translation Manager"
+msgstr "翻譯管理器"
+
+#. module: translation_manager
+#. odoo-python
+#: code:addons/translation_manager/wizard/translation_loader.py:0
+msgid ""
+"Translation Manager needs more than one active language.\n"
+"\n"
+"Only English (en_US) is active right now, so there is nothing to translate yet. Activate at least one more language under Settings ‣ Translations ‣ Languages, then open this menu again."
+msgstr "翻譯管理器需要多於一種已啟用的語言。\n\n目前僅啟用了英文 (en_US)，因此尚無內容可翻譯。請在 設定 ‣ 翻譯 ‣ 語言 下至少啟用一種其他語言，然後再次開啟此選單。"
+
+#. module: translation_manager
+#: model:ir.model,name:translation_manager.model_translation_term
+msgid "Translation Term"
+msgstr "翻譯術語"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__term_type
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Type"
+msgstr "類型"
+
+#. module: translation_manager
+#: model_terms:ir.actions.act_window,help:translation_manager.action_translation_term
+msgid ""
+"Use <b>Refresh Terms</b> to load them for chosen models, modules\n"
+"               or languages (leave empty for everything). Every translatable\n"
+"               term is collected — Python, JavaScript, QWeb, fields, views and\n"
+"               menus — whether already translated or not."
+msgstr "使用 <b>重新整理術語</b> 為所選模型、模組\n               或語言載入它們（留空則表示全部）。每一個可翻譯\n               術語都會被收集——Python、JavaScript、QWeb、欄位、檢視和\n               選單——無論是否已翻譯。"
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__term_type__code_web
+msgid "Web / JS Code"
+msgstr "網頁 / JS 程式碼"

@@ -1,0 +1,315 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* translation_manager
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-24 00:00+0000\n"
+"PO-Revision-Date: 2026-06-24 00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: tl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_loader_form
+msgid "Cancel"
+msgstr "Kanselahin"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Code (errors/JS)"
+msgstr "Code (errors/JS)"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__is_override
+msgid "Code Override"
+msgstr "Code Override"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Code Overrides"
+msgstr "Code Overrides"
+
+#. module: translation_manager
+#. odoo-python
+#: code:addons/translation_manager/models/translation_term.py:0
+msgid ""
+"Could not store the translation for %(model)s.%(field)s (record %(rid)s): "
+"%(err)s"
+msgstr "Hindi maitago ang pagsasalin para sa %(model)s.%(field)s (record %(rid)s): %(err)s"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__create_uid
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__create_uid
+msgid "Created by"
+msgstr "Ginawa ni"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__create_date
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__create_date
+msgid "Created on"
+msgstr "Ginawa noong"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__display_name
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__display_name
+msgid "Display Name"
+msgstr "Display Name"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__field_name
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__term_type__model
+msgid "Field"
+msgstr "Field"
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__term_type__model_term
+msgid "Field Term"
+msgstr "Field Term"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Fields"
+msgstr "Fields"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__id
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__id
+msgid "ID"
+msgstr "ID"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__term_key
+msgid "Key"
+msgstr "Key"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__lang_id
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Language"
+msgstr "Wika"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__lang_ids
+msgid "Languages"
+msgstr "Mga Wika"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_loader__lang_ids
+msgid "Languages to load. Leave empty to load every active language."
+msgstr "Mga wikang ilo-load. Iwanang walang laman upang i-load ang bawat aktibong wika."
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__write_uid
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__write_uid
+msgid "Last Updated by"
+msgstr "Huling Na-update ni"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__write_date
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__write_date
+msgid "Last Updated on"
+msgstr "Huling Na-update noong"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_loader__model_ids
+msgid "Limit to these models. Leave empty to load every model."
+msgstr "Limitahan sa mga model na ito. Iwanang walang laman upang i-load ang bawat model."
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_loader__module_ids
+msgid ""
+"Limit to these modules — both their field/view terms and their code terms. "
+"Leave empty to load every installed module."
+msgstr "Limitahan sa mga module na ito — kapwa ang kanilang field/view terms at code terms. Iwanang walang laman upang i-load ang bawat naka-install na module."
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_loader_form
+msgid "Load"
+msgstr "I-load"
+
+#. module: translation_manager
+#. odoo-python
+#: code:addons/translation_manager/wizard/translation_loader.py:0
+msgid "Loaded %(db)s field/view terms and %(code)s code terms."
+msgstr "Nag-load ng %(db)s field/view terms at %(code)s code terms."
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__lang
+msgid "Locale Code"
+msgstr "Locale Code"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__model_name
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Model"
+msgstr "Model"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__model_ids
+msgid "Models"
+msgstr "Mga Model"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__module
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Module"
+msgstr "Module"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_loader__module_ids
+msgid "Modules"
+msgstr "Mga Module"
+
+#. module: translation_manager
+#: model_terms:ir.actions.act_window,help:translation_manager.action_translation_term
+msgid "No translated terms loaded yet"
+msgstr "Wala pang naka-load na mga isinaling termino"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_loader_form
+msgid ""
+"Pick what to (re)load. Leave a field empty to include\n"
+"                        everything. This loads every translatable term —\n"
+"                        Python, JavaScript, QWeb, field, view and menu — for the\n"
+"                        chosen languages, whether already translated or not."
+msgstr "Piliin kung ano ang (muling) ilo-load. Iwanang walang laman ang isang field upang isama\n                        ang lahat. Ito ay nag-lo-load ng bawat naisasaling termino —\n                        Python, JavaScript, QWeb, field, view at menu — para sa\n                        piniling mga wika, naisalin na man o hindi pa."
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__res_name
+msgid "Record"
+msgstr "Record"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__res_id
+msgid "Record ID"
+msgstr "Record ID"
+
+#. module: translation_manager
+#: model:ir.actions.server,name:translation_manager.action_translation_loader_open
+#: model:ir.ui.menu,name:translation_manager.menu_translation_loader
+msgid "Refresh Terms"
+msgstr "I-refresh ang mga Termino"
+
+#. module: translation_manager
+#: model:ir.actions.act_window,name:translation_manager.action_translation_loader
+#: model:ir.model,name:translation_manager.model_translation_loader
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_loader_form
+msgid "Refresh Translated Terms"
+msgstr "I-refresh ang mga Isinaling Termino"
+
+#. module: translation_manager
+#. odoo-python
+#: code:addons/translation_manager/models/translation_term.py:0
+msgid "Select at least one language other than English (en_US)."
+msgstr "Pumili ng kahit isang wika maliban sa Ingles (en_US)."
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__term_type__code_python
+msgid "Server Code"
+msgstr "Server Code"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_term__is_override
+msgid ""
+"Set on code terms whose value was edited by a user; only these are served on"
+" top of the module .po files."
+msgstr "Itinatakda sa mga code term na ang halaga ay in-edit ng isang user; ang mga ito lamang ang inihahain sa ibabaw ng mga module .po file."
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Source / Translation"
+msgstr "Pinagmulan / Pagsasalin"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__src
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_form
+msgid "Source Term (en_US)"
+msgstr "Source Term (en_US)"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__state
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Status"
+msgstr "Status"
+
+#. module: translation_manager
+#: model:ir.model.fields,help:translation_manager.field_translation_term__lang
+msgid "This field is used to set/get locales for user"
+msgstr "Ginagamit ang field na ito upang itakda/kunin ang mga locale para sa user"
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__state__to_translate
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "To Translate"
+msgstr "Isasalin"
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__state__translated
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Translated"
+msgstr "Naisalin"
+
+#. module: translation_manager
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_form
+msgid "Translated Term"
+msgstr "Isinaling Termino"
+
+#. module: translation_manager
+#: model:ir.actions.act_window,name:translation_manager.action_translation_term
+#: model:ir.ui.menu,name:translation_manager.menu_translation_term
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_list
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Translated Terms"
+msgstr "Mga Isinaling Termino"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__value
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_form
+msgid "Translation"
+msgstr "Pagsasalin"
+
+#. module: translation_manager
+#: model:ir.ui.menu,name:translation_manager.menu_translation_manager_section
+msgid "Translation Manager"
+msgstr "Translation Manager"
+
+#. module: translation_manager
+#. odoo-python
+#: code:addons/translation_manager/wizard/translation_loader.py:0
+msgid ""
+"Translation Manager needs more than one active language.\n"
+"\n"
+"Only English (en_US) is active right now, so there is nothing to translate yet. Activate at least one more language under Settings ‣ Translations ‣ Languages, then open this menu again."
+msgstr "Ang Translation Manager ay nangangailangan ng higit sa isang aktibong wika.\n\nIngles (en_US) lamang ang aktibo ngayon, kaya wala pang maisasalin. Mag-activate ng kahit isa pang wika sa ilalim ng Settings ‣ Translations ‣ Languages, pagkatapos ay buksang muli ang menu na ito."
+
+#. module: translation_manager
+#: model:ir.model,name:translation_manager.model_translation_term
+msgid "Translation Term"
+msgstr "Translation Term"
+
+#. module: translation_manager
+#: model:ir.model.fields,field_description:translation_manager.field_translation_term__term_type
+#: model_terms:ir.ui.view,arch_db:translation_manager.view_translation_term_search
+msgid "Type"
+msgstr "Uri"
+
+#. module: translation_manager
+#: model_terms:ir.actions.act_window,help:translation_manager.action_translation_term
+msgid ""
+"Use <b>Refresh Terms</b> to load them for chosen models, modules\n"
+"               or languages (leave empty for everything). Every translatable\n"
+"               term is collected — Python, JavaScript, QWeb, fields, views and\n"
+"               menus — whether already translated or not."
+msgstr "Gamitin ang <b>Refresh Terms</b> upang i-load ang mga ito para sa piniling models, modules\n               o languages (iwanang walang laman para sa lahat). Bawat naisasaling\n               termino ay kinokolekta — Python, JavaScript, QWeb, fields, views at\n               menus — naisalin na man o hindi pa."
+
+#. module: translation_manager
+#: model:ir.model.fields.selection,name:translation_manager.selection__translation_term__term_type__code_web
+msgid "Web / JS Code"
+msgstr "Web / JS Code"
