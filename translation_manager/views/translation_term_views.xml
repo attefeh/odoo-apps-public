@@ -110,15 +110,20 @@
         </field>
     </record>
 
-    <!-- Menus: live under Odoo's existing Settings > Translations menu -->
+    <!-- Menus: a titled section under Odoo's existing Settings > Translations
+         menu, separating these from the built-in translation entries. -->
+    <menuitem id="menu_translation_manager_section"
+              name="Translation Manager"
+              parent="base.menu_translation"
+              sequence="20"/>
     <menuitem id="menu_translation_term"
               name="Translated Terms"
-              parent="base.menu_translation"
+              parent="menu_translation_manager_section"
               action="action_translation_term"
               sequence="10"/>
     <menuitem id="menu_translation_loader"
               name="Refresh Terms"
-              parent="base.menu_translation"
+              parent="menu_translation_manager_section"
               action="action_translation_loader_open"
               sequence="20"/>
 </odoo>
