@@ -50,10 +50,10 @@ class TranslationTerm(models.Model):
              "are served on top of the module .po files.")
     term_key = fields.Char(string='Key', index=True, copy=False)
 
-    _sql_constraints = [
-        ('term_key_uniq', 'unique(term_key)',
-         'This translation term already exists for this language.'),
-    ]
+    _term_key_uniq = models.Constraint(
+        'unique(term_key)',
+        "This translation term already exists for this language.",
+    )
 
     # ------------------------------------------------------------------
     # Identity / computed
