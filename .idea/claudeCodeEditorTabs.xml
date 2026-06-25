@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ClaudeCodeEditorTabs">
-    <option name="activeSessionId" value="b9e9a1c2-ba1a-4df3-a969-916dd32062e1" />
+    <option name="activeSessionId" value="0a092dc8-944f-4c9b-8f34-1d9e4182b4fd" />
     <option name="openSessionIds">
       <list>
         <option value="b9e9a1c2-ba1a-4df3-a969-916dd32062e1" />
+        <option value="0a092dc8-944f-4c9b-8f34-1d9e4182b4fd" />
       </list>
+    </option>
+    <option name="sessionPaths">
+      <map>
+        <entry key="0a092dc8-944f-4c9b-8f34-1d9e4182b4fd" value="/sessions/e27f9e52-5a6e-49db-b5ea-0c6b746b6d77" />
+      </map>
+    </option>
+    <option name="sessionTitles">
+      <map>
+        <entry key="0a092dc8-944f-4c9b-8f34-1d9e4182b4fd" value="update index.html to use screenshot. also esit scr" />
+      </map>
     </option>
   </component>
 </project>

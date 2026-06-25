@@ -23,7 +23,7 @@ company or against a shared (no-company) record.
 There is no setting; once installed, uniqueness is enforced everywhere products
 are created — the interface, imports and other apps alike.
     """,
-    "version": "18.0.1.0.0",
+    "version": "19.0.1.0.0",
     "category": "Inventory/Inventory",
     "license": "LGPL-3",
     "author": "Attefeh Falah",
